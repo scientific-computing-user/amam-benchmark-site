@@ -136,6 +136,711 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "12ZKRgmPJkhLzJN_oNTImmut37ynE09SE",
+            "name": "4130x10 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=12ZKRgmPJkhLzJN_oNTImmut37ynE09SE&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/12ZKRgmPJkhLzJN_oNTImmut37ynE09SE/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=12ZKRgmPJkhLzJN_oNTImmut37ynE09SE",
+            "maskId": "1JP4GpPTPQ0QC7duliknG6mS3hl7uGVYh",
+            "maskName": "6362 x 10 (1).png"
+          },
+          {
+            "id": "1OOtfMGe6eoF_BHd4BalrIP89HMVOoGOH",
+            "name": "4130x10 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1OOtfMGe6eoF_BHd4BalrIP89HMVOoGOH&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1OOtfMGe6eoF_BHd4BalrIP89HMVOoGOH/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1OOtfMGe6eoF_BHd4BalrIP89HMVOoGOH",
+            "maskId": "1_9ik5ImiKYSf0giI-0cgYDwLdExhndgn",
+            "maskName": "6362 x 10 (2).png"
+          },
+          {
+            "id": "1i4YNSuk5Pp6P_VrUHK1wNlOahnm0xO-l",
+            "name": "4130x10 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1i4YNSuk5Pp6P_VrUHK1wNlOahnm0xO-l&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1i4YNSuk5Pp6P_VrUHK1wNlOahnm0xO-l/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1i4YNSuk5Pp6P_VrUHK1wNlOahnm0xO-l",
+            "maskId": "1EqDxaG_jdB-KZS7bu_okAWRCmWdO1h3H",
+            "maskName": "6362 x 10 (3).png"
+          },
+          {
+            "id": "1H2loOcCEMiO_mYLThrLFK4Ri8I6szm7c",
+            "name": "4130x10 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1H2loOcCEMiO_mYLThrLFK4Ri8I6szm7c&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1H2loOcCEMiO_mYLThrLFK4Ri8I6szm7c/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1H2loOcCEMiO_mYLThrLFK4Ri8I6szm7c",
+            "maskId": "1Kcmk7IZ1_oJ_9sa6AtuXmXBKbx7lQcPk",
+            "maskName": "6362 x 10 (4).png"
+          },
+          {
+            "id": "11yASsnAD7axem-iY85Ket2QETwWspDhs",
+            "name": "4130x10 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=11yASsnAD7axem-iY85Ket2QETwWspDhs&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/11yASsnAD7axem-iY85Ket2QETwWspDhs/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=11yASsnAD7axem-iY85Ket2QETwWspDhs",
+            "maskId": "1VkDhuVkRVSmc-l94AD0RGyTJVrI8Z78V",
+            "maskName": "6362 x 10 (5).png"
+          },
+          {
+            "id": "1WsfoN1qjN8wK7987psSx3sn3rPSfI24d",
+            "name": "4130x10 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WsfoN1qjN8wK7987psSx3sn3rPSfI24d&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WsfoN1qjN8wK7987psSx3sn3rPSfI24d/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WsfoN1qjN8wK7987psSx3sn3rPSfI24d",
+            "maskId": "1Fb_3mnVoenqdH3T2p0v43rQ92Ig7-Qc6",
+            "maskName": "6362 x 10 (6).PNG"
+          },
+          {
+            "id": "1SeEjvukbKn_VDzl0v_kegCDB0cDikaeM",
+            "name": "4130x10 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1SeEjvukbKn_VDzl0v_kegCDB0cDikaeM&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1SeEjvukbKn_VDzl0v_kegCDB0cDikaeM/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1SeEjvukbKn_VDzl0v_kegCDB0cDikaeM",
+            "maskId": "1_zbi_epBUdzlveZEwox7qKZMbfLf9MRZ",
+            "maskName": "6362 x 10 (7).PNG"
+          },
+          {
+            "id": "1v99c4R10cgyckT5dcnCzuyOhaWZZcSvM",
+            "name": "4130x10 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1v99c4R10cgyckT5dcnCzuyOhaWZZcSvM&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1v99c4R10cgyckT5dcnCzuyOhaWZZcSvM/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1v99c4R10cgyckT5dcnCzuyOhaWZZcSvM",
+            "maskId": "1RL6A_hUFHEhUpbK0HFbtLqQifT5Xr6Yf",
+            "maskName": "6362 x 10 (8).PNG"
+          },
+          {
+            "id": "1XngnL9g1NYD-HoAl74LqdoPb2AnMffPU",
+            "name": "4130x10 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XngnL9g1NYD-HoAl74LqdoPb2AnMffPU&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XngnL9g1NYD-HoAl74LqdoPb2AnMffPU/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XngnL9g1NYD-HoAl74LqdoPb2AnMffPU",
+            "maskId": "1hhDhuf6h_j7BGCsCGlddOauzT3jMbF8R",
+            "maskName": "6362 x 10 (9).PNG"
+          },
+          {
+            "id": "1WLX1r1-GJAoDoLowe9GPHO_5MVeWwdQV",
+            "name": "4130x10 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WLX1r1-GJAoDoLowe9GPHO_5MVeWwdQV&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WLX1r1-GJAoDoLowe9GPHO_5MVeWwdQV/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WLX1r1-GJAoDoLowe9GPHO_5MVeWwdQV",
+            "maskId": "1IHtn6g-QC3FpoczIZhV-vWVD45wy_PAu",
+            "maskName": "6362 x 10 (10).PNG"
+          },
+          {
+            "id": "1hBYdfVV8cF-EdvlQeZa4aPHNxiQggkCE",
+            "name": "4130x10 (11).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hBYdfVV8cF-EdvlQeZa4aPHNxiQggkCE&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hBYdfVV8cF-EdvlQeZa4aPHNxiQggkCE/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hBYdfVV8cF-EdvlQeZa4aPHNxiQggkCE",
+            "maskId": "1CQyoXv1SqwPgfo2QUR_IhvsaBqz1DgNM",
+            "maskName": "6362 x 10 (11).PNG"
+          },
+          {
+            "id": "1TNWpkpnM9wqNeK-w4EG-GBxWtUKmR7zT",
+            "name": "4130x10 (12).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1TNWpkpnM9wqNeK-w4EG-GBxWtUKmR7zT&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1TNWpkpnM9wqNeK-w4EG-GBxWtUKmR7zT/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1TNWpkpnM9wqNeK-w4EG-GBxWtUKmR7zT",
+            "maskId": "1Znkt4J_v2blSRVXtEwUhPMGGeq4qCHKn",
+            "maskName": "6362 x 10 (12).PNG"
+          },
+          {
+            "id": "1qEhpqoj8k9NrE4DedjjhNU0pKSIdyZR_",
+            "name": "4130x10 (13).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qEhpqoj8k9NrE4DedjjhNU0pKSIdyZR_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qEhpqoj8k9NrE4DedjjhNU0pKSIdyZR_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qEhpqoj8k9NrE4DedjjhNU0pKSIdyZR_",
+            "maskId": "16jTxgj1vm_hPxPMND4hUVOguj8yJsc1u",
+            "maskName": "6362 x 10 (13).PNG"
+          },
+          {
+            "id": "1hWwzfvXO3wasegeRyTzL5AMHURuI1qdv",
+            "name": "4130x10 (14).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hWwzfvXO3wasegeRyTzL5AMHURuI1qdv&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hWwzfvXO3wasegeRyTzL5AMHURuI1qdv/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hWwzfvXO3wasegeRyTzL5AMHURuI1qdv",
+            "maskId": "1HualJzIA-VfmtqZaJXqNpVOJeOTTZIsc",
+            "maskName": "6362 x 10 (14).PNG"
+          },
+          {
+            "id": "12jQiLS62ewFXn0VyMHvsJsUL1NkaxZPF",
+            "name": "4130x10 (15).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=12jQiLS62ewFXn0VyMHvsJsUL1NkaxZPF&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/12jQiLS62ewFXn0VyMHvsJsUL1NkaxZPF/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=12jQiLS62ewFXn0VyMHvsJsUL1NkaxZPF",
+            "maskId": "1Oj9E0DwJ5RkQmY3b1KmpLoC8Vx6P5f90",
+            "maskName": "6362 x 10 (15).PNG"
+          },
+          {
+            "id": "1_Q6Dd-Yzl0moxaCXslejcZnM5tLiNyQH",
+            "name": "4130x10 (16).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_Q6Dd-Yzl0moxaCXslejcZnM5tLiNyQH&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_Q6Dd-Yzl0moxaCXslejcZnM5tLiNyQH/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_Q6Dd-Yzl0moxaCXslejcZnM5tLiNyQH",
+            "maskId": "1DNIPRs0pv4icoGRNL49huwaIJImZengz",
+            "maskName": "6362 x 10 (16).PNG"
+          },
+          {
+            "id": "1DVOMTu_3PagxsgpoqrKP-AdKCQn5GKzc",
+            "name": "4130x10 (17).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1DVOMTu_3PagxsgpoqrKP-AdKCQn5GKzc&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1DVOMTu_3PagxsgpoqrKP-AdKCQn5GKzc/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1DVOMTu_3PagxsgpoqrKP-AdKCQn5GKzc",
+            "maskId": "1ECoP7eiKMlRbNCtz9T8CYXhPoNvf-vFT",
+            "maskName": "6362 x 10 (17).PNG"
+          },
+          {
+            "id": "1mk9g09ekhuQl27DCF99qZTzTtM7R2jnZ",
+            "name": "4130x10 (18).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1mk9g09ekhuQl27DCF99qZTzTtM7R2jnZ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1mk9g09ekhuQl27DCF99qZTzTtM7R2jnZ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1mk9g09ekhuQl27DCF99qZTzTtM7R2jnZ",
+            "maskId": "19tUwFEt5GiiaCW4cIa3l9FgnVeieFcdx",
+            "maskName": "6362 x 10 (18).PNG"
+          },
+          {
+            "id": "1Fi8sdP1PqGlCEr6HiHtLcCIo5AbMSagu",
+            "name": "4130x10 (19).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Fi8sdP1PqGlCEr6HiHtLcCIo5AbMSagu&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Fi8sdP1PqGlCEr6HiHtLcCIo5AbMSagu/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Fi8sdP1PqGlCEr6HiHtLcCIo5AbMSagu",
+            "maskId": "1nhJSsdVAiUOK6PHbAild4x3uHY15-jK2",
+            "maskName": "6362 x 10 (19).PNG"
+          },
+          {
+            "id": "1WXkn9phyrH2UzFMiRpz-KkIvnqLgQQLn",
+            "name": "4130x10 (20).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WXkn9phyrH2UzFMiRpz-KkIvnqLgQQLn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WXkn9phyrH2UzFMiRpz-KkIvnqLgQQLn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WXkn9phyrH2UzFMiRpz-KkIvnqLgQQLn",
+            "maskId": "1GIgpEBDu8ulsV-zgsgULkExcYdZ-oZtw",
+            "maskName": "6362 x 10 (20).PNG"
+          },
+          {
+            "id": "1Z4CAD5Jrvtr5xmOb133gQNU_uII_fZh_",
+            "name": "4130x20 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Z4CAD5Jrvtr5xmOb133gQNU_uII_fZh_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Z4CAD5Jrvtr5xmOb133gQNU_uII_fZh_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Z4CAD5Jrvtr5xmOb133gQNU_uII_fZh_",
+            "maskId": "1HyCJ2-AUdKe1s86C4A4HuSriiI-rypCC",
+            "maskName": "6362 x 20 (1).PNG"
+          },
+          {
+            "id": "1lSrN9qOiTtkobxaNZBvynn-eBdRYC0iD",
+            "name": "4130x20 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1lSrN9qOiTtkobxaNZBvynn-eBdRYC0iD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1lSrN9qOiTtkobxaNZBvynn-eBdRYC0iD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1lSrN9qOiTtkobxaNZBvynn-eBdRYC0iD",
+            "maskId": "1hm3vzrxsj3vrIgoCm2-cd03uuikeO0hu",
+            "maskName": "6362 x 20 (2).PNG"
+          },
+          {
+            "id": "1K1e1_krQgALJ7P3UnVUAC3zZe_93-GGt",
+            "name": "4130x20 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1K1e1_krQgALJ7P3UnVUAC3zZe_93-GGt&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1K1e1_krQgALJ7P3UnVUAC3zZe_93-GGt/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1K1e1_krQgALJ7P3UnVUAC3zZe_93-GGt",
+            "maskId": "16cN2wbqoBDZPCUlKOKg3nJw5UMwVTZN8",
+            "maskName": "6362 x 20 (3).PNG"
+          },
+          {
+            "id": "1Op6-VpoWY9sqModxtlMrJsKjm2CL1R9e",
+            "name": "4130x20 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Op6-VpoWY9sqModxtlMrJsKjm2CL1R9e&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Op6-VpoWY9sqModxtlMrJsKjm2CL1R9e/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Op6-VpoWY9sqModxtlMrJsKjm2CL1R9e",
+            "maskId": "1U72GUsLSzlQf_KuK_I6JZXTg2nEwukQh",
+            "maskName": "6362 x 20 (4).PNG"
+          },
+          {
+            "id": "1eiXwHpMRgVM4WDE--WsUzyt6GaEfvL2z",
+            "name": "4130x20 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1eiXwHpMRgVM4WDE--WsUzyt6GaEfvL2z&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1eiXwHpMRgVM4WDE--WsUzyt6GaEfvL2z/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1eiXwHpMRgVM4WDE--WsUzyt6GaEfvL2z",
+            "maskId": "1QaqQORO7Iw06XNHSwA1jmKxRJAaSRvSm",
+            "maskName": "6362 x 20 (5).PNG"
+          },
+          {
+            "id": "1qEJ2303acAvdO_PndUwrMm-oEvogVkJU",
+            "name": "4130x20 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qEJ2303acAvdO_PndUwrMm-oEvogVkJU&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qEJ2303acAvdO_PndUwrMm-oEvogVkJU/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qEJ2303acAvdO_PndUwrMm-oEvogVkJU",
+            "maskId": "11bYLl9F_m9cXt_LVISY3U7VYId0gGXuA",
+            "maskName": "6362 x 20 (6).PNG"
+          },
+          {
+            "id": "16g84NMR5DyzKHRGoQxaqluhgX9P2EHcL",
+            "name": "4130x20 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16g84NMR5DyzKHRGoQxaqluhgX9P2EHcL&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16g84NMR5DyzKHRGoQxaqluhgX9P2EHcL/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16g84NMR5DyzKHRGoQxaqluhgX9P2EHcL",
+            "maskId": "1Fx2MqHIe1LaExJVh2FKBlPMB20GPFKsf",
+            "maskName": "6362 x 20 (7).PNG"
+          },
+          {
+            "id": "1te4UZaJAcxc-vW71o7jYAIQRrjkBWthx",
+            "name": "4130x20 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1te4UZaJAcxc-vW71o7jYAIQRrjkBWthx&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1te4UZaJAcxc-vW71o7jYAIQRrjkBWthx/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1te4UZaJAcxc-vW71o7jYAIQRrjkBWthx",
+            "maskId": "1GFuQFrVVCo8YWV3rgrNpF3EGNGeWk5q2",
+            "maskName": "6362 x 20 (8).PNG"
+          },
+          {
+            "id": "1cKfMuo6eDB2lY47uFd23Qoa6q8YDwd6b",
+            "name": "4130x20 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1cKfMuo6eDB2lY47uFd23Qoa6q8YDwd6b&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1cKfMuo6eDB2lY47uFd23Qoa6q8YDwd6b/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1cKfMuo6eDB2lY47uFd23Qoa6q8YDwd6b",
+            "maskId": "1XSOfa_scAez39EW6kk6j1sJ4k3jekgNR",
+            "maskName": "6362 x 20 (9).PNG"
+          },
+          {
+            "id": "1GUAHogj3LpbvimIaHqYU-hEOaoD88eRI",
+            "name": "4130x20 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GUAHogj3LpbvimIaHqYU-hEOaoD88eRI&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GUAHogj3LpbvimIaHqYU-hEOaoD88eRI/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GUAHogj3LpbvimIaHqYU-hEOaoD88eRI",
+            "maskId": "1Xet7afRFtquW0puMtNTuIED5qmYJDVhh",
+            "maskName": "6362 x 20 (10).PNG"
+          },
+          {
+            "id": "1TiGGAFnYf102KYcLpAo9TzLJ2qSF1hwz",
+            "name": "4130x20 (11).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1TiGGAFnYf102KYcLpAo9TzLJ2qSF1hwz&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1TiGGAFnYf102KYcLpAo9TzLJ2qSF1hwz/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1TiGGAFnYf102KYcLpAo9TzLJ2qSF1hwz",
+            "maskId": "1rJJyk62rlaPJcqb5vKRtdF-NzV_H8Atm",
+            "maskName": "6362 x 20 (11).PNG"
+          },
+          {
+            "id": "1bnlIRqFXqFoSepVWycChgfA_xiQaPTAX",
+            "name": "4130x20 (12).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bnlIRqFXqFoSepVWycChgfA_xiQaPTAX&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bnlIRqFXqFoSepVWycChgfA_xiQaPTAX/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bnlIRqFXqFoSepVWycChgfA_xiQaPTAX",
+            "maskId": "16u7O1_RiHr83tIbjR4BGXdCYmQ6QHs28",
+            "maskName": "6362 x 20 (12).PNG"
+          },
+          {
+            "id": "1Tq7JQNb9-lAl9-BmP-qbuIKDn0959iuS",
+            "name": "4130x20 (13).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Tq7JQNb9-lAl9-BmP-qbuIKDn0959iuS&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Tq7JQNb9-lAl9-BmP-qbuIKDn0959iuS/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Tq7JQNb9-lAl9-BmP-qbuIKDn0959iuS",
+            "maskId": "1a2DnHSMlUQOiFeE4UdtcENOBcdTaAAMI",
+            "maskName": "6362 x 20 (13).PNG"
+          },
+          {
+            "id": "1bbhDWMKT1zbRRW2JtJCUZvjDAwJVxjSY",
+            "name": "4130x20 (14).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bbhDWMKT1zbRRW2JtJCUZvjDAwJVxjSY&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bbhDWMKT1zbRRW2JtJCUZvjDAwJVxjSY/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bbhDWMKT1zbRRW2JtJCUZvjDAwJVxjSY",
+            "maskId": "1wFBfdeMTGtPNgrur-Z-K4P9gHaFuiFFs",
+            "maskName": "6362 x 20 (14).PNG"
+          },
+          {
+            "id": "1Xg6JB5LDDQgei_7t3-7ake88PyOLbZS3",
+            "name": "4130x20 (15).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Xg6JB5LDDQgei_7t3-7ake88PyOLbZS3&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Xg6JB5LDDQgei_7t3-7ake88PyOLbZS3/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Xg6JB5LDDQgei_7t3-7ake88PyOLbZS3",
+            "maskId": "10XyWJApuVjlkPWCziO0nlydpaeTxE0MN",
+            "maskName": "6362 x 20 (15).PNG"
+          },
+          {
+            "id": "1791gFDHvtpiWRCiNxaW29zA32BlyiD3T",
+            "name": "4130x20 (16).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1791gFDHvtpiWRCiNxaW29zA32BlyiD3T&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1791gFDHvtpiWRCiNxaW29zA32BlyiD3T/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1791gFDHvtpiWRCiNxaW29zA32BlyiD3T",
+            "maskId": "1j32zgqt7jD2MH3yT_C-x3BFR7ovPL1Ui",
+            "maskName": "6362 x 20 (16).PNG"
+          },
+          {
+            "id": "1Ths7uWfYykgInNHceJpPv9XS91OsFaJq",
+            "name": "4130x20 (17).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Ths7uWfYykgInNHceJpPv9XS91OsFaJq&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Ths7uWfYykgInNHceJpPv9XS91OsFaJq/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Ths7uWfYykgInNHceJpPv9XS91OsFaJq",
+            "maskId": "1_llkcfF4-4Ik_Vu5I_uSQrBhbUm_1yDO",
+            "maskName": "6362 x 10 (17).PNG"
+          },
+          {
+            "id": "14Ldg-k7wr3MMnQGNwPeXeS36F_Rs8ywx",
+            "name": "4130x20 (18).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=14Ldg-k7wr3MMnQGNwPeXeS36F_Rs8ywx&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/14Ldg-k7wr3MMnQGNwPeXeS36F_Rs8ywx/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=14Ldg-k7wr3MMnQGNwPeXeS36F_Rs8ywx",
+            "maskId": "16FCErx-61jiQeKJOk5rlaoLRsrD_9Ldk",
+            "maskName": "6362 x 20 (18).PNG"
+          },
+          {
+            "id": "1PcN-2NS31lmH13vcOFBVMdcx-9Nlz-FI",
+            "name": "4130x20 (19).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1PcN-2NS31lmH13vcOFBVMdcx-9Nlz-FI&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1PcN-2NS31lmH13vcOFBVMdcx-9Nlz-FI/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1PcN-2NS31lmH13vcOFBVMdcx-9Nlz-FI",
+            "maskId": "1sPIinLN3VNr-eNLmyPOTb8IH6RR_M-b5",
+            "maskName": "6362 x 20 (19).PNG"
+          },
+          {
+            "id": "1csovhVZlUMkNDGCAntU-mIREn0AptORo",
+            "name": "4130x20 (20).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1csovhVZlUMkNDGCAntU-mIREn0AptORo&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1csovhVZlUMkNDGCAntU-mIREn0AptORo/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1csovhVZlUMkNDGCAntU-mIREn0AptORo",
+            "maskId": "1qUCSmZFGDRvGOi6gSStBitCFK8MGrEPH",
+            "maskName": "6362 x 20 (20).PNG"
+          },
+          {
+            "id": "1TU8ts8He9vYBr-PQ2KSjhhJknz2QME8U",
+            "name": "4130x50 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1TU8ts8He9vYBr-PQ2KSjhhJknz2QME8U&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1TU8ts8He9vYBr-PQ2KSjhhJknz2QME8U/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1TU8ts8He9vYBr-PQ2KSjhhJknz2QME8U",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1iIGN892VAomTYof8uR15oX2KROJ1BGcK",
+            "name": "4130x50 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1iIGN892VAomTYof8uR15oX2KROJ1BGcK&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1iIGN892VAomTYof8uR15oX2KROJ1BGcK/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1iIGN892VAomTYof8uR15oX2KROJ1BGcK",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1owp1eD8JBOQ8Z5_go3F5RV6qRgbyATAL",
+            "name": "4130x50 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1owp1eD8JBOQ8Z5_go3F5RV6qRgbyATAL&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1owp1eD8JBOQ8Z5_go3F5RV6qRgbyATAL/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1owp1eD8JBOQ8Z5_go3F5RV6qRgbyATAL",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "18RXZNsYTIzbRQcNzi9gWtSsAgN-JPi8a",
+            "name": "4130x50 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=18RXZNsYTIzbRQcNzi9gWtSsAgN-JPi8a&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/18RXZNsYTIzbRQcNzi9gWtSsAgN-JPi8a/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=18RXZNsYTIzbRQcNzi9gWtSsAgN-JPi8a",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1Gc8nxY1fDeHCsQ9ndGJ7mwmptckCOrfz",
+            "name": "4130x50 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Gc8nxY1fDeHCsQ9ndGJ7mwmptckCOrfz&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Gc8nxY1fDeHCsQ9ndGJ7mwmptckCOrfz/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Gc8nxY1fDeHCsQ9ndGJ7mwmptckCOrfz",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1XFXMh2IgqDyUV0t76rJXAp0OxHtZNwW4",
+            "name": "4130x100 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XFXMh2IgqDyUV0t76rJXAp0OxHtZNwW4&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XFXMh2IgqDyUV0t76rJXAp0OxHtZNwW4/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XFXMh2IgqDyUV0t76rJXAp0OxHtZNwW4",
+            "maskId": null,
+            "maskName": null
+          }
+        ],
+        "masks": [
+          {
+            "id": "1JP4GpPTPQ0QC7duliknG6mS3hl7uGVYh",
+            "name": "6362 x 10 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1JP4GpPTPQ0QC7duliknG6mS3hl7uGVYh&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1JP4GpPTPQ0QC7duliknG6mS3hl7uGVYh/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1JP4GpPTPQ0QC7duliknG6mS3hl7uGVYh"
+          },
+          {
+            "id": "1_9ik5ImiKYSf0giI-0cgYDwLdExhndgn",
+            "name": "6362 x 10 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_9ik5ImiKYSf0giI-0cgYDwLdExhndgn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_9ik5ImiKYSf0giI-0cgYDwLdExhndgn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_9ik5ImiKYSf0giI-0cgYDwLdExhndgn"
+          },
+          {
+            "id": "1EqDxaG_jdB-KZS7bu_okAWRCmWdO1h3H",
+            "name": "6362 x 10 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1EqDxaG_jdB-KZS7bu_okAWRCmWdO1h3H&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1EqDxaG_jdB-KZS7bu_okAWRCmWdO1h3H/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1EqDxaG_jdB-KZS7bu_okAWRCmWdO1h3H"
+          },
+          {
+            "id": "1Kcmk7IZ1_oJ_9sa6AtuXmXBKbx7lQcPk",
+            "name": "6362 x 10 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Kcmk7IZ1_oJ_9sa6AtuXmXBKbx7lQcPk&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Kcmk7IZ1_oJ_9sa6AtuXmXBKbx7lQcPk/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Kcmk7IZ1_oJ_9sa6AtuXmXBKbx7lQcPk"
+          },
+          {
+            "id": "1VkDhuVkRVSmc-l94AD0RGyTJVrI8Z78V",
+            "name": "6362 x 10 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1VkDhuVkRVSmc-l94AD0RGyTJVrI8Z78V&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1VkDhuVkRVSmc-l94AD0RGyTJVrI8Z78V/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1VkDhuVkRVSmc-l94AD0RGyTJVrI8Z78V"
+          },
+          {
+            "id": "1Fb_3mnVoenqdH3T2p0v43rQ92Ig7-Qc6",
+            "name": "6362 x 10 (6).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Fb_3mnVoenqdH3T2p0v43rQ92Ig7-Qc6&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Fb_3mnVoenqdH3T2p0v43rQ92Ig7-Qc6/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Fb_3mnVoenqdH3T2p0v43rQ92Ig7-Qc6"
+          },
+          {
+            "id": "1_zbi_epBUdzlveZEwox7qKZMbfLf9MRZ",
+            "name": "6362 x 10 (7).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_zbi_epBUdzlveZEwox7qKZMbfLf9MRZ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_zbi_epBUdzlveZEwox7qKZMbfLf9MRZ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_zbi_epBUdzlveZEwox7qKZMbfLf9MRZ"
+          },
+          {
+            "id": "1RL6A_hUFHEhUpbK0HFbtLqQifT5Xr6Yf",
+            "name": "6362 x 10 (8).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RL6A_hUFHEhUpbK0HFbtLqQifT5Xr6Yf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1RL6A_hUFHEhUpbK0HFbtLqQifT5Xr6Yf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1RL6A_hUFHEhUpbK0HFbtLqQifT5Xr6Yf"
+          },
+          {
+            "id": "1hhDhuf6h_j7BGCsCGlddOauzT3jMbF8R",
+            "name": "6362 x 10 (9).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hhDhuf6h_j7BGCsCGlddOauzT3jMbF8R&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hhDhuf6h_j7BGCsCGlddOauzT3jMbF8R/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hhDhuf6h_j7BGCsCGlddOauzT3jMbF8R"
+          },
+          {
+            "id": "1IHtn6g-QC3FpoczIZhV-vWVD45wy_PAu",
+            "name": "6362 x 10 (10).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1IHtn6g-QC3FpoczIZhV-vWVD45wy_PAu&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1IHtn6g-QC3FpoczIZhV-vWVD45wy_PAu/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1IHtn6g-QC3FpoczIZhV-vWVD45wy_PAu"
+          },
+          {
+            "id": "1CQyoXv1SqwPgfo2QUR_IhvsaBqz1DgNM",
+            "name": "6362 x 10 (11).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1CQyoXv1SqwPgfo2QUR_IhvsaBqz1DgNM&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1CQyoXv1SqwPgfo2QUR_IhvsaBqz1DgNM/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1CQyoXv1SqwPgfo2QUR_IhvsaBqz1DgNM"
+          },
+          {
+            "id": "1Znkt4J_v2blSRVXtEwUhPMGGeq4qCHKn",
+            "name": "6362 x 10 (12).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Znkt4J_v2blSRVXtEwUhPMGGeq4qCHKn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Znkt4J_v2blSRVXtEwUhPMGGeq4qCHKn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Znkt4J_v2blSRVXtEwUhPMGGeq4qCHKn"
+          },
+          {
+            "id": "16jTxgj1vm_hPxPMND4hUVOguj8yJsc1u",
+            "name": "6362 x 10 (13).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16jTxgj1vm_hPxPMND4hUVOguj8yJsc1u&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16jTxgj1vm_hPxPMND4hUVOguj8yJsc1u/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16jTxgj1vm_hPxPMND4hUVOguj8yJsc1u"
+          },
+          {
+            "id": "1HualJzIA-VfmtqZaJXqNpVOJeOTTZIsc",
+            "name": "6362 x 10 (14).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1HualJzIA-VfmtqZaJXqNpVOJeOTTZIsc&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1HualJzIA-VfmtqZaJXqNpVOJeOTTZIsc/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1HualJzIA-VfmtqZaJXqNpVOJeOTTZIsc"
+          },
+          {
+            "id": "1Oj9E0DwJ5RkQmY3b1KmpLoC8Vx6P5f90",
+            "name": "6362 x 10 (15).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Oj9E0DwJ5RkQmY3b1KmpLoC8Vx6P5f90&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Oj9E0DwJ5RkQmY3b1KmpLoC8Vx6P5f90/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Oj9E0DwJ5RkQmY3b1KmpLoC8Vx6P5f90"
+          },
+          {
+            "id": "1DNIPRs0pv4icoGRNL49huwaIJImZengz",
+            "name": "6362 x 10 (16).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1DNIPRs0pv4icoGRNL49huwaIJImZengz&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1DNIPRs0pv4icoGRNL49huwaIJImZengz/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1DNIPRs0pv4icoGRNL49huwaIJImZengz"
+          },
+          {
+            "id": "1ECoP7eiKMlRbNCtz9T8CYXhPoNvf-vFT",
+            "name": "6362 x 10 (17).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ECoP7eiKMlRbNCtz9T8CYXhPoNvf-vFT&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ECoP7eiKMlRbNCtz9T8CYXhPoNvf-vFT/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ECoP7eiKMlRbNCtz9T8CYXhPoNvf-vFT"
+          },
+          {
+            "id": "1_llkcfF4-4Ik_Vu5I_uSQrBhbUm_1yDO",
+            "name": "6362 x 10 (17).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_llkcfF4-4Ik_Vu5I_uSQrBhbUm_1yDO&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_llkcfF4-4Ik_Vu5I_uSQrBhbUm_1yDO/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_llkcfF4-4Ik_Vu5I_uSQrBhbUm_1yDO"
+          },
+          {
+            "id": "19tUwFEt5GiiaCW4cIa3l9FgnVeieFcdx",
+            "name": "6362 x 10 (18).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=19tUwFEt5GiiaCW4cIa3l9FgnVeieFcdx&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/19tUwFEt5GiiaCW4cIa3l9FgnVeieFcdx/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=19tUwFEt5GiiaCW4cIa3l9FgnVeieFcdx"
+          },
+          {
+            "id": "1nhJSsdVAiUOK6PHbAild4x3uHY15-jK2",
+            "name": "6362 x 10 (19).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1nhJSsdVAiUOK6PHbAild4x3uHY15-jK2&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1nhJSsdVAiUOK6PHbAild4x3uHY15-jK2/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1nhJSsdVAiUOK6PHbAild4x3uHY15-jK2"
+          },
+          {
+            "id": "1GIgpEBDu8ulsV-zgsgULkExcYdZ-oZtw",
+            "name": "6362 x 10 (20).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GIgpEBDu8ulsV-zgsgULkExcYdZ-oZtw&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GIgpEBDu8ulsV-zgsgULkExcYdZ-oZtw/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GIgpEBDu8ulsV-zgsgULkExcYdZ-oZtw"
+          },
+          {
+            "id": "1HyCJ2-AUdKe1s86C4A4HuSriiI-rypCC",
+            "name": "6362 x 20 (1).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1HyCJ2-AUdKe1s86C4A4HuSriiI-rypCC&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1HyCJ2-AUdKe1s86C4A4HuSriiI-rypCC/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1HyCJ2-AUdKe1s86C4A4HuSriiI-rypCC"
+          },
+          {
+            "id": "1hm3vzrxsj3vrIgoCm2-cd03uuikeO0hu",
+            "name": "6362 x 20 (2).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hm3vzrxsj3vrIgoCm2-cd03uuikeO0hu&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hm3vzrxsj3vrIgoCm2-cd03uuikeO0hu/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hm3vzrxsj3vrIgoCm2-cd03uuikeO0hu"
+          },
+          {
+            "id": "16cN2wbqoBDZPCUlKOKg3nJw5UMwVTZN8",
+            "name": "6362 x 20 (3).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16cN2wbqoBDZPCUlKOKg3nJw5UMwVTZN8&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16cN2wbqoBDZPCUlKOKg3nJw5UMwVTZN8/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16cN2wbqoBDZPCUlKOKg3nJw5UMwVTZN8"
+          },
+          {
+            "id": "1U72GUsLSzlQf_KuK_I6JZXTg2nEwukQh",
+            "name": "6362 x 20 (4).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1U72GUsLSzlQf_KuK_I6JZXTg2nEwukQh&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1U72GUsLSzlQf_KuK_I6JZXTg2nEwukQh/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1U72GUsLSzlQf_KuK_I6JZXTg2nEwukQh"
+          },
+          {
+            "id": "1QaqQORO7Iw06XNHSwA1jmKxRJAaSRvSm",
+            "name": "6362 x 20 (5).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1QaqQORO7Iw06XNHSwA1jmKxRJAaSRvSm&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1QaqQORO7Iw06XNHSwA1jmKxRJAaSRvSm/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1QaqQORO7Iw06XNHSwA1jmKxRJAaSRvSm"
+          },
+          {
+            "id": "11bYLl9F_m9cXt_LVISY3U7VYId0gGXuA",
+            "name": "6362 x 20 (6).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=11bYLl9F_m9cXt_LVISY3U7VYId0gGXuA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/11bYLl9F_m9cXt_LVISY3U7VYId0gGXuA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=11bYLl9F_m9cXt_LVISY3U7VYId0gGXuA"
+          },
+          {
+            "id": "1Fx2MqHIe1LaExJVh2FKBlPMB20GPFKsf",
+            "name": "6362 x 20 (7).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Fx2MqHIe1LaExJVh2FKBlPMB20GPFKsf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Fx2MqHIe1LaExJVh2FKBlPMB20GPFKsf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Fx2MqHIe1LaExJVh2FKBlPMB20GPFKsf"
+          },
+          {
+            "id": "1GFuQFrVVCo8YWV3rgrNpF3EGNGeWk5q2",
+            "name": "6362 x 20 (8).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GFuQFrVVCo8YWV3rgrNpF3EGNGeWk5q2&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GFuQFrVVCo8YWV3rgrNpF3EGNGeWk5q2/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GFuQFrVVCo8YWV3rgrNpF3EGNGeWk5q2"
+          },
+          {
+            "id": "1XSOfa_scAez39EW6kk6j1sJ4k3jekgNR",
+            "name": "6362 x 20 (9).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XSOfa_scAez39EW6kk6j1sJ4k3jekgNR&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XSOfa_scAez39EW6kk6j1sJ4k3jekgNR/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XSOfa_scAez39EW6kk6j1sJ4k3jekgNR"
+          },
+          {
+            "id": "1Xet7afRFtquW0puMtNTuIED5qmYJDVhh",
+            "name": "6362 x 20 (10).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Xet7afRFtquW0puMtNTuIED5qmYJDVhh&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Xet7afRFtquW0puMtNTuIED5qmYJDVhh/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Xet7afRFtquW0puMtNTuIED5qmYJDVhh"
+          },
+          {
+            "id": "1rJJyk62rlaPJcqb5vKRtdF-NzV_H8Atm",
+            "name": "6362 x 20 (11).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1rJJyk62rlaPJcqb5vKRtdF-NzV_H8Atm&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1rJJyk62rlaPJcqb5vKRtdF-NzV_H8Atm/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1rJJyk62rlaPJcqb5vKRtdF-NzV_H8Atm"
+          },
+          {
+            "id": "16u7O1_RiHr83tIbjR4BGXdCYmQ6QHs28",
+            "name": "6362 x 20 (12).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16u7O1_RiHr83tIbjR4BGXdCYmQ6QHs28&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16u7O1_RiHr83tIbjR4BGXdCYmQ6QHs28/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16u7O1_RiHr83tIbjR4BGXdCYmQ6QHs28"
+          },
+          {
+            "id": "1a2DnHSMlUQOiFeE4UdtcENOBcdTaAAMI",
+            "name": "6362 x 20 (13).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1a2DnHSMlUQOiFeE4UdtcENOBcdTaAAMI&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1a2DnHSMlUQOiFeE4UdtcENOBcdTaAAMI/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1a2DnHSMlUQOiFeE4UdtcENOBcdTaAAMI"
+          },
+          {
+            "id": "1wFBfdeMTGtPNgrur-Z-K4P9gHaFuiFFs",
+            "name": "6362 x 20 (14).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1wFBfdeMTGtPNgrur-Z-K4P9gHaFuiFFs&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1wFBfdeMTGtPNgrur-Z-K4P9gHaFuiFFs/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1wFBfdeMTGtPNgrur-Z-K4P9gHaFuiFFs"
+          },
+          {
+            "id": "10XyWJApuVjlkPWCziO0nlydpaeTxE0MN",
+            "name": "6362 x 20 (15).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10XyWJApuVjlkPWCziO0nlydpaeTxE0MN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10XyWJApuVjlkPWCziO0nlydpaeTxE0MN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10XyWJApuVjlkPWCziO0nlydpaeTxE0MN"
+          },
+          {
+            "id": "1j32zgqt7jD2MH3yT_C-x3BFR7ovPL1Ui",
+            "name": "6362 x 20 (16).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1j32zgqt7jD2MH3yT_C-x3BFR7ovPL1Ui&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1j32zgqt7jD2MH3yT_C-x3BFR7ovPL1Ui/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1j32zgqt7jD2MH3yT_C-x3BFR7ovPL1Ui"
+          },
+          {
+            "id": "16FCErx-61jiQeKJOk5rlaoLRsrD_9Ldk",
+            "name": "6362 x 20 (18).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16FCErx-61jiQeKJOk5rlaoLRsrD_9Ldk&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16FCErx-61jiQeKJOk5rlaoLRsrD_9Ldk/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16FCErx-61jiQeKJOk5rlaoLRsrD_9Ldk"
+          },
+          {
+            "id": "1sPIinLN3VNr-eNLmyPOTb8IH6RR_M-b5",
+            "name": "6362 x 20 (19).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1sPIinLN3VNr-eNLmyPOTb8IH6RR_M-b5&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1sPIinLN3VNr-eNLmyPOTb8IH6RR_M-b5/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1sPIinLN3VNr-eNLmyPOTb8IH6RR_M-b5"
+          },
+          {
+            "id": "1qUCSmZFGDRvGOi6gSStBitCFK8MGrEPH",
+            "name": "6362 x 20 (20).PNG",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qUCSmZFGDRvGOi6gSStBitCFK8MGrEPH&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qUCSmZFGDRvGOi6gSStBitCFK8MGrEPH/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qUCSmZFGDRvGOi6gSStBitCFK8MGrEPH"
+          }
+        ],
+        "pairCount": 40,
+        "originalCount": 46,
+        "maskCount": 40,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -195,6 +900,193 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1e4qqSNL0YolH36C1PKQbvNlKTvIPTfeR",
+            "name": "6280 x 10 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1e4qqSNL0YolH36C1PKQbvNlKTvIPTfeR&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1e4qqSNL0YolH36C1PKQbvNlKTvIPTfeR/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1e4qqSNL0YolH36C1PKQbvNlKTvIPTfeR",
+            "maskId": "1HRF533eEznf5L6GdYqdX9tHvTVM20zL3",
+            "maskName": "x10 (1).png"
+          },
+          {
+            "id": "1sFwo8QLX4KiBiwg3Q4Gbv5RteB8bIGXy",
+            "name": "6280 x 10 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1sFwo8QLX4KiBiwg3Q4Gbv5RteB8bIGXy&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1sFwo8QLX4KiBiwg3Q4Gbv5RteB8bIGXy/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1sFwo8QLX4KiBiwg3Q4Gbv5RteB8bIGXy",
+            "maskId": "1Hq-o7bT-nfOfIoobUB0VAnx34wzwPuDe",
+            "maskName": "x10 (2).png"
+          },
+          {
+            "id": "17TRfjJIeJ_99auxeiDad-2ywY0q1uo0x",
+            "name": "6280 x 10 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=17TRfjJIeJ_99auxeiDad-2ywY0q1uo0x&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/17TRfjJIeJ_99auxeiDad-2ywY0q1uo0x/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=17TRfjJIeJ_99auxeiDad-2ywY0q1uo0x",
+            "maskId": "1gaTi4R8Ndj74J7KBOoQagRzgjRZ4bytl",
+            "maskName": "x10 (3).png"
+          },
+          {
+            "id": "1c8gi4P0NAqjFTSmfpjMulvpbqRpxjBLj",
+            "name": "6280 x 10 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1c8gi4P0NAqjFTSmfpjMulvpbqRpxjBLj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1c8gi4P0NAqjFTSmfpjMulvpbqRpxjBLj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1c8gi4P0NAqjFTSmfpjMulvpbqRpxjBLj",
+            "maskId": "1ibWQqWfmIRHKTYhJbdnSZLORcttFdGMp",
+            "maskName": "x10 (4).png"
+          },
+          {
+            "id": "195SK9hKDLgH7PytJWv0ilR4ogvZTF3Dx",
+            "name": "6280 x 10 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=195SK9hKDLgH7PytJWv0ilR4ogvZTF3Dx&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/195SK9hKDLgH7PytJWv0ilR4ogvZTF3Dx/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=195SK9hKDLgH7PytJWv0ilR4ogvZTF3Dx",
+            "maskId": "1CHCkSXqTa72FLJluz1JpA3OSS-PSJfnY",
+            "maskName": "x10 (5).png"
+          },
+          {
+            "id": "1gK0tTbIdhKiJ0nkouUnCQpZbbMEOIWRi",
+            "name": "6280 x 10 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1gK0tTbIdhKiJ0nkouUnCQpZbbMEOIWRi&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1gK0tTbIdhKiJ0nkouUnCQpZbbMEOIWRi/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1gK0tTbIdhKiJ0nkouUnCQpZbbMEOIWRi",
+            "maskId": "1NBz5rDR48Dy99V5vqeeKv0suQV8tVHNz",
+            "maskName": "x10 (6).png"
+          },
+          {
+            "id": "1jXUXCBAXpKeYMqXEZVIbEHHmyoTmmM5x",
+            "name": "6280 x 10 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1jXUXCBAXpKeYMqXEZVIbEHHmyoTmmM5x&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1jXUXCBAXpKeYMqXEZVIbEHHmyoTmmM5x/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1jXUXCBAXpKeYMqXEZVIbEHHmyoTmmM5x",
+            "maskId": "1K9EQohu2znlMaD-lZJlGudsCJF0ef1U4",
+            "maskName": "x10 (7).png"
+          },
+          {
+            "id": "1AE2QSDeY4FAGNzWaViWPnOc6kfCyWK0E",
+            "name": "6280 x 10 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1AE2QSDeY4FAGNzWaViWPnOc6kfCyWK0E&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1AE2QSDeY4FAGNzWaViWPnOc6kfCyWK0E/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1AE2QSDeY4FAGNzWaViWPnOc6kfCyWK0E",
+            "maskId": "1J0GeUoJgjFBeNU38XmfZa62dG8TrH6cv",
+            "maskName": "x10 (8).png"
+          },
+          {
+            "id": "134SAffJWdId0HJeqwu9RtfY-TjqgPLmH",
+            "name": "6280 x 10 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=134SAffJWdId0HJeqwu9RtfY-TjqgPLmH&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/134SAffJWdId0HJeqwu9RtfY-TjqgPLmH/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=134SAffJWdId0HJeqwu9RtfY-TjqgPLmH",
+            "maskId": "1BDufLCYKYVVdne7oq39Ymhug4mlBYO_B",
+            "maskName": "x10 (9).png"
+          },
+          {
+            "id": "1fONcT3zFw-6RvWuL4EMVGpBkEOhEZzAh",
+            "name": "6280 x 10 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1fONcT3zFw-6RvWuL4EMVGpBkEOhEZzAh&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1fONcT3zFw-6RvWuL4EMVGpBkEOhEZzAh/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1fONcT3zFw-6RvWuL4EMVGpBkEOhEZzAh",
+            "maskId": "15gEgWoL0nlTXPuZRPYQdLXORc-7b60Ed",
+            "maskName": "x10 (10).png"
+          },
+          {
+            "id": "1UdgPhkderKZeaDOSwIOwwxcxSvIQquLy",
+            "name": "6280 x 10 (11).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1UdgPhkderKZeaDOSwIOwwxcxSvIQquLy&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1UdgPhkderKZeaDOSwIOwwxcxSvIQquLy/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1UdgPhkderKZeaDOSwIOwwxcxSvIQquLy",
+            "maskId": "1ICGRICiJYjIx3ac0U02tCfGOqH06v2PU",
+            "maskName": "x10 (11).png"
+          }
+        ],
+        "masks": [
+          {
+            "id": "1HRF533eEznf5L6GdYqdX9tHvTVM20zL3",
+            "name": "x10 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1HRF533eEznf5L6GdYqdX9tHvTVM20zL3&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1HRF533eEznf5L6GdYqdX9tHvTVM20zL3/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1HRF533eEznf5L6GdYqdX9tHvTVM20zL3"
+          },
+          {
+            "id": "1Hq-o7bT-nfOfIoobUB0VAnx34wzwPuDe",
+            "name": "x10 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Hq-o7bT-nfOfIoobUB0VAnx34wzwPuDe&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Hq-o7bT-nfOfIoobUB0VAnx34wzwPuDe/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Hq-o7bT-nfOfIoobUB0VAnx34wzwPuDe"
+          },
+          {
+            "id": "1gaTi4R8Ndj74J7KBOoQagRzgjRZ4bytl",
+            "name": "x10 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1gaTi4R8Ndj74J7KBOoQagRzgjRZ4bytl&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1gaTi4R8Ndj74J7KBOoQagRzgjRZ4bytl/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1gaTi4R8Ndj74J7KBOoQagRzgjRZ4bytl"
+          },
+          {
+            "id": "1ibWQqWfmIRHKTYhJbdnSZLORcttFdGMp",
+            "name": "x10 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ibWQqWfmIRHKTYhJbdnSZLORcttFdGMp&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ibWQqWfmIRHKTYhJbdnSZLORcttFdGMp/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ibWQqWfmIRHKTYhJbdnSZLORcttFdGMp"
+          },
+          {
+            "id": "1CHCkSXqTa72FLJluz1JpA3OSS-PSJfnY",
+            "name": "x10 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1CHCkSXqTa72FLJluz1JpA3OSS-PSJfnY&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1CHCkSXqTa72FLJluz1JpA3OSS-PSJfnY/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1CHCkSXqTa72FLJluz1JpA3OSS-PSJfnY"
+          },
+          {
+            "id": "1NBz5rDR48Dy99V5vqeeKv0suQV8tVHNz",
+            "name": "x10 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1NBz5rDR48Dy99V5vqeeKv0suQV8tVHNz&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1NBz5rDR48Dy99V5vqeeKv0suQV8tVHNz/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1NBz5rDR48Dy99V5vqeeKv0suQV8tVHNz"
+          },
+          {
+            "id": "1K9EQohu2znlMaD-lZJlGudsCJF0ef1U4",
+            "name": "x10 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1K9EQohu2znlMaD-lZJlGudsCJF0ef1U4&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1K9EQohu2znlMaD-lZJlGudsCJF0ef1U4/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1K9EQohu2znlMaD-lZJlGudsCJF0ef1U4"
+          },
+          {
+            "id": "1J0GeUoJgjFBeNU38XmfZa62dG8TrH6cv",
+            "name": "x10 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1J0GeUoJgjFBeNU38XmfZa62dG8TrH6cv&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1J0GeUoJgjFBeNU38XmfZa62dG8TrH6cv/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1J0GeUoJgjFBeNU38XmfZa62dG8TrH6cv"
+          },
+          {
+            "id": "1BDufLCYKYVVdne7oq39Ymhug4mlBYO_B",
+            "name": "x10 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1BDufLCYKYVVdne7oq39Ymhug4mlBYO_B&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1BDufLCYKYVVdne7oq39Ymhug4mlBYO_B/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1BDufLCYKYVVdne7oq39Ymhug4mlBYO_B"
+          },
+          {
+            "id": "15gEgWoL0nlTXPuZRPYQdLXORc-7b60Ed",
+            "name": "x10 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=15gEgWoL0nlTXPuZRPYQdLXORc-7b60Ed&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/15gEgWoL0nlTXPuZRPYQdLXORc-7b60Ed/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=15gEgWoL0nlTXPuZRPYQdLXORc-7b60Ed"
+          },
+          {
+            "id": "1ICGRICiJYjIx3ac0U02tCfGOqH06v2PU",
+            "name": "x10 (11).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ICGRICiJYjIx3ac0U02tCfGOqH06v2PU&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ICGRICiJYjIx3ac0U02tCfGOqH06v2PU/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ICGRICiJYjIx3ac0U02tCfGOqH06v2PU"
+          }
+        ],
+        "pairCount": 11,
+        "originalCount": 11,
+        "maskCount": 11,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -253,6 +1145,177 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1ZztFHtpWFM2bB3tlPvT2cELnSuqGEI1x",
+            "name": "6280 x 20 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ZztFHtpWFM2bB3tlPvT2cELnSuqGEI1x&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ZztFHtpWFM2bB3tlPvT2cELnSuqGEI1x/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ZztFHtpWFM2bB3tlPvT2cELnSuqGEI1x",
+            "maskId": "1ebPB-RWWWwKo28C6p1xM40lpt6HYT85Q",
+            "maskName": "x20 (1).png"
+          },
+          {
+            "id": "1XIvq4R-L9KtyqhQdPaLdBeA6x_koRbSM",
+            "name": "6280 x 20 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XIvq4R-L9KtyqhQdPaLdBeA6x_koRbSM&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XIvq4R-L9KtyqhQdPaLdBeA6x_koRbSM/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XIvq4R-L9KtyqhQdPaLdBeA6x_koRbSM",
+            "maskId": "1oPEke_jJlz3l5ETmAbaxeNq2--lpFaNd",
+            "maskName": "x20 (2).png"
+          },
+          {
+            "id": "1WgC3BwwOYbN6s9o0-eQbcQzqcsk_B1q2",
+            "name": "6280 x 20 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WgC3BwwOYbN6s9o0-eQbcQzqcsk_B1q2&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WgC3BwwOYbN6s9o0-eQbcQzqcsk_B1q2/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WgC3BwwOYbN6s9o0-eQbcQzqcsk_B1q2",
+            "maskId": "17aFizjfkAGTjDrm9COJWLwlozNffC3GW",
+            "maskName": "x20 (3).png"
+          },
+          {
+            "id": "1pyFOeLtlCnjfEjgfVFM4Y51kkCamf2n0",
+            "name": "6280 x 20 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pyFOeLtlCnjfEjgfVFM4Y51kkCamf2n0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pyFOeLtlCnjfEjgfVFM4Y51kkCamf2n0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pyFOeLtlCnjfEjgfVFM4Y51kkCamf2n0",
+            "maskId": "1wSFYYY98o2310irpStUgqVucHd7a903m",
+            "maskName": "x20 (4).png"
+          },
+          {
+            "id": "189yPgU5Und0NpIp3xGzpIY9-Jkj8nPmC",
+            "name": "6280 x 20 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=189yPgU5Und0NpIp3xGzpIY9-Jkj8nPmC&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/189yPgU5Und0NpIp3xGzpIY9-Jkj8nPmC/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=189yPgU5Und0NpIp3xGzpIY9-Jkj8nPmC",
+            "maskId": "1e_0KB0Fkb-cIz7ekElcSXHvONxfvVod0",
+            "maskName": "x20 (5).png"
+          },
+          {
+            "id": "1XcKBSiyQZgA91QkELP_0q6iqiQcbVbvi",
+            "name": "6280 x 20 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XcKBSiyQZgA91QkELP_0q6iqiQcbVbvi&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XcKBSiyQZgA91QkELP_0q6iqiQcbVbvi/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XcKBSiyQZgA91QkELP_0q6iqiQcbVbvi",
+            "maskId": "1_5hvCFpSJBU-grtGheIjZuL0oR-w-3uJ",
+            "maskName": "x20 (6).png"
+          },
+          {
+            "id": "1lOqwH1HBv0EuSdYhQ6U4jdM5x_IN2cMj",
+            "name": "6280 x 20 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1lOqwH1HBv0EuSdYhQ6U4jdM5x_IN2cMj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1lOqwH1HBv0EuSdYhQ6U4jdM5x_IN2cMj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1lOqwH1HBv0EuSdYhQ6U4jdM5x_IN2cMj",
+            "maskId": "1IxmHzK9_sAFPjj-5_hhS-3t8kmZ5N-lV",
+            "maskName": "x20 (7).png"
+          },
+          {
+            "id": "1BGAF_aKoCEVpb0QOhtuifADKIf3129Hc",
+            "name": "6280 x 20 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1BGAF_aKoCEVpb0QOhtuifADKIf3129Hc&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1BGAF_aKoCEVpb0QOhtuifADKIf3129Hc/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1BGAF_aKoCEVpb0QOhtuifADKIf3129Hc",
+            "maskId": "1yI98N8T6HopIRiKR3rIdkVqFSqvkZ0AI",
+            "maskName": "x20 (8).png"
+          },
+          {
+            "id": "187M3SaCFBiAiRPX0voQO-2ruHK-4UfEp",
+            "name": "6280 x 20 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=187M3SaCFBiAiRPX0voQO-2ruHK-4UfEp&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/187M3SaCFBiAiRPX0voQO-2ruHK-4UfEp/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=187M3SaCFBiAiRPX0voQO-2ruHK-4UfEp",
+            "maskId": "1xTCJEBDudEOR7EEsRO0cBL4MfnpHtv6b",
+            "maskName": "x20 (9).png"
+          },
+          {
+            "id": "1v78aA09OmCxh6BR00-tJVUeLFB2LVl5a",
+            "name": "6280 x 20 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1v78aA09OmCxh6BR00-tJVUeLFB2LVl5a&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1v78aA09OmCxh6BR00-tJVUeLFB2LVl5a/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1v78aA09OmCxh6BR00-tJVUeLFB2LVl5a",
+            "maskId": "1UkgYmRMkm0Di0z9hGcI7uOby9yfPtjCK",
+            "maskName": "x20 (10).png"
+          }
+        ],
+        "masks": [
+          {
+            "id": "1ebPB-RWWWwKo28C6p1xM40lpt6HYT85Q",
+            "name": "x20 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ebPB-RWWWwKo28C6p1xM40lpt6HYT85Q&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ebPB-RWWWwKo28C6p1xM40lpt6HYT85Q/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ebPB-RWWWwKo28C6p1xM40lpt6HYT85Q"
+          },
+          {
+            "id": "1oPEke_jJlz3l5ETmAbaxeNq2--lpFaNd",
+            "name": "x20 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1oPEke_jJlz3l5ETmAbaxeNq2--lpFaNd&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1oPEke_jJlz3l5ETmAbaxeNq2--lpFaNd/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1oPEke_jJlz3l5ETmAbaxeNq2--lpFaNd"
+          },
+          {
+            "id": "17aFizjfkAGTjDrm9COJWLwlozNffC3GW",
+            "name": "x20 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=17aFizjfkAGTjDrm9COJWLwlozNffC3GW&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/17aFizjfkAGTjDrm9COJWLwlozNffC3GW/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=17aFizjfkAGTjDrm9COJWLwlozNffC3GW"
+          },
+          {
+            "id": "1wSFYYY98o2310irpStUgqVucHd7a903m",
+            "name": "x20 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1wSFYYY98o2310irpStUgqVucHd7a903m&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1wSFYYY98o2310irpStUgqVucHd7a903m/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1wSFYYY98o2310irpStUgqVucHd7a903m"
+          },
+          {
+            "id": "1e_0KB0Fkb-cIz7ekElcSXHvONxfvVod0",
+            "name": "x20 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1e_0KB0Fkb-cIz7ekElcSXHvONxfvVod0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1e_0KB0Fkb-cIz7ekElcSXHvONxfvVod0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1e_0KB0Fkb-cIz7ekElcSXHvONxfvVod0"
+          },
+          {
+            "id": "1_5hvCFpSJBU-grtGheIjZuL0oR-w-3uJ",
+            "name": "x20 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_5hvCFpSJBU-grtGheIjZuL0oR-w-3uJ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_5hvCFpSJBU-grtGheIjZuL0oR-w-3uJ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_5hvCFpSJBU-grtGheIjZuL0oR-w-3uJ"
+          },
+          {
+            "id": "1IxmHzK9_sAFPjj-5_hhS-3t8kmZ5N-lV",
+            "name": "x20 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1IxmHzK9_sAFPjj-5_hhS-3t8kmZ5N-lV&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1IxmHzK9_sAFPjj-5_hhS-3t8kmZ5N-lV/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1IxmHzK9_sAFPjj-5_hhS-3t8kmZ5N-lV"
+          },
+          {
+            "id": "1yI98N8T6HopIRiKR3rIdkVqFSqvkZ0AI",
+            "name": "x20 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1yI98N8T6HopIRiKR3rIdkVqFSqvkZ0AI&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1yI98N8T6HopIRiKR3rIdkVqFSqvkZ0AI/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1yI98N8T6HopIRiKR3rIdkVqFSqvkZ0AI"
+          },
+          {
+            "id": "1xTCJEBDudEOR7EEsRO0cBL4MfnpHtv6b",
+            "name": "x20 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xTCJEBDudEOR7EEsRO0cBL4MfnpHtv6b&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1xTCJEBDudEOR7EEsRO0cBL4MfnpHtv6b/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1xTCJEBDudEOR7EEsRO0cBL4MfnpHtv6b"
+          },
+          {
+            "id": "1UkgYmRMkm0Di0z9hGcI7uOby9yfPtjCK",
+            "name": "x20 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1UkgYmRMkm0Di0z9hGcI7uOby9yfPtjCK&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1UkgYmRMkm0Di0z9hGcI7uOby9yfPtjCK/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1UkgYmRMkm0Di0z9hGcI7uOby9yfPtjCK"
+          }
+        ],
+        "pairCount": 10,
+        "originalCount": 10,
+        "maskCount": 10,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -353,6 +1416,362 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "19iFStWTRODDapsF7mMCTiOUwN9tQRe1Y",
+            "name": "armor steel  x 5 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=19iFStWTRODDapsF7mMCTiOUwN9tQRe1Y&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/19iFStWTRODDapsF7mMCTiOUwN9tQRe1Y/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=19iFStWTRODDapsF7mMCTiOUwN9tQRe1Y",
+            "maskId": "1O_TqxOnmc5dfUx0x7bQ_Fa8u0vdnSQ_E",
+            "maskName": "5884 x 5 (3).png"
+          },
+          {
+            "id": "1pjZzIMcb984TWf5z18n5N-LPoRCStiE0",
+            "name": "armor steel x 5 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pjZzIMcb984TWf5z18n5N-LPoRCStiE0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pjZzIMcb984TWf5z18n5N-LPoRCStiE0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pjZzIMcb984TWf5z18n5N-LPoRCStiE0",
+            "maskId": "1GidvtzsCsbK1ZYKMUdMPhMd7OUrrOzPb",
+            "maskName": "5884 x 5 (1).png"
+          },
+          {
+            "id": "1PYCD8WMQXFCKyFVzH2xsBAZjoDQAHEva",
+            "name": "armor steel x 5 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1PYCD8WMQXFCKyFVzH2xsBAZjoDQAHEva&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1PYCD8WMQXFCKyFVzH2xsBAZjoDQAHEva/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1PYCD8WMQXFCKyFVzH2xsBAZjoDQAHEva",
+            "maskId": "1SPKoZSYbk8cP10-FiyHmMuq4TgtaSQbD",
+            "maskName": "5884 x 5 (2).png"
+          },
+          {
+            "id": "1SIhnt8P3qZsJHBngfXtKLEwcrLQ_kSwN",
+            "name": "armor steel x 5 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1SIhnt8P3qZsJHBngfXtKLEwcrLQ_kSwN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1SIhnt8P3qZsJHBngfXtKLEwcrLQ_kSwN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1SIhnt8P3qZsJHBngfXtKLEwcrLQ_kSwN",
+            "maskId": "1Sv7MCMqhjlfXG7Qij_khWDD9Zq-A8HVn",
+            "maskName": "5884 x 5 (4).png"
+          },
+          {
+            "id": "15fyGvh9yk8C9AwngYr2QvPOZg2LGy3Ea",
+            "name": "armor steel x 5 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=15fyGvh9yk8C9AwngYr2QvPOZg2LGy3Ea&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/15fyGvh9yk8C9AwngYr2QvPOZg2LGy3Ea/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=15fyGvh9yk8C9AwngYr2QvPOZg2LGy3Ea",
+            "maskId": "1oLfPaaEn4rEjHSRj-myr6AvPcgEPtypb",
+            "maskName": "5884 x 5 (5).png"
+          },
+          {
+            "id": "1pOsHWRKMRnebNx32yNqPypcsm4FFbfWD",
+            "name": "armor steel x 10 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pOsHWRKMRnebNx32yNqPypcsm4FFbfWD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pOsHWRKMRnebNx32yNqPypcsm4FFbfWD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pOsHWRKMRnebNx32yNqPypcsm4FFbfWD",
+            "maskId": "1XkvnmjmbCiv5B05LvBzoDnfwfmIwDTOQ",
+            "maskName": "5884 x 10 (1).png"
+          },
+          {
+            "id": "1GniahJ-p0QJwKg6yhx6GSelLA94NdpKr",
+            "name": "armor steel x 10 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GniahJ-p0QJwKg6yhx6GSelLA94NdpKr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GniahJ-p0QJwKg6yhx6GSelLA94NdpKr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GniahJ-p0QJwKg6yhx6GSelLA94NdpKr",
+            "maskId": "1OOLN_V8hmnHR3NKrkdjsmYvgiFJ9glxU",
+            "maskName": "5884 x 10 (2).png"
+          },
+          {
+            "id": "1on8MvPe__twKwNUUFNb6Q9nDCkKWWEIg",
+            "name": "armor steel x 10 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1on8MvPe__twKwNUUFNb6Q9nDCkKWWEIg&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1on8MvPe__twKwNUUFNb6Q9nDCkKWWEIg/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1on8MvPe__twKwNUUFNb6Q9nDCkKWWEIg",
+            "maskId": "187rrDyGWRcZ2RWq3dHrARjvtZ8DIpZCr",
+            "maskName": "5884 x 10 (3).png"
+          },
+          {
+            "id": "1fWjumUNYtWdJGEQyf28_6d-rZW6n-ddr",
+            "name": "armor steel x 10 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1fWjumUNYtWdJGEQyf28_6d-rZW6n-ddr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1fWjumUNYtWdJGEQyf28_6d-rZW6n-ddr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1fWjumUNYtWdJGEQyf28_6d-rZW6n-ddr",
+            "maskId": "1WmvUhwRtRyoUpzl79ovJRXqM0s8tupOC",
+            "maskName": "5884 x 10 (4).png"
+          },
+          {
+            "id": "1-Eoueyu_MTA9uligfmRgiL0LFMP_i-jG",
+            "name": "armor steel x 10 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-Eoueyu_MTA9uligfmRgiL0LFMP_i-jG&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-Eoueyu_MTA9uligfmRgiL0LFMP_i-jG/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-Eoueyu_MTA9uligfmRgiL0LFMP_i-jG",
+            "maskId": "1vQRf37_ZAoAs1Rh4mwUlG9p9ZKSNkPaf",
+            "maskName": "5884 x 10 (5).png"
+          },
+          {
+            "id": "1bQWjI9eyc3wWKLW-8lNWl4vOo1zzIPy3",
+            "name": "armor steel x 10 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bQWjI9eyc3wWKLW-8lNWl4vOo1zzIPy3&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bQWjI9eyc3wWKLW-8lNWl4vOo1zzIPy3/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bQWjI9eyc3wWKLW-8lNWl4vOo1zzIPy3",
+            "maskId": "1xcdFX4LLQm8nI2gMj0n2JRkAi3II-e0_",
+            "maskName": "5884 x 10 (6).png"
+          },
+          {
+            "id": "1-TInMdpWjZ0IZZh94wNGJf72LqYA3Cxa",
+            "name": "armor steel x 20 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-TInMdpWjZ0IZZh94wNGJf72LqYA3Cxa&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-TInMdpWjZ0IZZh94wNGJf72LqYA3Cxa/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-TInMdpWjZ0IZZh94wNGJf72LqYA3Cxa",
+            "maskId": "13JeCXv-hUTkYAitZUkarr5PDUVZ3LVtf",
+            "maskName": "5884 x 20 (1).png"
+          },
+          {
+            "id": "1tKdUog13UUml-mXfBUA-SHwKyCcDJsma",
+            "name": "armor steel x 20 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1tKdUog13UUml-mXfBUA-SHwKyCcDJsma&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1tKdUog13UUml-mXfBUA-SHwKyCcDJsma/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1tKdUog13UUml-mXfBUA-SHwKyCcDJsma",
+            "maskId": "1Dcy1S0HCGLPZEX5OutKAipzQ3nH61Sal",
+            "maskName": "5884 x 20 (2).png"
+          },
+          {
+            "id": "1r_7Rcbm-FfBupTv_DSdBTLkoPDuGiIPO",
+            "name": "armor steel x 20 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1r_7Rcbm-FfBupTv_DSdBTLkoPDuGiIPO&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1r_7Rcbm-FfBupTv_DSdBTLkoPDuGiIPO/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1r_7Rcbm-FfBupTv_DSdBTLkoPDuGiIPO",
+            "maskId": "16eLMcl02SzfDazNyTS9GjA-897fGSgwJ",
+            "maskName": "5884 x 20 (3).png"
+          },
+          {
+            "id": "1NZVA2MmAxRPzMI-y_nQOldW-U3Iipq2b",
+            "name": "armor steel x 20 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1NZVA2MmAxRPzMI-y_nQOldW-U3Iipq2b&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1NZVA2MmAxRPzMI-y_nQOldW-U3Iipq2b/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1NZVA2MmAxRPzMI-y_nQOldW-U3Iipq2b",
+            "maskId": "1cv-4zW_2NoZFI_qk9dyIF9IdnpopORDo",
+            "maskName": "5884 x 20 (4).png"
+          },
+          {
+            "id": "1mgctgjXX1xhkdcRBRIxFOJzAGxAHr-CE",
+            "name": "armor steel x 20 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1mgctgjXX1xhkdcRBRIxFOJzAGxAHr-CE&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1mgctgjXX1xhkdcRBRIxFOJzAGxAHr-CE/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1mgctgjXX1xhkdcRBRIxFOJzAGxAHr-CE",
+            "maskId": "1RYRef3jMSwHVn_HdoYuybQbbgXsVd3Yf",
+            "maskName": "5884 x 20 (5).png"
+          },
+          {
+            "id": "13Tieys6USY_-xjiVNJoS4Tw9WRJwgUf1",
+            "name": "armor steel x 20 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=13Tieys6USY_-xjiVNJoS4Tw9WRJwgUf1&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/13Tieys6USY_-xjiVNJoS4Tw9WRJwgUf1/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=13Tieys6USY_-xjiVNJoS4Tw9WRJwgUf1",
+            "maskId": "1M_MZU9N0Xy0v0PbzaJM3SbzsCmzk83_X",
+            "maskName": "5884 x 20 (6).png"
+          },
+          {
+            "id": "1-ELWn4p2fBF6t4FFl_HhdyzSSbnlHHQO",
+            "name": "armor steel x 50 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-ELWn4p2fBF6t4FFl_HhdyzSSbnlHHQO&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-ELWn4p2fBF6t4FFl_HhdyzSSbnlHHQO/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-ELWn4p2fBF6t4FFl_HhdyzSSbnlHHQO",
+            "maskId": "1nDR2ngdZzPzMepwpDmVTS48zwunRT-YD",
+            "maskName": "5884 x 50 (1).png"
+          },
+          {
+            "id": "1skVDt8Z7zTV69NEj3DqCnpWr8Isb20Wb",
+            "name": "armor steel x 50 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1skVDt8Z7zTV69NEj3DqCnpWr8Isb20Wb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1skVDt8Z7zTV69NEj3DqCnpWr8Isb20Wb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1skVDt8Z7zTV69NEj3DqCnpWr8Isb20Wb",
+            "maskId": "1hetBi-RFrAWgSY6r38s-EHHRVhbr93CH",
+            "maskName": "5884 x 50 (2).png"
+          },
+          {
+            "id": "1ccXYdPojqizRlNXnYRkLQmhH4f2sD9Ak",
+            "name": "armor steel x 50 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ccXYdPojqizRlNXnYRkLQmhH4f2sD9Ak&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ccXYdPojqizRlNXnYRkLQmhH4f2sD9Ak/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ccXYdPojqizRlNXnYRkLQmhH4f2sD9Ak",
+            "maskId": "1c4Tg9dkxwRGvnldzOT2tJ1esyfFbAT5b",
+            "maskName": "5884 x 50 (3).png"
+          },
+          {
+            "id": "1eKiXEZ48hksbvJMBkSRWp57_fHLf8s-P",
+            "name": "armor steel x 50 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1eKiXEZ48hksbvJMBkSRWp57_fHLf8s-P&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1eKiXEZ48hksbvJMBkSRWp57_fHLf8s-P/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1eKiXEZ48hksbvJMBkSRWp57_fHLf8s-P",
+            "maskId": "1vSPQlxEQC7fHrWH9bkyEM-CONJ9w3TRZ",
+            "maskName": "5884 x 50 (4).png"
+          },
+          {
+            "id": "1SHLJzATY8IRBDMHocjVw7jcroJTJYpIQ",
+            "name": "armor steel x100 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1SHLJzATY8IRBDMHocjVw7jcroJTJYpIQ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1SHLJzATY8IRBDMHocjVw7jcroJTJYpIQ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1SHLJzATY8IRBDMHocjVw7jcroJTJYpIQ",
+            "maskId": null,
+            "maskName": null
+          }
+        ],
+        "masks": [
+          {
+            "id": "1GidvtzsCsbK1ZYKMUdMPhMd7OUrrOzPb",
+            "name": "5884 x 5 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GidvtzsCsbK1ZYKMUdMPhMd7OUrrOzPb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GidvtzsCsbK1ZYKMUdMPhMd7OUrrOzPb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GidvtzsCsbK1ZYKMUdMPhMd7OUrrOzPb"
+          },
+          {
+            "id": "1SPKoZSYbk8cP10-FiyHmMuq4TgtaSQbD",
+            "name": "5884 x 5 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1SPKoZSYbk8cP10-FiyHmMuq4TgtaSQbD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1SPKoZSYbk8cP10-FiyHmMuq4TgtaSQbD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1SPKoZSYbk8cP10-FiyHmMuq4TgtaSQbD"
+          },
+          {
+            "id": "1O_TqxOnmc5dfUx0x7bQ_Fa8u0vdnSQ_E",
+            "name": "5884 x 5 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1O_TqxOnmc5dfUx0x7bQ_Fa8u0vdnSQ_E&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1O_TqxOnmc5dfUx0x7bQ_Fa8u0vdnSQ_E/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1O_TqxOnmc5dfUx0x7bQ_Fa8u0vdnSQ_E"
+          },
+          {
+            "id": "1Sv7MCMqhjlfXG7Qij_khWDD9Zq-A8HVn",
+            "name": "5884 x 5 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Sv7MCMqhjlfXG7Qij_khWDD9Zq-A8HVn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Sv7MCMqhjlfXG7Qij_khWDD9Zq-A8HVn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Sv7MCMqhjlfXG7Qij_khWDD9Zq-A8HVn"
+          },
+          {
+            "id": "1oLfPaaEn4rEjHSRj-myr6AvPcgEPtypb",
+            "name": "5884 x 5 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1oLfPaaEn4rEjHSRj-myr6AvPcgEPtypb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1oLfPaaEn4rEjHSRj-myr6AvPcgEPtypb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1oLfPaaEn4rEjHSRj-myr6AvPcgEPtypb"
+          },
+          {
+            "id": "1XkvnmjmbCiv5B05LvBzoDnfwfmIwDTOQ",
+            "name": "5884 x 10 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1XkvnmjmbCiv5B05LvBzoDnfwfmIwDTOQ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1XkvnmjmbCiv5B05LvBzoDnfwfmIwDTOQ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1XkvnmjmbCiv5B05LvBzoDnfwfmIwDTOQ"
+          },
+          {
+            "id": "1OOLN_V8hmnHR3NKrkdjsmYvgiFJ9glxU",
+            "name": "5884 x 10 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1OOLN_V8hmnHR3NKrkdjsmYvgiFJ9glxU&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1OOLN_V8hmnHR3NKrkdjsmYvgiFJ9glxU/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1OOLN_V8hmnHR3NKrkdjsmYvgiFJ9glxU"
+          },
+          {
+            "id": "187rrDyGWRcZ2RWq3dHrARjvtZ8DIpZCr",
+            "name": "5884 x 10 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=187rrDyGWRcZ2RWq3dHrARjvtZ8DIpZCr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/187rrDyGWRcZ2RWq3dHrARjvtZ8DIpZCr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=187rrDyGWRcZ2RWq3dHrARjvtZ8DIpZCr"
+          },
+          {
+            "id": "1WmvUhwRtRyoUpzl79ovJRXqM0s8tupOC",
+            "name": "5884 x 10 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WmvUhwRtRyoUpzl79ovJRXqM0s8tupOC&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WmvUhwRtRyoUpzl79ovJRXqM0s8tupOC/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WmvUhwRtRyoUpzl79ovJRXqM0s8tupOC"
+          },
+          {
+            "id": "1vQRf37_ZAoAs1Rh4mwUlG9p9ZKSNkPaf",
+            "name": "5884 x 10 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1vQRf37_ZAoAs1Rh4mwUlG9p9ZKSNkPaf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1vQRf37_ZAoAs1Rh4mwUlG9p9ZKSNkPaf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1vQRf37_ZAoAs1Rh4mwUlG9p9ZKSNkPaf"
+          },
+          {
+            "id": "1xcdFX4LLQm8nI2gMj0n2JRkAi3II-e0_",
+            "name": "5884 x 10 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xcdFX4LLQm8nI2gMj0n2JRkAi3II-e0_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1xcdFX4LLQm8nI2gMj0n2JRkAi3II-e0_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1xcdFX4LLQm8nI2gMj0n2JRkAi3II-e0_"
+          },
+          {
+            "id": "13JeCXv-hUTkYAitZUkarr5PDUVZ3LVtf",
+            "name": "5884 x 20 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=13JeCXv-hUTkYAitZUkarr5PDUVZ3LVtf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/13JeCXv-hUTkYAitZUkarr5PDUVZ3LVtf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=13JeCXv-hUTkYAitZUkarr5PDUVZ3LVtf"
+          },
+          {
+            "id": "1Dcy1S0HCGLPZEX5OutKAipzQ3nH61Sal",
+            "name": "5884 x 20 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Dcy1S0HCGLPZEX5OutKAipzQ3nH61Sal&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Dcy1S0HCGLPZEX5OutKAipzQ3nH61Sal/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Dcy1S0HCGLPZEX5OutKAipzQ3nH61Sal"
+          },
+          {
+            "id": "16eLMcl02SzfDazNyTS9GjA-897fGSgwJ",
+            "name": "5884 x 20 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16eLMcl02SzfDazNyTS9GjA-897fGSgwJ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16eLMcl02SzfDazNyTS9GjA-897fGSgwJ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16eLMcl02SzfDazNyTS9GjA-897fGSgwJ"
+          },
+          {
+            "id": "1cv-4zW_2NoZFI_qk9dyIF9IdnpopORDo",
+            "name": "5884 x 20 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1cv-4zW_2NoZFI_qk9dyIF9IdnpopORDo&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1cv-4zW_2NoZFI_qk9dyIF9IdnpopORDo/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1cv-4zW_2NoZFI_qk9dyIF9IdnpopORDo"
+          },
+          {
+            "id": "1RYRef3jMSwHVn_HdoYuybQbbgXsVd3Yf",
+            "name": "5884 x 20 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RYRef3jMSwHVn_HdoYuybQbbgXsVd3Yf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1RYRef3jMSwHVn_HdoYuybQbbgXsVd3Yf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1RYRef3jMSwHVn_HdoYuybQbbgXsVd3Yf"
+          },
+          {
+            "id": "1M_MZU9N0Xy0v0PbzaJM3SbzsCmzk83_X",
+            "name": "5884 x 20 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1M_MZU9N0Xy0v0PbzaJM3SbzsCmzk83_X&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1M_MZU9N0Xy0v0PbzaJM3SbzsCmzk83_X/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1M_MZU9N0Xy0v0PbzaJM3SbzsCmzk83_X"
+          },
+          {
+            "id": "1nDR2ngdZzPzMepwpDmVTS48zwunRT-YD",
+            "name": "5884 x 50 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1nDR2ngdZzPzMepwpDmVTS48zwunRT-YD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1nDR2ngdZzPzMepwpDmVTS48zwunRT-YD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1nDR2ngdZzPzMepwpDmVTS48zwunRT-YD"
+          },
+          {
+            "id": "1hetBi-RFrAWgSY6r38s-EHHRVhbr93CH",
+            "name": "5884 x 50 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hetBi-RFrAWgSY6r38s-EHHRVhbr93CH&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hetBi-RFrAWgSY6r38s-EHHRVhbr93CH/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hetBi-RFrAWgSY6r38s-EHHRVhbr93CH"
+          },
+          {
+            "id": "1c4Tg9dkxwRGvnldzOT2tJ1esyfFbAT5b",
+            "name": "5884 x 50 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1c4Tg9dkxwRGvnldzOT2tJ1esyfFbAT5b&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1c4Tg9dkxwRGvnldzOT2tJ1esyfFbAT5b/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1c4Tg9dkxwRGvnldzOT2tJ1esyfFbAT5b"
+          },
+          {
+            "id": "1vSPQlxEQC7fHrWH9bkyEM-CONJ9w3TRZ",
+            "name": "5884 x 50 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1vSPQlxEQC7fHrWH9bkyEM-CONJ9w3TRZ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1vSPQlxEQC7fHrWH9bkyEM-CONJ9w3TRZ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1vSPQlxEQC7fHrWH9bkyEM-CONJ9w3TRZ"
+          }
+        ],
+        "pairCount": 21,
+        "originalCount": 22,
+        "maskCount": 21,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -404,6 +1823,196 @@
         "url": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link",
         "imageCount": 20,
         "children": []
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1u5I6kfD1kwaZc3b6EUGrRKUF1phmcBSN",
+            "name": "7075 x 20 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1u5I6kfD1kwaZc3b6EUGrRKUF1phmcBSN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1u5I6kfD1kwaZc3b6EUGrRKUF1phmcBSN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1u5I6kfD1kwaZc3b6EUGrRKUF1phmcBSN",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1ph4hPjTBChoBNl8kGnV3tqtQrhLeomZ0",
+            "name": "7075 x 20 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ph4hPjTBChoBNl8kGnV3tqtQrhLeomZ0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ph4hPjTBChoBNl8kGnV3tqtQrhLeomZ0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ph4hPjTBChoBNl8kGnV3tqtQrhLeomZ0",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1il5KQzU9Ps4LuHPSiRZUuY1BdZ90D4Gw",
+            "name": "7075 x 20 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1il5KQzU9Ps4LuHPSiRZUuY1BdZ90D4Gw&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1il5KQzU9Ps4LuHPSiRZUuY1BdZ90D4Gw/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1il5KQzU9Ps4LuHPSiRZUuY1BdZ90D4Gw",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1qg3gfr37Tu0NQV2WYUSm3k5fFBgnU5oy",
+            "name": "7075 x 20 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qg3gfr37Tu0NQV2WYUSm3k5fFBgnU5oy&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qg3gfr37Tu0NQV2WYUSm3k5fFBgnU5oy/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qg3gfr37Tu0NQV2WYUSm3k5fFBgnU5oy",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1e535BYtVsNnw2WB1NsgtxVH6uS8dwD5H",
+            "name": "7075 x 20 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1e535BYtVsNnw2WB1NsgtxVH6uS8dwD5H&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1e535BYtVsNnw2WB1NsgtxVH6uS8dwD5H/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1e535BYtVsNnw2WB1NsgtxVH6uS8dwD5H",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1jUH2qdmEhPBKoTyIuyTw0s04XCGksdK7",
+            "name": "7075 x 20 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1jUH2qdmEhPBKoTyIuyTw0s04XCGksdK7&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1jUH2qdmEhPBKoTyIuyTw0s04XCGksdK7/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1jUH2qdmEhPBKoTyIuyTw0s04XCGksdK7",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1uULdmpQig2o1o973KuE44XnoUuwVSrYb",
+            "name": "7075 x 20 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1uULdmpQig2o1o973KuE44XnoUuwVSrYb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1uULdmpQig2o1o973KuE44XnoUuwVSrYb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1uULdmpQig2o1o973KuE44XnoUuwVSrYb",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1C7nNGy9h3V3QdFUakIX7U6Edxeo8mr6r",
+            "name": "7075 x 20 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1C7nNGy9h3V3QdFUakIX7U6Edxeo8mr6r&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1C7nNGy9h3V3QdFUakIX7U6Edxeo8mr6r/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1C7nNGy9h3V3QdFUakIX7U6Edxeo8mr6r",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1dx9jLMoGoQrRoL6c9c4ikiuNsAfx4c6i",
+            "name": "7075 x 20 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1dx9jLMoGoQrRoL6c9c4ikiuNsAfx4c6i&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1dx9jLMoGoQrRoL6c9c4ikiuNsAfx4c6i/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1dx9jLMoGoQrRoL6c9c4ikiuNsAfx4c6i",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1Xx2FegcsZeZ6oomibP_TvtbfFO5eKx-x",
+            "name": "7075 x 20 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Xx2FegcsZeZ6oomibP_TvtbfFO5eKx-x&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Xx2FegcsZeZ6oomibP_TvtbfFO5eKx-x/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Xx2FegcsZeZ6oomibP_TvtbfFO5eKx-x",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1ImIu141pgjkXCCvYWtHbFeKRpTToZU4y",
+            "name": "7075 x 20 (11).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ImIu141pgjkXCCvYWtHbFeKRpTToZU4y&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ImIu141pgjkXCCvYWtHbFeKRpTToZU4y/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ImIu141pgjkXCCvYWtHbFeKRpTToZU4y",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1JhF-RHEHpGViNwflrLO5wKRT_fFrVZSI",
+            "name": "7075 x 20 (12).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1JhF-RHEHpGViNwflrLO5wKRT_fFrVZSI&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1JhF-RHEHpGViNwflrLO5wKRT_fFrVZSI/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1JhF-RHEHpGViNwflrLO5wKRT_fFrVZSI",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1gjzSFbiq7a88Jb_Wiv9w-CSFP9AANz4X",
+            "name": "7075 x 20 (13).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1gjzSFbiq7a88Jb_Wiv9w-CSFP9AANz4X&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1gjzSFbiq7a88Jb_Wiv9w-CSFP9AANz4X/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1gjzSFbiq7a88Jb_Wiv9w-CSFP9AANz4X",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "17ruozXun8WdjUVi6g5hEMue0xv_FE4_p",
+            "name": "7075 x 20 (14).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=17ruozXun8WdjUVi6g5hEMue0xv_FE4_p&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/17ruozXun8WdjUVi6g5hEMue0xv_FE4_p/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=17ruozXun8WdjUVi6g5hEMue0xv_FE4_p",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1KN91_QOdJp5tt3stpNQTLqaArvakXJm0",
+            "name": "7075 x 20 (15).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1KN91_QOdJp5tt3stpNQTLqaArvakXJm0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1KN91_QOdJp5tt3stpNQTLqaArvakXJm0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1KN91_QOdJp5tt3stpNQTLqaArvakXJm0",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1LNqTnWD5OsJvRW_F5aMq8UCyNcTLugcR",
+            "name": "7075 x 20 (16).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1LNqTnWD5OsJvRW_F5aMq8UCyNcTLugcR&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1LNqTnWD5OsJvRW_F5aMq8UCyNcTLugcR/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1LNqTnWD5OsJvRW_F5aMq8UCyNcTLugcR",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "170Kn-MdSQVTRKPcSc1A8c9rijY68uIa9",
+            "name": "7075 x 20 (17).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=170Kn-MdSQVTRKPcSc1A8c9rijY68uIa9&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/170Kn-MdSQVTRKPcSc1A8c9rijY68uIa9/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=170Kn-MdSQVTRKPcSc1A8c9rijY68uIa9",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1o0vaoEdZaCF-lgq2vPdadfjxZ7hziaOD",
+            "name": "7075 x 20 (18).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1o0vaoEdZaCF-lgq2vPdadfjxZ7hziaOD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1o0vaoEdZaCF-lgq2vPdadfjxZ7hziaOD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1o0vaoEdZaCF-lgq2vPdadfjxZ7hziaOD",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1yoSEpWOxRe7-EJWRWcvRU4xbV0Oai5Y5",
+            "name": "7075 x 20 (19).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1yoSEpWOxRe7-EJWRWcvRU4xbV0Oai5Y5&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1yoSEpWOxRe7-EJWRWcvRU4xbV0Oai5Y5/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1yoSEpWOxRe7-EJWRWcvRU4xbV0Oai5Y5",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1f2U8DlaDtYETtISDn3-OLlDQuFf4KFG9",
+            "name": "7075 x 20 (20).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1f2U8DlaDtYETtISDn3-OLlDQuFf4KFG9&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1f2U8DlaDtYETtISDn3-OLlDQuFf4KFG9/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1f2U8DlaDtYETtISDn3-OLlDQuFf4KFG9",
+            "maskId": null,
+            "maskName": null
+          }
+        ],
+        "masks": [],
+        "pairCount": 0,
+        "originalCount": 20,
+        "maskCount": 0,
+        "hasMaskPairs": false,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -454,6 +2063,331 @@
         "url": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link",
         "imageCount": 35,
         "children": []
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1WBq5_7rGGDQewRIZFrUUyHQpfFAIyJp3",
+            "name": "3105 x 50 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1WBq5_7rGGDQewRIZFrUUyHQpfFAIyJp3&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1WBq5_7rGGDQewRIZFrUUyHQpfFAIyJp3/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1WBq5_7rGGDQewRIZFrUUyHQpfFAIyJp3",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1bZvW3Co002HT4dbMBEYXQCdZrRLOwM2J",
+            "name": "3105 x 50 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bZvW3Co002HT4dbMBEYXQCdZrRLOwM2J&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bZvW3Co002HT4dbMBEYXQCdZrRLOwM2J/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bZvW3Co002HT4dbMBEYXQCdZrRLOwM2J",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1M10MWj2LZd0DnEaTG35QcPGCqrup3FF_",
+            "name": "3105 x 50 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1M10MWj2LZd0DnEaTG35QcPGCqrup3FF_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1M10MWj2LZd0DnEaTG35QcPGCqrup3FF_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1M10MWj2LZd0DnEaTG35QcPGCqrup3FF_",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1iBydcaKlMayVxspPWVM7B4i1CVxhQlCL",
+            "name": "3105 x 50 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1iBydcaKlMayVxspPWVM7B4i1CVxhQlCL&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1iBydcaKlMayVxspPWVM7B4i1CVxhQlCL/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1iBydcaKlMayVxspPWVM7B4i1CVxhQlCL",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "142hryL3KEpwMIOf9byPmkL5Kl9EiGr2j",
+            "name": "3105 x 50 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=142hryL3KEpwMIOf9byPmkL5Kl9EiGr2j&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/142hryL3KEpwMIOf9byPmkL5Kl9EiGr2j/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=142hryL3KEpwMIOf9byPmkL5Kl9EiGr2j",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1ztTNPX0gac-_uHPPwDPziOOxngAredEk",
+            "name": "3105 x 50 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ztTNPX0gac-_uHPPwDPziOOxngAredEk&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ztTNPX0gac-_uHPPwDPziOOxngAredEk/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ztTNPX0gac-_uHPPwDPziOOxngAredEk",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1Ws2cc3785VqMn1UE9_peWR7bznKJ0MPi",
+            "name": "3105 x 50 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Ws2cc3785VqMn1UE9_peWR7bznKJ0MPi&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Ws2cc3785VqMn1UE9_peWR7bznKJ0MPi/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Ws2cc3785VqMn1UE9_peWR7bznKJ0MPi",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "15gziAyPQPOfSmKEyD9BZYiCPTX52Kpfy",
+            "name": "3105 x 50 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=15gziAyPQPOfSmKEyD9BZYiCPTX52Kpfy&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/15gziAyPQPOfSmKEyD9BZYiCPTX52Kpfy/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=15gziAyPQPOfSmKEyD9BZYiCPTX52Kpfy",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1O8a4klia3SGuCh-1JsBEqlxk8qqh9Zt6",
+            "name": "3105 x 50 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1O8a4klia3SGuCh-1JsBEqlxk8qqh9Zt6&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1O8a4klia3SGuCh-1JsBEqlxk8qqh9Zt6/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1O8a4klia3SGuCh-1JsBEqlxk8qqh9Zt6",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1bf5H50of1CGh2b-m7q7gQ8SMtX7N3jKJ",
+            "name": "3105 x 50 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bf5H50of1CGh2b-m7q7gQ8SMtX7N3jKJ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bf5H50of1CGh2b-m7q7gQ8SMtX7N3jKJ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bf5H50of1CGh2b-m7q7gQ8SMtX7N3jKJ",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1J5FHFJq92ANcCQGM65pbDH_T8rK7y3kk",
+            "name": "3105 x 100 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1J5FHFJq92ANcCQGM65pbDH_T8rK7y3kk&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1J5FHFJq92ANcCQGM65pbDH_T8rK7y3kk/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1J5FHFJq92ANcCQGM65pbDH_T8rK7y3kk",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1A88kZXSSvZ1VjhAteeL64l_OUyUeG9SA",
+            "name": "3105 x 100 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1A88kZXSSvZ1VjhAteeL64l_OUyUeG9SA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1A88kZXSSvZ1VjhAteeL64l_OUyUeG9SA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1A88kZXSSvZ1VjhAteeL64l_OUyUeG9SA",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1TJxiieSZAHijwK-lzTAfs--MJvaj7ei5",
+            "name": "3105 x 100 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1TJxiieSZAHijwK-lzTAfs--MJvaj7ei5&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1TJxiieSZAHijwK-lzTAfs--MJvaj7ei5/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1TJxiieSZAHijwK-lzTAfs--MJvaj7ei5",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1UrUgW3fZxjZEjC8u-Tr97_MA_ifeAg3G",
+            "name": "3105 x 100 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1UrUgW3fZxjZEjC8u-Tr97_MA_ifeAg3G&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1UrUgW3fZxjZEjC8u-Tr97_MA_ifeAg3G/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1UrUgW3fZxjZEjC8u-Tr97_MA_ifeAg3G",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1JCZK4xpfY41mOjuO7NEvbbpgb0H62p0q",
+            "name": "3105 x 100 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1JCZK4xpfY41mOjuO7NEvbbpgb0H62p0q&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1JCZK4xpfY41mOjuO7NEvbbpgb0H62p0q/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1JCZK4xpfY41mOjuO7NEvbbpgb0H62p0q",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1n53blw0TYbmUM5hX0EbAtCjir4aas80R",
+            "name": "3105 x 100 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1n53blw0TYbmUM5hX0EbAtCjir4aas80R&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1n53blw0TYbmUM5hX0EbAtCjir4aas80R/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1n53blw0TYbmUM5hX0EbAtCjir4aas80R",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1Vwfq31NNDfZrHD77ju2Yva8Svh84kaBi",
+            "name": "3105 x 100 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Vwfq31NNDfZrHD77ju2Yva8Svh84kaBi&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Vwfq31NNDfZrHD77ju2Yva8Svh84kaBi/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Vwfq31NNDfZrHD77ju2Yva8Svh84kaBi",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1w-B6CpEUhwpFgbnQdNvJssEheakw4Ls4",
+            "name": "3105 x 100 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1w-B6CpEUhwpFgbnQdNvJssEheakw4Ls4&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1w-B6CpEUhwpFgbnQdNvJssEheakw4Ls4/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1w-B6CpEUhwpFgbnQdNvJssEheakw4Ls4",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1ojZcRRzpbwAP37DKZNaIBWsHV7TaKCph",
+            "name": "3105 x 100 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ojZcRRzpbwAP37DKZNaIBWsHV7TaKCph&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ojZcRRzpbwAP37DKZNaIBWsHV7TaKCph/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ojZcRRzpbwAP37DKZNaIBWsHV7TaKCph",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "193kfLbE3kzuB6msPRSovipI4aBNaOunN",
+            "name": "3105 x 100 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=193kfLbE3kzuB6msPRSovipI4aBNaOunN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/193kfLbE3kzuB6msPRSovipI4aBNaOunN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=193kfLbE3kzuB6msPRSovipI4aBNaOunN",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1wDCunCxLFtAwSht9KXLnH3nBzkUO0Lf_",
+            "name": "3105 x 100 (11).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1wDCunCxLFtAwSht9KXLnH3nBzkUO0Lf_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1wDCunCxLFtAwSht9KXLnH3nBzkUO0Lf_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1wDCunCxLFtAwSht9KXLnH3nBzkUO0Lf_",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1IQXyW-DWhrGZerjDxB13u3_OOYbEGiX7",
+            "name": "3105 x 100 (12).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1IQXyW-DWhrGZerjDxB13u3_OOYbEGiX7&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1IQXyW-DWhrGZerjDxB13u3_OOYbEGiX7/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1IQXyW-DWhrGZerjDxB13u3_OOYbEGiX7",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1U0hApKfhGoPNvsN-3Sjmw5wUjAsd3uMe",
+            "name": "3105 x 100 (13).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1U0hApKfhGoPNvsN-3Sjmw5wUjAsd3uMe&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1U0hApKfhGoPNvsN-3Sjmw5wUjAsd3uMe/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1U0hApKfhGoPNvsN-3Sjmw5wUjAsd3uMe",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1dl2XS14UZtKVoHEq54mAcEhYGDYbbQdS",
+            "name": "3105 x 100 (14).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1dl2XS14UZtKVoHEq54mAcEhYGDYbbQdS&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1dl2XS14UZtKVoHEq54mAcEhYGDYbbQdS/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1dl2XS14UZtKVoHEq54mAcEhYGDYbbQdS",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1wzOJhadlgC2L9uyHwrF7YY6elHugGVen",
+            "name": "3105 x 100 (15).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1wzOJhadlgC2L9uyHwrF7YY6elHugGVen&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1wzOJhadlgC2L9uyHwrF7YY6elHugGVen/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1wzOJhadlgC2L9uyHwrF7YY6elHugGVen",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1n81LSTyTOilrsnsz-S1mgvjXRTWd6ddl",
+            "name": "3105 x 100 (16).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1n81LSTyTOilrsnsz-S1mgvjXRTWd6ddl&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1n81LSTyTOilrsnsz-S1mgvjXRTWd6ddl/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1n81LSTyTOilrsnsz-S1mgvjXRTWd6ddl",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1pcgYgMBTV07OgJpETv7Z5qjz5LfhWDMj",
+            "name": "3105 x 100 (17).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pcgYgMBTV07OgJpETv7Z5qjz5LfhWDMj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pcgYgMBTV07OgJpETv7Z5qjz5LfhWDMj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pcgYgMBTV07OgJpETv7Z5qjz5LfhWDMj",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1YhIsKHrzKzBrFcTjg-h5494izToUSEs3",
+            "name": "3105 x 100 (18).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1YhIsKHrzKzBrFcTjg-h5494izToUSEs3&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1YhIsKHrzKzBrFcTjg-h5494izToUSEs3/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1YhIsKHrzKzBrFcTjg-h5494izToUSEs3",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "16Gnj95RIJsAQHzwMf-1Ga8F-etYZhCqf",
+            "name": "3105 x 100 (19).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16Gnj95RIJsAQHzwMf-1Ga8F-etYZhCqf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16Gnj95RIJsAQHzwMf-1Ga8F-etYZhCqf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16Gnj95RIJsAQHzwMf-1Ga8F-etYZhCqf",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1_utVBMbwFsIrbO2K8sdoJOl61ep1mgCr",
+            "name": "3105 x 100 (20).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1_utVBMbwFsIrbO2K8sdoJOl61ep1mgCr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1_utVBMbwFsIrbO2K8sdoJOl61ep1mgCr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1_utVBMbwFsIrbO2K8sdoJOl61ep1mgCr",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1ECtvbD3YckOxHeRtlc4_min3SEUZel1x",
+            "name": "3105 x 100 (21).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ECtvbD3YckOxHeRtlc4_min3SEUZel1x&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ECtvbD3YckOxHeRtlc4_min3SEUZel1x/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ECtvbD3YckOxHeRtlc4_min3SEUZel1x",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "14QGmJcGUjooNjVH75JJpSv981OGm9tYn",
+            "name": "3105 x 100 (22).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=14QGmJcGUjooNjVH75JJpSv981OGm9tYn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/14QGmJcGUjooNjVH75JJpSv981OGm9tYn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=14QGmJcGUjooNjVH75JJpSv981OGm9tYn",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "132FR9M7a5YHbMB9FIn5atSVg1LFYbb6y",
+            "name": "3105 x 100 (23).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=132FR9M7a5YHbMB9FIn5atSVg1LFYbb6y&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/132FR9M7a5YHbMB9FIn5atSVg1LFYbb6y/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=132FR9M7a5YHbMB9FIn5atSVg1LFYbb6y",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1UY6MjN6c1H6J2fAdLYkdIsKcfHcGpLOs",
+            "name": "3105 x 100 (24).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1UY6MjN6c1H6J2fAdLYkdIsKcfHcGpLOs&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1UY6MjN6c1H6J2fAdLYkdIsKcfHcGpLOs/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1UY6MjN6c1H6J2fAdLYkdIsKcfHcGpLOs",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1d2AhF7VlOC1WUfygFvxkcoZNa5VLziBW",
+            "name": "3105 x 100 (25).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1d2AhF7VlOC1WUfygFvxkcoZNa5VLziBW&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1d2AhF7VlOC1WUfygFvxkcoZNa5VLziBW/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1d2AhF7VlOC1WUfygFvxkcoZNa5VLziBW",
+            "maskId": null,
+            "maskName": null
+          }
+        ],
+        "masks": [],
+        "pairCount": 0,
+        "originalCount": 35,
+        "maskCount": 0,
+        "hasMaskPairs": false,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -512,6 +2446,417 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1-ILUTC_UZhMwdDYzeePMPVjw8L9PuUOK",
+            "name": "x5 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-ILUTC_UZhMwdDYzeePMPVjw8L9PuUOK&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-ILUTC_UZhMwdDYzeePMPVjw8L9PuUOK/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-ILUTC_UZhMwdDYzeePMPVjw8L9PuUOK",
+            "maskId": "1D33gDrCxbDn0aFJReJt41-i5tB4UgdkD",
+            "maskName": "x5 (1).png"
+          },
+          {
+            "id": "107vTj1CJEBJ13BfqqsxGYkKk46gTuAkq",
+            "name": "x5 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=107vTj1CJEBJ13BfqqsxGYkKk46gTuAkq&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/107vTj1CJEBJ13BfqqsxGYkKk46gTuAkq/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=107vTj1CJEBJ13BfqqsxGYkKk46gTuAkq",
+            "maskId": "1G3NHOB6PmVyOW1vrSrbfg6zFT8kDD0Qi",
+            "maskName": "x5 (2).png"
+          },
+          {
+            "id": "10OsxuUjoRGAaAnbAIijFLlFN39RdYeU_",
+            "name": "x5 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10OsxuUjoRGAaAnbAIijFLlFN39RdYeU_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10OsxuUjoRGAaAnbAIijFLlFN39RdYeU_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10OsxuUjoRGAaAnbAIijFLlFN39RdYeU_",
+            "maskId": "16kBFDGCOEW0waXRDROOJt9IyDxo1eVqf",
+            "maskName": "x5 (3).png"
+          },
+          {
+            "id": "10URXiGs6YE_qrLRDR3UqY-n-aYbNA7kf",
+            "name": "x5 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10URXiGs6YE_qrLRDR3UqY-n-aYbNA7kf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10URXiGs6YE_qrLRDR3UqY-n-aYbNA7kf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10URXiGs6YE_qrLRDR3UqY-n-aYbNA7kf",
+            "maskId": "1ENAgOseezm-QjtsL9z77tv7BzvybN4bv",
+            "maskName": "x5 (4).png"
+          },
+          {
+            "id": "10SCc14w189odCGwj95qAd9XSdSjXUG5K",
+            "name": "x5 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10SCc14w189odCGwj95qAd9XSdSjXUG5K&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10SCc14w189odCGwj95qAd9XSdSjXUG5K/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10SCc14w189odCGwj95qAd9XSdSjXUG5K",
+            "maskId": "1Qc4M80LWmfUfunCktzFqVuAyE5hCkmBG",
+            "maskName": "x5 (5).png"
+          },
+          {
+            "id": "10VRB6yqAcyY95VwLDswe19WRlJWjZmH_",
+            "name": "x5 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10VRB6yqAcyY95VwLDswe19WRlJWjZmH_&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10VRB6yqAcyY95VwLDswe19WRlJWjZmH_/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10VRB6yqAcyY95VwLDswe19WRlJWjZmH_",
+            "maskId": "1KN-oFtLlzg4yMwlh1990B1SR4CKGURF2",
+            "maskName": "x5 (6).png"
+          },
+          {
+            "id": "10V-oEBE_KbAaE8yJnpp9nfrAqpgUsanA",
+            "name": "x5 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10V-oEBE_KbAaE8yJnpp9nfrAqpgUsanA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10V-oEBE_KbAaE8yJnpp9nfrAqpgUsanA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10V-oEBE_KbAaE8yJnpp9nfrAqpgUsanA",
+            "maskId": "12bKNM_SrgiEY1_c86wOmGq4e7qPVvfoh",
+            "maskName": "x5 (7).png"
+          },
+          {
+            "id": "13ZnOGYSDA6xmNn7kkuXmg9IBMRQ5Nqp-",
+            "name": "x5 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=13ZnOGYSDA6xmNn7kkuXmg9IBMRQ5Nqp-&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/13ZnOGYSDA6xmNn7kkuXmg9IBMRQ5Nqp-/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=13ZnOGYSDA6xmNn7kkuXmg9IBMRQ5Nqp-",
+            "maskId": "1TmANDJaMZuWV1xJt9TUg9mHGZvXTiokt",
+            "maskName": "x5 (8).png"
+          },
+          {
+            "id": "13XO3pnP18Q8vkW898e3f9VPu5ohR80UM",
+            "name": "x5 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=13XO3pnP18Q8vkW898e3f9VPu5ohR80UM&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/13XO3pnP18Q8vkW898e3f9VPu5ohR80UM/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=13XO3pnP18Q8vkW898e3f9VPu5ohR80UM",
+            "maskId": "1qPboxFTXBkHyDs_EbepQwlIfSlU5kqXN",
+            "maskName": "x5 (9).png"
+          },
+          {
+            "id": "1-RBVc8Szryks63-jzDqLfP7ry3uz87ux",
+            "name": "x5 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-RBVc8Szryks63-jzDqLfP7ry3uz87ux&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-RBVc8Szryks63-jzDqLfP7ry3uz87ux/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-RBVc8Szryks63-jzDqLfP7ry3uz87ux",
+            "maskId": "19NK1qhvthH28CxjXodH98jMkfjwrtW5f",
+            "maskName": "x5 (10).png"
+          },
+          {
+            "id": "1-N3uwU0Terhfu07XfL5gPDc5IhJHHARy",
+            "name": "x5 (11).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-N3uwU0Terhfu07XfL5gPDc5IhJHHARy&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-N3uwU0Terhfu07XfL5gPDc5IhJHHARy/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-N3uwU0Terhfu07XfL5gPDc5IhJHHARy",
+            "maskId": "1Z92ENGbS456u4vJJvrqEvaxCxpjDuGJ1",
+            "maskName": "x5 (11).png"
+          },
+          {
+            "id": "1-aOv7DIEoCKfjY5Gdjrb9qqcddn-iFMN",
+            "name": "x5 (12).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-aOv7DIEoCKfjY5Gdjrb9qqcddn-iFMN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-aOv7DIEoCKfjY5Gdjrb9qqcddn-iFMN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-aOv7DIEoCKfjY5Gdjrb9qqcddn-iFMN",
+            "maskId": "1V3hrQ4RRQmwT6nKNA6PhH9NyYvCeQ9t5",
+            "maskName": "x5 (12).png"
+          },
+          {
+            "id": "1-_mEofmZCltucYhpJPdBYcnXQ_rX75rz",
+            "name": "x5 (13).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-_mEofmZCltucYhpJPdBYcnXQ_rX75rz&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-_mEofmZCltucYhpJPdBYcnXQ_rX75rz/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-_mEofmZCltucYhpJPdBYcnXQ_rX75rz",
+            "maskId": "1HmU-xcD8hIgRNoe78zBqxtMpnRv2-o31",
+            "maskName": "x5 (13).png"
+          },
+          {
+            "id": "1-cQl_pMoEICuvvkaYP9AM84QfcRIql7s",
+            "name": "x5 (14).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-cQl_pMoEICuvvkaYP9AM84QfcRIql7s&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-cQl_pMoEICuvvkaYP9AM84QfcRIql7s/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-cQl_pMoEICuvvkaYP9AM84QfcRIql7s",
+            "maskId": "1v43u1rSKjlYm72ktm6L0zUScHgKJtW4H",
+            "maskName": "x5 (14).png"
+          },
+          {
+            "id": "1-avQEpelevp6wim1yaa3sRTwmTfHDza0",
+            "name": "x5 (15).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-avQEpelevp6wim1yaa3sRTwmTfHDza0&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-avQEpelevp6wim1yaa3sRTwmTfHDza0/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-avQEpelevp6wim1yaa3sRTwmTfHDza0",
+            "maskId": "1usQ3XpnC6cD8lH6lNZROcKBTPYqB9Ryw",
+            "maskName": "x5 (15).png"
+          },
+          {
+            "id": "1-iCUWLg246idMINW2GgPknXqZfqqpuFD",
+            "name": "x5 (16).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-iCUWLg246idMINW2GgPknXqZfqqpuFD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-iCUWLg246idMINW2GgPknXqZfqqpuFD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-iCUWLg246idMINW2GgPknXqZfqqpuFD",
+            "maskId": "1CKZ5zZWurebxgolYJYk79L7IQWdk9DWZ",
+            "maskName": "x5 (16).png"
+          },
+          {
+            "id": "1-hw2NE7DfcfOsros0EiUWMTOUP3VJbzR",
+            "name": "x5 (17).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-hw2NE7DfcfOsros0EiUWMTOUP3VJbzR&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-hw2NE7DfcfOsros0EiUWMTOUP3VJbzR/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-hw2NE7DfcfOsros0EiUWMTOUP3VJbzR",
+            "maskId": "1Hk030jPophgJeg9l2uweKq4bXr2snwwj",
+            "maskName": "x5 (17).png"
+          },
+          {
+            "id": "10-oUxm6G7uy8M0pIMd8VNW3DtE25MGak",
+            "name": "x5 (18).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10-oUxm6G7uy8M0pIMd8VNW3DtE25MGak&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10-oUxm6G7uy8M0pIMd8VNW3DtE25MGak/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10-oUxm6G7uy8M0pIMd8VNW3DtE25MGak",
+            "maskId": "10du41XdBr0kB_mPpFlLKRf77nxg1mz2k",
+            "maskName": "x5 (18).png"
+          },
+          {
+            "id": "1-uIOD1lL2pQxiOuoBktd96tmw1J-dfOD",
+            "name": "x5 (19).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-uIOD1lL2pQxiOuoBktd96tmw1J-dfOD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-uIOD1lL2pQxiOuoBktd96tmw1J-dfOD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-uIOD1lL2pQxiOuoBktd96tmw1J-dfOD",
+            "maskId": "1MOlTegdkvYwcVIwMqDr3EzLSr0LeOelC",
+            "maskName": "x5 (19).png"
+          },
+          {
+            "id": "106kTBjlIsxu78kOcMFOhVLd8eJ86HwnY",
+            "name": "x5 (20).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=106kTBjlIsxu78kOcMFOhVLd8eJ86HwnY&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/106kTBjlIsxu78kOcMFOhVLd8eJ86HwnY/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=106kTBjlIsxu78kOcMFOhVLd8eJ86HwnY",
+            "maskId": "1BmExGFEnfBSTvn9iy5nWmoq37TBH7lNR",
+            "maskName": "x5 (20).png"
+          },
+          {
+            "id": "10BsgyZUdgjIXFWZp7-Xi9ZihcR2u_1wx",
+            "name": "x5 (21).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10BsgyZUdgjIXFWZp7-Xi9ZihcR2u_1wx&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10BsgyZUdgjIXFWZp7-Xi9ZihcR2u_1wx/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10BsgyZUdgjIXFWZp7-Xi9ZihcR2u_1wx",
+            "maskId": "1yNjYoJ7U6A9Ijh0HEkba68STEmUzkUes",
+            "maskName": "x5 (21).png"
+          },
+          {
+            "id": "109r_2S9d2niuFHnFvHhUD3BPYeDpOUzr",
+            "name": "x5 (22).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=109r_2S9d2niuFHnFvHhUD3BPYeDpOUzr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/109r_2S9d2niuFHnFvHhUD3BPYeDpOUzr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=109r_2S9d2niuFHnFvHhUD3BPYeDpOUzr",
+            "maskId": "1l6d9uz7ZkTHxWF8ATXhAZIEhnIrZgPcV",
+            "maskName": "x5 (22).png"
+          },
+          {
+            "id": "10KIP0kDU3Phful03mr8gp6bkR7geO38o",
+            "name": "x5 (23).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10KIP0kDU3Phful03mr8gp6bkR7geO38o&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10KIP0kDU3Phful03mr8gp6bkR7geO38o/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10KIP0kDU3Phful03mr8gp6bkR7geO38o",
+            "maskId": "1naUJZvlaEVHb0KYD2ZmBW7Zpc70uGjKj",
+            "maskName": "x5 (23).png"
+          },
+          {
+            "id": "10HT9tbD3prq9BnAJuGPDkOlvZEQFtymq",
+            "name": "x5 (24).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10HT9tbD3prq9BnAJuGPDkOlvZEQFtymq&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10HT9tbD3prq9BnAJuGPDkOlvZEQFtymq/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10HT9tbD3prq9BnAJuGPDkOlvZEQFtymq",
+            "maskId": "1nr4RMupk-nAk3ZCbMh7jE4gDDIDgIaR9",
+            "maskName": "x5 (24).png"
+          },
+          {
+            "id": "10RFPWlcFeYliUG71-11QPmrKkUaRZYAb",
+            "name": "x5 (25).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10RFPWlcFeYliUG71-11QPmrKkUaRZYAb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10RFPWlcFeYliUG71-11QPmrKkUaRZYAb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10RFPWlcFeYliUG71-11QPmrKkUaRZYAb",
+            "maskId": "1Y7bvcrqR43yiND_wJTp2IDnGfDsqwPku",
+            "maskName": "x5 (25).png"
+          }
+        ],
+        "masks": [
+          {
+            "id": "1D33gDrCxbDn0aFJReJt41-i5tB4UgdkD",
+            "name": "x5 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1D33gDrCxbDn0aFJReJt41-i5tB4UgdkD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1D33gDrCxbDn0aFJReJt41-i5tB4UgdkD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1D33gDrCxbDn0aFJReJt41-i5tB4UgdkD"
+          },
+          {
+            "id": "1G3NHOB6PmVyOW1vrSrbfg6zFT8kDD0Qi",
+            "name": "x5 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1G3NHOB6PmVyOW1vrSrbfg6zFT8kDD0Qi&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1G3NHOB6PmVyOW1vrSrbfg6zFT8kDD0Qi/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1G3NHOB6PmVyOW1vrSrbfg6zFT8kDD0Qi"
+          },
+          {
+            "id": "16kBFDGCOEW0waXRDROOJt9IyDxo1eVqf",
+            "name": "x5 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=16kBFDGCOEW0waXRDROOJt9IyDxo1eVqf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/16kBFDGCOEW0waXRDROOJt9IyDxo1eVqf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=16kBFDGCOEW0waXRDROOJt9IyDxo1eVqf"
+          },
+          {
+            "id": "1ENAgOseezm-QjtsL9z77tv7BzvybN4bv",
+            "name": "x5 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ENAgOseezm-QjtsL9z77tv7BzvybN4bv&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ENAgOseezm-QjtsL9z77tv7BzvybN4bv/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ENAgOseezm-QjtsL9z77tv7BzvybN4bv"
+          },
+          {
+            "id": "1Qc4M80LWmfUfunCktzFqVuAyE5hCkmBG",
+            "name": "x5 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Qc4M80LWmfUfunCktzFqVuAyE5hCkmBG&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Qc4M80LWmfUfunCktzFqVuAyE5hCkmBG/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Qc4M80LWmfUfunCktzFqVuAyE5hCkmBG"
+          },
+          {
+            "id": "1KN-oFtLlzg4yMwlh1990B1SR4CKGURF2",
+            "name": "x5 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1KN-oFtLlzg4yMwlh1990B1SR4CKGURF2&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1KN-oFtLlzg4yMwlh1990B1SR4CKGURF2/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1KN-oFtLlzg4yMwlh1990B1SR4CKGURF2"
+          },
+          {
+            "id": "12bKNM_SrgiEY1_c86wOmGq4e7qPVvfoh",
+            "name": "x5 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=12bKNM_SrgiEY1_c86wOmGq4e7qPVvfoh&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/12bKNM_SrgiEY1_c86wOmGq4e7qPVvfoh/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=12bKNM_SrgiEY1_c86wOmGq4e7qPVvfoh"
+          },
+          {
+            "id": "1TmANDJaMZuWV1xJt9TUg9mHGZvXTiokt",
+            "name": "x5 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1TmANDJaMZuWV1xJt9TUg9mHGZvXTiokt&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1TmANDJaMZuWV1xJt9TUg9mHGZvXTiokt/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1TmANDJaMZuWV1xJt9TUg9mHGZvXTiokt"
+          },
+          {
+            "id": "1qPboxFTXBkHyDs_EbepQwlIfSlU5kqXN",
+            "name": "x5 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qPboxFTXBkHyDs_EbepQwlIfSlU5kqXN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qPboxFTXBkHyDs_EbepQwlIfSlU5kqXN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qPboxFTXBkHyDs_EbepQwlIfSlU5kqXN"
+          },
+          {
+            "id": "19NK1qhvthH28CxjXodH98jMkfjwrtW5f",
+            "name": "x5 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=19NK1qhvthH28CxjXodH98jMkfjwrtW5f&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/19NK1qhvthH28CxjXodH98jMkfjwrtW5f/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=19NK1qhvthH28CxjXodH98jMkfjwrtW5f"
+          },
+          {
+            "id": "1Z92ENGbS456u4vJJvrqEvaxCxpjDuGJ1",
+            "name": "x5 (11).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Z92ENGbS456u4vJJvrqEvaxCxpjDuGJ1&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Z92ENGbS456u4vJJvrqEvaxCxpjDuGJ1/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Z92ENGbS456u4vJJvrqEvaxCxpjDuGJ1"
+          },
+          {
+            "id": "1V3hrQ4RRQmwT6nKNA6PhH9NyYvCeQ9t5",
+            "name": "x5 (12).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1V3hrQ4RRQmwT6nKNA6PhH9NyYvCeQ9t5&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1V3hrQ4RRQmwT6nKNA6PhH9NyYvCeQ9t5/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1V3hrQ4RRQmwT6nKNA6PhH9NyYvCeQ9t5"
+          },
+          {
+            "id": "1HmU-xcD8hIgRNoe78zBqxtMpnRv2-o31",
+            "name": "x5 (13).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1HmU-xcD8hIgRNoe78zBqxtMpnRv2-o31&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1HmU-xcD8hIgRNoe78zBqxtMpnRv2-o31/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1HmU-xcD8hIgRNoe78zBqxtMpnRv2-o31"
+          },
+          {
+            "id": "1v43u1rSKjlYm72ktm6L0zUScHgKJtW4H",
+            "name": "x5 (14).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1v43u1rSKjlYm72ktm6L0zUScHgKJtW4H&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1v43u1rSKjlYm72ktm6L0zUScHgKJtW4H/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1v43u1rSKjlYm72ktm6L0zUScHgKJtW4H"
+          },
+          {
+            "id": "1usQ3XpnC6cD8lH6lNZROcKBTPYqB9Ryw",
+            "name": "x5 (15).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1usQ3XpnC6cD8lH6lNZROcKBTPYqB9Ryw&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1usQ3XpnC6cD8lH6lNZROcKBTPYqB9Ryw/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1usQ3XpnC6cD8lH6lNZROcKBTPYqB9Ryw"
+          },
+          {
+            "id": "1CKZ5zZWurebxgolYJYk79L7IQWdk9DWZ",
+            "name": "x5 (16).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1CKZ5zZWurebxgolYJYk79L7IQWdk9DWZ&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1CKZ5zZWurebxgolYJYk79L7IQWdk9DWZ/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1CKZ5zZWurebxgolYJYk79L7IQWdk9DWZ"
+          },
+          {
+            "id": "1Hk030jPophgJeg9l2uweKq4bXr2snwwj",
+            "name": "x5 (17).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Hk030jPophgJeg9l2uweKq4bXr2snwwj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Hk030jPophgJeg9l2uweKq4bXr2snwwj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Hk030jPophgJeg9l2uweKq4bXr2snwwj"
+          },
+          {
+            "id": "10du41XdBr0kB_mPpFlLKRf77nxg1mz2k",
+            "name": "x5 (18).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=10du41XdBr0kB_mPpFlLKRf77nxg1mz2k&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/10du41XdBr0kB_mPpFlLKRf77nxg1mz2k/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=10du41XdBr0kB_mPpFlLKRf77nxg1mz2k"
+          },
+          {
+            "id": "1MOlTegdkvYwcVIwMqDr3EzLSr0LeOelC",
+            "name": "x5 (19).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1MOlTegdkvYwcVIwMqDr3EzLSr0LeOelC&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1MOlTegdkvYwcVIwMqDr3EzLSr0LeOelC/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1MOlTegdkvYwcVIwMqDr3EzLSr0LeOelC"
+          },
+          {
+            "id": "1BmExGFEnfBSTvn9iy5nWmoq37TBH7lNR",
+            "name": "x5 (20).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1BmExGFEnfBSTvn9iy5nWmoq37TBH7lNR&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1BmExGFEnfBSTvn9iy5nWmoq37TBH7lNR/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1BmExGFEnfBSTvn9iy5nWmoq37TBH7lNR"
+          },
+          {
+            "id": "1yNjYoJ7U6A9Ijh0HEkba68STEmUzkUes",
+            "name": "x5 (21).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1yNjYoJ7U6A9Ijh0HEkba68STEmUzkUes&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1yNjYoJ7U6A9Ijh0HEkba68STEmUzkUes/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1yNjYoJ7U6A9Ijh0HEkba68STEmUzkUes"
+          },
+          {
+            "id": "1l6d9uz7ZkTHxWF8ATXhAZIEhnIrZgPcV",
+            "name": "x5 (22).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1l6d9uz7ZkTHxWF8ATXhAZIEhnIrZgPcV&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1l6d9uz7ZkTHxWF8ATXhAZIEhnIrZgPcV/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1l6d9uz7ZkTHxWF8ATXhAZIEhnIrZgPcV"
+          },
+          {
+            "id": "1naUJZvlaEVHb0KYD2ZmBW7Zpc70uGjKj",
+            "name": "x5 (23).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1naUJZvlaEVHb0KYD2ZmBW7Zpc70uGjKj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1naUJZvlaEVHb0KYD2ZmBW7Zpc70uGjKj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1naUJZvlaEVHb0KYD2ZmBW7Zpc70uGjKj"
+          },
+          {
+            "id": "1nr4RMupk-nAk3ZCbMh7jE4gDDIDgIaR9",
+            "name": "x5 (24).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1nr4RMupk-nAk3ZCbMh7jE4gDDIDgIaR9&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1nr4RMupk-nAk3ZCbMh7jE4gDDIDgIaR9/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1nr4RMupk-nAk3ZCbMh7jE4gDDIDgIaR9"
+          },
+          {
+            "id": "1Y7bvcrqR43yiND_wJTp2IDnGfDsqwPku",
+            "name": "x5 (25).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Y7bvcrqR43yiND_wJTp2IDnGfDsqwPku&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Y7bvcrqR43yiND_wJTp2IDnGfDsqwPku/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Y7bvcrqR43yiND_wJTp2IDnGfDsqwPku"
+          }
+        ],
+        "pairCount": 25,
+        "originalCount": 25,
+        "maskCount": 25,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     },
     {
@@ -557,8 +2902,369 @@
             "children": []
           }
         ]
+      },
+      "gallery": {
+        "originals": [
+          {
+            "id": "1zf7Z2sSKbKkIaVtXpnkw03MsGCEGC8-7",
+            "name": "x20 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zf7Z2sSKbKkIaVtXpnkw03MsGCEGC8-7&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zf7Z2sSKbKkIaVtXpnkw03MsGCEGC8-7/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zf7Z2sSKbKkIaVtXpnkw03MsGCEGC8-7",
+            "maskId": "1Hd56mrfDm3fvmQd86yV-AEPGmzFdSYPa",
+            "maskName": "x20 (1).png"
+          },
+          {
+            "id": "1VANkqln6IgIxhgRWOFK_petLA61xQ_UN",
+            "name": "x20 (1).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1VANkqln6IgIxhgRWOFK_petLA61xQ_UN&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1VANkqln6IgIxhgRWOFK_petLA61xQ_UN/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1VANkqln6IgIxhgRWOFK_petLA61xQ_UN",
+            "maskId": null,
+            "maskName": null
+          },
+          {
+            "id": "1Co_7sYbBj4FHS0ecGhgd86NiD4nVixAA",
+            "name": "x20 (2).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Co_7sYbBj4FHS0ecGhgd86NiD4nVixAA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Co_7sYbBj4FHS0ecGhgd86NiD4nVixAA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Co_7sYbBj4FHS0ecGhgd86NiD4nVixAA",
+            "maskId": "1RCMwPm8zAlcbdiu5SoAu2UpmDfAqndBq",
+            "maskName": "x20 (2).png"
+          },
+          {
+            "id": "1-6ByNNhI2GurftQPqmaMuEYpZzn3BAg7",
+            "name": "x20 (3).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-6ByNNhI2GurftQPqmaMuEYpZzn3BAg7&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-6ByNNhI2GurftQPqmaMuEYpZzn3BAg7/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-6ByNNhI2GurftQPqmaMuEYpZzn3BAg7",
+            "maskId": "1hcr70osD45VbXVz354ck-aQ87IpPSh_h",
+            "maskName": "x20 (3).png"
+          },
+          {
+            "id": "1-55S6sWukEVOJ2TiX99IkHyOhjijJ7jV",
+            "name": "x20 (4).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-55S6sWukEVOJ2TiX99IkHyOhjijJ7jV&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-55S6sWukEVOJ2TiX99IkHyOhjijJ7jV/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-55S6sWukEVOJ2TiX99IkHyOhjijJ7jV",
+            "maskId": "19BHWpw0PiSnzm2Wh1wKqvUn8D9mTdvz-",
+            "maskName": "x20 (4).png"
+          },
+          {
+            "id": "1-AJlFAmi8ZRWftCaXEnfGyd6p8BnpRgB",
+            "name": "x20 (5).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-AJlFAmi8ZRWftCaXEnfGyd6p8BnpRgB&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-AJlFAmi8ZRWftCaXEnfGyd6p8BnpRgB/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-AJlFAmi8ZRWftCaXEnfGyd6p8BnpRgB",
+            "maskId": "1Qo993wRKJulZ1xrJ3kSaukHEfFSn4oxe",
+            "maskName": "x20 (5).png"
+          },
+          {
+            "id": "1-8jnlacGaEZTQlF0zgVtv0mmetCww4ye",
+            "name": "x20 (6).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-8jnlacGaEZTQlF0zgVtv0mmetCww4ye&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-8jnlacGaEZTQlF0zgVtv0mmetCww4ye/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-8jnlacGaEZTQlF0zgVtv0mmetCww4ye",
+            "maskId": "1PRGmBP8VpxhCLpAtWnAxXUBUq-8KHVyr",
+            "maskName": "x20 (6).png"
+          },
+          {
+            "id": "1-GglqfmpapCNqQgnQHo4yqQxEFKP0guo",
+            "name": "x20 (7).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-GglqfmpapCNqQgnQHo4yqQxEFKP0guo&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-GglqfmpapCNqQgnQHo4yqQxEFKP0guo/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-GglqfmpapCNqQgnQHo4yqQxEFKP0guo",
+            "maskId": "1G5fUMS_56BpvoOkcEgIz01pH3EqFDldp",
+            "maskName": "x20 (7).png"
+          },
+          {
+            "id": "1-BXF37j1_I7Ss1I6XCAyN9zeJTAoG7Hc",
+            "name": "x20 (8).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-BXF37j1_I7Ss1I6XCAyN9zeJTAoG7Hc&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-BXF37j1_I7Ss1I6XCAyN9zeJTAoG7Hc/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-BXF37j1_I7Ss1I6XCAyN9zeJTAoG7Hc",
+            "maskId": "1fnKR51r2PQfZsxh-Z1tlPW0icvI5oJth",
+            "maskName": "x20 (8).png"
+          },
+          {
+            "id": "1-Ig9zZJgVeclh0FixnsRLQa1aqqszPbA",
+            "name": "x20 (9).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-Ig9zZJgVeclh0FixnsRLQa1aqqszPbA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-Ig9zZJgVeclh0FixnsRLQa1aqqszPbA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-Ig9zZJgVeclh0FixnsRLQa1aqqszPbA",
+            "maskId": "1pm0BoNRu1zi8AigloKU8gMSX61F2gXUl",
+            "maskName": "x20 (9).png"
+          },
+          {
+            "id": "1zd9DqYP86FATAUclct6a05pcwfUA6cfU",
+            "name": "x20 (10).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zd9DqYP86FATAUclct6a05pcwfUA6cfU&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zd9DqYP86FATAUclct6a05pcwfUA6cfU/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zd9DqYP86FATAUclct6a05pcwfUA6cfU",
+            "maskId": "1HWN0FoZ-RqpAH4RWXJnHcbggklI7Qoyb",
+            "maskName": "x20 (10).png"
+          },
+          {
+            "id": "1zil1AmDOlO1oV_EgWvYhd56iVEqlBPrn",
+            "name": "x20 (11).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zil1AmDOlO1oV_EgWvYhd56iVEqlBPrn&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zil1AmDOlO1oV_EgWvYhd56iVEqlBPrn/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zil1AmDOlO1oV_EgWvYhd56iVEqlBPrn",
+            "maskId": "1MI2FeLnzdCzCt3W53HDhtQ_b7QBxQ2zk",
+            "maskName": "x20 (11).png"
+          },
+          {
+            "id": "1ziDFD72gxBVMfGgRL9B7UBkGuIeCW3CD",
+            "name": "x20 (12).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ziDFD72gxBVMfGgRL9B7UBkGuIeCW3CD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ziDFD72gxBVMfGgRL9B7UBkGuIeCW3CD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ziDFD72gxBVMfGgRL9B7UBkGuIeCW3CD",
+            "maskId": "1bc1nevH2XTkuUUJx9IA25EoOfl3kuL54",
+            "maskName": "x20 (12).png"
+          },
+          {
+            "id": "1zmjwXYtTXy5U0zSg5TgixZ7eEGAXdTmt",
+            "name": "x20 (13).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zmjwXYtTXy5U0zSg5TgixZ7eEGAXdTmt&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zmjwXYtTXy5U0zSg5TgixZ7eEGAXdTmt/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zmjwXYtTXy5U0zSg5TgixZ7eEGAXdTmt",
+            "maskId": "1GAA1ttVVBu6P4fEae_hJwDS2tSf-gQkA",
+            "maskName": "x20 (13).png"
+          },
+          {
+            "id": "1zlSi7xEWq0PLtZAlOoMcqRYIbrXdy9jf",
+            "name": "x20 (14).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zlSi7xEWq0PLtZAlOoMcqRYIbrXdy9jf&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zlSi7xEWq0PLtZAlOoMcqRYIbrXdy9jf/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zlSi7xEWq0PLtZAlOoMcqRYIbrXdy9jf",
+            "maskId": "1sULSiEIwNeFtRPzlmk-ol1IGnHqwzOaW",
+            "maskName": "x20 (14).png"
+          },
+          {
+            "id": "1ztkQfjFyLeqgCvOM8qwHQRtRghBxAeKv",
+            "name": "x20 (15).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ztkQfjFyLeqgCvOM8qwHQRtRghBxAeKv&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ztkQfjFyLeqgCvOM8qwHQRtRghBxAeKv/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ztkQfjFyLeqgCvOM8qwHQRtRghBxAeKv",
+            "maskId": "1qElHzGdNmM7LnG8hNWKnrGwgTdJyScZ1",
+            "maskName": "x20 (15).png"
+          },
+          {
+            "id": "1ztdR53h20LjI7YD_Zhlyw99fi9Wu5C1f",
+            "name": "x20 (16).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1ztdR53h20LjI7YD_Zhlyw99fi9Wu5C1f&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1ztdR53h20LjI7YD_Zhlyw99fi9Wu5C1f/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ztdR53h20LjI7YD_Zhlyw99fi9Wu5C1f",
+            "maskId": "1Z8ljJro-k3SOuTvH3ogd_vfZT3NQNpa8",
+            "maskName": "x20 (16).png"
+          },
+          {
+            "id": "1zznt1dHoEog-1-oPGyiVBCD4eKkQm09P",
+            "name": "x20 (17).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zznt1dHoEog-1-oPGyiVBCD4eKkQm09P&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zznt1dHoEog-1-oPGyiVBCD4eKkQm09P/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zznt1dHoEog-1-oPGyiVBCD4eKkQm09P",
+            "maskId": "1RyrtDyvATvUWZAcjeCo4rf38p7e8huGm",
+            "maskName": "x20 (17).png"
+          },
+          {
+            "id": "1zxKXDy8iIX0WZz79VlfZIu0a-VyYwiNj",
+            "name": "x20 (18).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1zxKXDy8iIX0WZz79VlfZIu0a-VyYwiNj&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1zxKXDy8iIX0WZz79VlfZIu0a-VyYwiNj/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1zxKXDy8iIX0WZz79VlfZIu0a-VyYwiNj",
+            "maskId": "1YxENZj6Iwn-wZYa1hszMWFolpCxkhaVD",
+            "maskName": "x20 (18).png"
+          },
+          {
+            "id": "1w6WxNOBM4bz6TqEyyEXzvQpALPb_-7cK",
+            "name": "x20 (19).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1w6WxNOBM4bz6TqEyyEXzvQpALPb_-7cK&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1w6WxNOBM4bz6TqEyyEXzvQpALPb_-7cK/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1w6WxNOBM4bz6TqEyyEXzvQpALPb_-7cK",
+            "maskId": "1xXT8NAwEWnKoeob_MSw6ARphB0OCAk_Y",
+            "maskName": "x20 (19).png"
+          },
+          {
+            "id": "1-47Wd5RoThrSi4yxT2UID_HceohUOc1v",
+            "name": "x20 (20).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-47Wd5RoThrSi4yxT2UID_HceohUOc1v&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-47Wd5RoThrSi4yxT2UID_HceohUOc1v/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-47Wd5RoThrSi4yxT2UID_HceohUOc1v",
+            "maskId": "1pLMm2pKJcJGYSL1nUNoaK3-vRmjCq8Gt",
+            "maskName": "x20 (20).png"
+          },
+          {
+            "id": "1-3Gl_JvrXTm74FtSjUpcYxF4t7O1WF_u",
+            "name": "x20 (21).jpg",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1-3Gl_JvrXTm74FtSjUpcYxF4t7O1WF_u&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1-3Gl_JvrXTm74FtSjUpcYxF4t7O1WF_u/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1-3Gl_JvrXTm74FtSjUpcYxF4t7O1WF_u",
+            "maskId": "127BA9zWdTtsgFnjzvEk1BVfyYhZPyF_V",
+            "maskName": "x20 (21).png"
+          }
+        ],
+        "masks": [
+          {
+            "id": "1Hd56mrfDm3fvmQd86yV-AEPGmzFdSYPa",
+            "name": "x20 (1).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Hd56mrfDm3fvmQd86yV-AEPGmzFdSYPa&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Hd56mrfDm3fvmQd86yV-AEPGmzFdSYPa/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Hd56mrfDm3fvmQd86yV-AEPGmzFdSYPa"
+          },
+          {
+            "id": "1RCMwPm8zAlcbdiu5SoAu2UpmDfAqndBq",
+            "name": "x20 (2).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RCMwPm8zAlcbdiu5SoAu2UpmDfAqndBq&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1RCMwPm8zAlcbdiu5SoAu2UpmDfAqndBq/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1RCMwPm8zAlcbdiu5SoAu2UpmDfAqndBq"
+          },
+          {
+            "id": "1hcr70osD45VbXVz354ck-aQ87IpPSh_h",
+            "name": "x20 (3).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1hcr70osD45VbXVz354ck-aQ87IpPSh_h&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1hcr70osD45VbXVz354ck-aQ87IpPSh_h/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1hcr70osD45VbXVz354ck-aQ87IpPSh_h"
+          },
+          {
+            "id": "19BHWpw0PiSnzm2Wh1wKqvUn8D9mTdvz-",
+            "name": "x20 (4).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=19BHWpw0PiSnzm2Wh1wKqvUn8D9mTdvz-&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/19BHWpw0PiSnzm2Wh1wKqvUn8D9mTdvz-/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=19BHWpw0PiSnzm2Wh1wKqvUn8D9mTdvz-"
+          },
+          {
+            "id": "1Qo993wRKJulZ1xrJ3kSaukHEfFSn4oxe",
+            "name": "x20 (5).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Qo993wRKJulZ1xrJ3kSaukHEfFSn4oxe&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Qo993wRKJulZ1xrJ3kSaukHEfFSn4oxe/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Qo993wRKJulZ1xrJ3kSaukHEfFSn4oxe"
+          },
+          {
+            "id": "1PRGmBP8VpxhCLpAtWnAxXUBUq-8KHVyr",
+            "name": "x20 (6).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1PRGmBP8VpxhCLpAtWnAxXUBUq-8KHVyr&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1PRGmBP8VpxhCLpAtWnAxXUBUq-8KHVyr/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1PRGmBP8VpxhCLpAtWnAxXUBUq-8KHVyr"
+          },
+          {
+            "id": "1G5fUMS_56BpvoOkcEgIz01pH3EqFDldp",
+            "name": "x20 (7).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1G5fUMS_56BpvoOkcEgIz01pH3EqFDldp&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1G5fUMS_56BpvoOkcEgIz01pH3EqFDldp/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1G5fUMS_56BpvoOkcEgIz01pH3EqFDldp"
+          },
+          {
+            "id": "1fnKR51r2PQfZsxh-Z1tlPW0icvI5oJth",
+            "name": "x20 (8).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1fnKR51r2PQfZsxh-Z1tlPW0icvI5oJth&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1fnKR51r2PQfZsxh-Z1tlPW0icvI5oJth/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1fnKR51r2PQfZsxh-Z1tlPW0icvI5oJth"
+          },
+          {
+            "id": "1pm0BoNRu1zi8AigloKU8gMSX61F2gXUl",
+            "name": "x20 (9).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pm0BoNRu1zi8AigloKU8gMSX61F2gXUl&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pm0BoNRu1zi8AigloKU8gMSX61F2gXUl/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pm0BoNRu1zi8AigloKU8gMSX61F2gXUl"
+          },
+          {
+            "id": "1HWN0FoZ-RqpAH4RWXJnHcbggklI7Qoyb",
+            "name": "x20 (10).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1HWN0FoZ-RqpAH4RWXJnHcbggklI7Qoyb&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1HWN0FoZ-RqpAH4RWXJnHcbggklI7Qoyb/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1HWN0FoZ-RqpAH4RWXJnHcbggklI7Qoyb"
+          },
+          {
+            "id": "1MI2FeLnzdCzCt3W53HDhtQ_b7QBxQ2zk",
+            "name": "x20 (11).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1MI2FeLnzdCzCt3W53HDhtQ_b7QBxQ2zk&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1MI2FeLnzdCzCt3W53HDhtQ_b7QBxQ2zk/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1MI2FeLnzdCzCt3W53HDhtQ_b7QBxQ2zk"
+          },
+          {
+            "id": "1bc1nevH2XTkuUUJx9IA25EoOfl3kuL54",
+            "name": "x20 (12).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1bc1nevH2XTkuUUJx9IA25EoOfl3kuL54&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1bc1nevH2XTkuUUJx9IA25EoOfl3kuL54/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bc1nevH2XTkuUUJx9IA25EoOfl3kuL54"
+          },
+          {
+            "id": "1GAA1ttVVBu6P4fEae_hJwDS2tSf-gQkA",
+            "name": "x20 (13).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1GAA1ttVVBu6P4fEae_hJwDS2tSf-gQkA&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1GAA1ttVVBu6P4fEae_hJwDS2tSf-gQkA/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GAA1ttVVBu6P4fEae_hJwDS2tSf-gQkA"
+          },
+          {
+            "id": "1sULSiEIwNeFtRPzlmk-ol1IGnHqwzOaW",
+            "name": "x20 (14).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1sULSiEIwNeFtRPzlmk-ol1IGnHqwzOaW&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1sULSiEIwNeFtRPzlmk-ol1IGnHqwzOaW/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1sULSiEIwNeFtRPzlmk-ol1IGnHqwzOaW"
+          },
+          {
+            "id": "1qElHzGdNmM7LnG8hNWKnrGwgTdJyScZ1",
+            "name": "x20 (15).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1qElHzGdNmM7LnG8hNWKnrGwgTdJyScZ1&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1qElHzGdNmM7LnG8hNWKnrGwgTdJyScZ1/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qElHzGdNmM7LnG8hNWKnrGwgTdJyScZ1"
+          },
+          {
+            "id": "1Z8ljJro-k3SOuTvH3ogd_vfZT3NQNpa8",
+            "name": "x20 (16).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1Z8ljJro-k3SOuTvH3ogd_vfZT3NQNpa8&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1Z8ljJro-k3SOuTvH3ogd_vfZT3NQNpa8/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Z8ljJro-k3SOuTvH3ogd_vfZT3NQNpa8"
+          },
+          {
+            "id": "1RyrtDyvATvUWZAcjeCo4rf38p7e8huGm",
+            "name": "x20 (17).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1RyrtDyvATvUWZAcjeCo4rf38p7e8huGm&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1RyrtDyvATvUWZAcjeCo4rf38p7e8huGm/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1RyrtDyvATvUWZAcjeCo4rf38p7e8huGm"
+          },
+          {
+            "id": "1YxENZj6Iwn-wZYa1hszMWFolpCxkhaVD",
+            "name": "x20 (18).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1YxENZj6Iwn-wZYa1hszMWFolpCxkhaVD&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1YxENZj6Iwn-wZYa1hszMWFolpCxkhaVD/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1YxENZj6Iwn-wZYa1hszMWFolpCxkhaVD"
+          },
+          {
+            "id": "1xXT8NAwEWnKoeob_MSw6ARphB0OCAk_Y",
+            "name": "x20 (19).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1xXT8NAwEWnKoeob_MSw6ARphB0OCAk_Y&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1xXT8NAwEWnKoeob_MSw6ARphB0OCAk_Y/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1xXT8NAwEWnKoeob_MSw6ARphB0OCAk_Y"
+          },
+          {
+            "id": "1pLMm2pKJcJGYSL1nUNoaK3-vRmjCq8Gt",
+            "name": "x20 (20).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=1pLMm2pKJcJGYSL1nUNoaK3-vRmjCq8Gt&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/1pLMm2pKJcJGYSL1nUNoaK3-vRmjCq8Gt/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=1pLMm2pKJcJGYSL1nUNoaK3-vRmjCq8Gt"
+          },
+          {
+            "id": "127BA9zWdTtsgFnjzvEk1BVfyYhZPyF_V",
+            "name": "x20 (21).png",
+            "thumbnailUrl": "https://drive.google.com/thumbnail?id=127BA9zWdTtsgFnjzvEk1BVfyYhZPyF_V&sz=w1000",
+            "viewUrl": "https://drive.google.com/file/d/127BA9zWdTtsgFnjzvEk1BVfyYhZPyF_V/view?usp=drive_link",
+            "downloadUrl": "https://drive.google.com/uc?export=download&id=127BA9zWdTtsgFnjzvEk1BVfyYhZPyF_V"
+          }
+        ],
+        "pairCount": 21,
+        "originalCount": 22,
+        "maskCount": 21,
+        "hasMaskPairs": true,
+        "notes": "Pairs matched by filename index/magnification heuristics from Drive structure."
       }
     }
   ],
-  "driveStructureNote": "Root links contain originals; processed subfolders (where present) contain processed/annotation outputs and can include full masks."
+  "driveStructureNote": "Root links contain originals; processed subfolders (where present) contain processed/annotation outputs and can include full masks.",
+  "gallerySummary": {
+    "totalOriginals": 191,
+    "totalMasks": 128,
+    "totalPairs": 128
+  }
 }

@@ -88,7 +88,7 @@
     <section class="panel" id="explorer">
       <div class="panel-head reveal">
         <h2>Section-by-Section Explorer</h2>
-        <p>Browse each AMAM subset, inspect representative images, and zoom to benchmark-level detail.</p>
+        <p>Browse all images in each category via an automatic horizontal rotating panel, then click any frame to compare original versus mask.</p>
       </div>
 
       <div class="controls reveal">
@@ -120,19 +120,31 @@
     <p>AMAM Dataset • Built for benchmark publication and reproducible segmentation evaluation.</p>
   </footer>
 
-  <dialog id="lightbox" class="lightbox" aria-label="Image viewer">
-    <form method="dialog" class="lightbox-backdrop">
-      <button class="lightbox-close" aria-label="Close image viewer" value="cancel" type="submit">×</button>
+  <dialog id="compareModal" class="compare-modal" aria-label="Original and mask comparison">
+    <form method="dialog" class="compare-backdrop">
+      <button class="compare-close" aria-label="Close comparison" value="cancel" type="submit">×</button>
     </form>
-    <div class="lightbox-content">
-      <button id="lightboxPrev" class="lightbox-nav" type="button" aria-label="Previous image">‹</button>
-      <figure>
-        <img id="lightboxImage" alt="Expanded microstructure preview">
-        <figcaption id="lightboxCaption"></figcaption>
-      </figure>
-      <button id="lightboxNext" class="lightbox-nav" type="button" aria-label="Next image">›</button>
+    <div class="compare-header">
+      <h3 id="compareTitle">Image Compare</h3>
     </div>
-    <div class="lightbox-props" id="lightboxProps"></div>
+    <div class="compare-grid">
+      <figure class="compare-pane">
+        <img id="compareOriginalImage" alt="Original dataset image">
+        <figcaption>Original</figcaption>
+      </figure>
+      <figure class="compare-pane" id="compareMaskPane">
+        <img id="compareMaskImage" alt="Mask image">
+        <figcaption>Mask</figcaption>
+      </figure>
+      <div class="compare-empty" id="compareNoMask">No paired mask detected for this image.</div>
+    </div>
+    <div class="compare-meta" id="compareMeta"></div>
+    <div class="compare-actions">
+      <a id="compareOpenOriginal" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="#">Open Original</a>
+      <a id="compareDownloadOriginal" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="#">Download Original</a>
+      <a id="compareOpenMask" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="#">Open Mask</a>
+      <a id="compareDownloadMask" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="#">Download Mask</a>
+    </div>
   </dialog>
 
   <script src="assets/js/app.js" defer></script>

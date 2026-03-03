@@ -2,8 +2,8 @@
   const state = {
     dataset: null,
     filteredSubsets: [],
-    visibleSamples: [],
-    lightboxIndex: 0
+    compareLookup: new Map(),
+    carouselTimers: []
   };
 
   const els = {
@@ -22,12 +22,17 @@
     downloadCategoryBtn: document.getElementById("downloadCategoryBtn"),
     downloadAllBtn: document.getElementById("downloadAllBtn"),
     downloadManifestBtn: document.getElementById("downloadManifestBtn"),
-    lightbox: document.getElementById("lightbox"),
-    lightboxImage: document.getElementById("lightboxImage"),
-    lightboxCaption: document.getElementById("lightboxCaption"),
-    lightboxProps: document.getElementById("lightboxProps"),
-    lightboxPrev: document.getElementById("lightboxPrev"),
-    lightboxNext: document.getElementById("lightboxNext")
+    compareModal: document.getElementById("compareModal"),
+    compareTitle: document.getElementById("compareTitle"),
+    compareOriginalImage: document.getElementById("compareOriginalImage"),
+    compareMaskImage: document.getElementById("compareMaskImage"),
+    compareMaskPane: document.getElementById("compareMaskPane"),
+    compareNoMask: document.getElementById("compareNoMask"),
+    compareMeta: document.getElementById("compareMeta"),
+    compareOpenOriginal: document.getElementById("compareOpenOriginal"),
+    compareDownloadOriginal: document.getElementById("compareDownloadOriginal"),
+    compareOpenMask: document.getElementById("compareOpenMask"),
+    compareDownloadMask: document.getElementById("compareDownloadMask")
   };
 
   const observer = new IntersectionObserver(
@@ -54,17 +59,30 @@
     scope.querySelectorAll(".reveal").forEach(node => observer.observe(node));
   }
 
+  function hiResThumbnail(url) {
+    if (!url) {
+      return "";
+    }
+    return url.replace("sz=w1000", "sz=w1800");
+  }
+
   function initStaticContent(dataset) {
     document.title = `${dataset.shortName} Dataset Benchmark`;
     els.heroTitle.textContent = dataset.name;
     els.heroOverview.textContent = dataset.overview;
 
+    const g = dataset.gallerySummary || {
+      totalOriginals: dataset.totalImages,
+      totalMasks: 0,
+      totalPairs: 0
+    };
+
     els.summaryStats.innerHTML = `
       <div class="summary-grid">
-        <article class="stat-card"><span class="stat-value">${dataset.totalImages}</span><span class="stat-label">Fully labeled images</span></article>
+        <article class="stat-card"><span class="stat-value">${dataset.totalImages}</span><span class="stat-label">Benchmark full labels (paper)</span></article>
         <article class="stat-card"><span class="stat-value">${dataset.totalSubsets}</span><span class="stat-label">Dataset subsets</span></article>
-        <article class="stat-card"><span class="stat-value">${dataset.materialFamilies.length}</span><span class="stat-label">Material families</span></article>
-        <article class="stat-card"><span class="stat-value">${dataset.method.tool}</span><span class="stat-label">Annotation platform</span></article>
+        <article class="stat-card"><span class="stat-value">${g.totalOriginals}</span><span class="stat-label">Root/original images exposed</span></article>
+        <article class="stat-card"><span class="stat-value">${g.totalPairs}</span><span class="stat-label">Detected original-mask pairs</span></article>
       </div>
     `;
 
@@ -113,6 +131,7 @@
     if (children.length === 0) {
       return "";
     }
+
     return `
       <ul class="drive-tree">
         ${children
@@ -248,67 +267,139 @@
       .join("");
   }
 
+  function clearCarouselTimers() {
+    state.carouselTimers.forEach(timer => clearInterval(timer));
+    state.carouselTimers = [];
+  }
+
+  function moveCarousel(viewport, direction) {
+    const firstSlide = viewport.querySelector(".carousel-slide");
+    if (!firstSlide) {
+      return;
+    }
+
+    const track = viewport.querySelector(".carousel-track");
+    const gap = Number.parseFloat(window.getComputedStyle(track).columnGap || window.getComputedStyle(track).gap || "0") || 0;
+    const step = firstSlide.offsetWidth + gap;
+
+    if (direction > 0) {
+      const atEnd = viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - step * 0.5;
+      if (atEnd) {
+        viewport.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        viewport.scrollBy({ left: step, behavior: "smooth" });
+      }
+    } else {
+      if (viewport.scrollLeft <= step * 0.3) {
+        viewport.scrollTo({ left: Math.max(0, viewport.scrollWidth - viewport.clientWidth), behavior: "smooth" });
+      } else {
+        viewport.scrollBy({ left: -step, behavior: "smooth" });
+      }
+    }
+  }
+
+  function initCarousels() {
+    clearCarouselTimers();
+
+    els.subsetContainer.querySelectorAll(".js-carousel-shell").forEach(shell => {
+      const viewport = shell.querySelector(".js-carousel");
+      const nextBtn = shell.querySelector(".js-carousel-next");
+      const prevBtn = shell.querySelector(".js-carousel-prev");
+      if (!viewport) {
+        return;
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => moveCarousel(viewport, 1));
+      }
+      if (prevBtn) {
+        prevBtn.addEventListener("click", () => moveCarousel(viewport, -1));
+      }
+
+      let paused = false;
+      viewport.addEventListener("mouseenter", () => {
+        paused = true;
+      });
+      viewport.addEventListener("mouseleave", () => {
+        paused = false;
+      });
+      viewport.addEventListener("focusin", () => {
+        paused = true;
+      });
+      viewport.addEventListener("focusout", () => {
+        paused = false;
+      });
+
+      const timer = setInterval(() => {
+        if (!paused) {
+          moveCarousel(viewport, 1);
+        }
+      }, 2800);
+
+      state.carouselTimers.push(timer);
+    });
+  }
+
+  function buildGalleryFallback(subset) {
+    const originals = (subset.samples || []).map(sample => ({
+      id: sample.id,
+      name: sample.title,
+      thumbnailUrl: sample.image,
+      viewUrl: sample.image,
+      downloadUrl: sample.image,
+      maskId: null,
+      maskName: null
+    }));
+
+    return {
+      originals,
+      masks: [],
+      pairCount: 0,
+      originalCount: originals.length,
+      maskCount: 0,
+      hasMaskPairs: false,
+      notes: "Fallback gallery from local representative samples."
+    };
+  }
+
   function renderSubsets(subsets) {
+    state.compareLookup.clear();
+
     if (subsets.length === 0) {
-      state.visibleSamples = [];
+      clearCarouselTimers();
       els.subsetContainer.innerHTML =
         '<article class="subset"><h3>No matching subsets</h3><p>Try broadening the filters or removing search terms.</p></article>';
       return;
     }
 
-    const sampleRefs = [];
     const markup = subsets
       .map(subset => {
+        const gallery = subset.gallery || buildGalleryFallback(subset);
+        const masksById = new Map((gallery.masks || []).map(item => [item.id, item]));
         const processed = findProcessedFolder(subset.driveTree);
         const rootUrl = subset.driveTree?.url || subset.downloadUrl;
-        const subsetHeader = `
-          <header class="subset-head">
-            <div>
-              <h3>${escapeHtml(subset.material)}</h3>
-              <div class="subset-meta">
-                <span class="badge">${subset.images} images</span>
-                <span class="badge">${escapeHtml(subset.family)}</span>
-                <span class="badge">${escapeHtml(subset.condition)}</span>
-                <span class="badge">${escapeHtml(subset.magnification)}</span>
-              </div>
-            </div>
-            <div class="subset-actions">
-              <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
-              ${
-                processed
-                  ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
-                  : `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(subset.downloadUrl)}">Open Category</a>`
-              }
-            </div>
-          </header>
-          <p>${escapeHtml(subset.description)}</p>
-          <p><strong>Annotation notes:</strong> ${escapeHtml(subset.annotationNotes)}</p>
-          <p><strong>Phase classes:</strong> ${subset.phases.map(phase => escapeHtml(phase)).join(", ")}</p>
-        `;
 
-        const sampleCards = subset.samples
-          .map(sample => {
-            const index = sampleRefs.push({ subset, sample }) - 1;
-            const propMarkup = Object.entries(sample.properties)
-              .slice(0, 5)
-              .map(
-                ([key, value]) =>
-                  `<div><dt>${escapeHtml(key)}</dt><dd>${escapeHtml(value)}</dd></div>`
-              )
-              .join("");
+        const slides = (gallery.originals || [])
+          .map(original => {
+            const compareKey = `${subset.id}::${original.id}`;
+            const mask = original.maskId ? masksById.get(original.maskId) || null : null;
+            state.compareLookup.set(compareKey, { subset, original, mask });
+
+            const source = original.thumbnailUrl || original.image;
+            const label = original.name || original.title || original.id;
+            const tag = mask
+              ? '<span class="pair-tag mask">Mask Pair Available</span>'
+              : '<span class="pair-tag nomask">No Paired Mask</span>';
 
             return `
-              <article class="sample-card">
-                <img src="${escapeHtml(sample.image)}" alt="${escapeHtml(sample.title)}" data-sample-index="${index}" class="js-open-lightbox">
-                <div class="sample-body">
-                  <h4>${escapeHtml(sample.title)}</h4>
-                  <span class="sample-kind">${escapeHtml(sample.kind)}</span>
-                  <dl class="props">${propMarkup}</dl>
-                  <div class="sample-actions">
-                    <button type="button" class="btn btn-ghost js-open-lightbox" data-sample-index="${index}">Enlarge</button>
-                    <a class="btn btn-ghost" href="${escapeHtml(sample.image)}" download>Download Sample</a>
+              <article class="carousel-slide">
+                <button type="button" class="carousel-card js-open-compare" data-compare-key="${escapeHtml(compareKey)}">
+                  <img src="${escapeHtml(source)}" alt="${escapeHtml(label)}" loading="lazy">
+                  <div class="carousel-caption">
+                    <strong>${escapeHtml(label)}</strong>
+                    ${tag}
                   </div>
-                </div>
+                </button>
               </article>
             `;
           })
@@ -316,26 +407,56 @@
 
         return `
           <section id="subset-${escapeHtml(subset.id)}" class="subset reveal">
-            ${subsetHeader}
-            <div class="sample-grid">${sampleCards}</div>
+            <header class="subset-head">
+              <div>
+                <h3>${escapeHtml(subset.material)}</h3>
+                <div class="subset-meta">
+                  <span class="badge">${subset.images} images (paper)</span>
+                  <span class="badge">${escapeHtml(subset.family)}</span>
+                  <span class="badge">${escapeHtml(subset.condition)}</span>
+                  <span class="badge">${escapeHtml(subset.magnification)}</span>
+                </div>
+              </div>
+              <div class="subset-actions">
+                <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
+                ${
+                  processed
+                    ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
+                    : `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(subset.downloadUrl)}">Open Category</a>`
+                }
+              </div>
+            </header>
+            <p>${escapeHtml(subset.description)}</p>
+            <p><strong>Annotation notes:</strong> ${escapeHtml(subset.annotationNotes)}</p>
+            <p><strong>Phase classes:</strong> ${subset.phases.map(phase => escapeHtml(phase)).join(", ")}</p>
+            <p class="category-gallery-meta">Showing ${gallery.originalCount} originals, ${gallery.maskCount} masks, ${gallery.pairCount} matched pairs. ${escapeHtml(gallery.notes || "")}</p>
+
+            <div class="carousel-shell js-carousel-shell">
+              <button type="button" class="carousel-btn js-carousel-prev" aria-label="Previous images">‹</button>
+              <div class="carousel-viewport js-carousel" tabindex="0" aria-label="${escapeHtml(subset.material)} rotating image panel">
+                <div class="carousel-track">
+                  ${slides}
+                </div>
+              </div>
+              <button type="button" class="carousel-btn js-carousel-next" aria-label="Next images">›</button>
+            </div>
           </section>
         `;
       })
       .join("");
 
-    state.visibleSamples = sampleRefs;
     els.subsetContainer.innerHTML = markup;
 
-    els.subsetContainer.querySelectorAll(".js-open-lightbox").forEach(node => {
+    els.subsetContainer.querySelectorAll(".js-open-compare").forEach(node => {
       node.addEventListener("click", event => {
-        const target = event.currentTarget;
-        const index = Number(target.getAttribute("data-sample-index"));
-        if (!Number.isNaN(index)) {
-          openLightbox(index);
+        const key = event.currentTarget.getAttribute("data-compare-key");
+        if (key) {
+          openCompare(key);
         }
       });
     });
 
+    initCarousels();
     observeReveals(els.subsetContainer);
   }
 
@@ -346,43 +467,54 @@
     renderSubsets(state.filteredSubsets);
   }
 
-  function fillLightbox(index) {
-    const entry = state.visibleSamples[index];
+  function openCompare(compareKey) {
+    const entry = state.compareLookup.get(compareKey);
     if (!entry) {
       return;
     }
 
-    const { subset, sample } = entry;
-    const caption = `${sample.title} • ${subset.material} • ${sample.kind}`;
+    const { subset, original, mask } = entry;
 
-    els.lightboxImage.src = sample.image;
-    els.lightboxImage.alt = sample.title;
-    els.lightboxCaption.textContent = caption;
+    const originalTitle = original.name || original.title || original.id;
+    const maskTitle = mask?.name || "No paired mask";
 
-    els.lightboxProps.innerHTML = Object.entries(sample.properties)
-      .map(
-        ([key, value]) =>
-          `<div><strong>${escapeHtml(key)}:</strong> ${escapeHtml(value)}</div>`
-      )
-      .join("");
+    els.compareTitle.textContent = `${subset.material} • ${subset.magnification} • ${originalTitle}`;
+    els.compareOriginalImage.src = hiResThumbnail(original.thumbnailUrl || original.image || "");
+    els.compareOriginalImage.alt = originalTitle;
 
-    state.lightboxIndex = index;
-  }
+    const originalView = original.viewUrl || original.thumbnailUrl || original.image || "#";
+    const originalDownload = original.downloadUrl || original.thumbnailUrl || original.image || "#";
+    els.compareOpenOriginal.href = originalView;
+    els.compareDownloadOriginal.href = originalDownload;
 
-  function openLightbox(index) {
-    fillLightbox(index);
-    if (!els.lightbox.open) {
-      els.lightbox.showModal();
+    if (mask) {
+      els.compareMaskPane.style.display = "";
+      els.compareNoMask.classList.remove("show");
+      els.compareMaskImage.src = hiResThumbnail(mask.thumbnailUrl || "");
+      els.compareMaskImage.alt = maskTitle;
+      els.compareOpenMask.hidden = false;
+      els.compareDownloadMask.hidden = false;
+      els.compareOpenMask.href = mask.viewUrl || mask.thumbnailUrl || "#";
+      els.compareDownloadMask.href = mask.downloadUrl || mask.thumbnailUrl || "#";
+    } else {
+      els.compareMaskPane.style.display = "none";
+      els.compareNoMask.classList.add("show");
+      els.compareMaskImage.src = "";
+      els.compareOpenMask.hidden = true;
+      els.compareDownloadMask.hidden = true;
+      els.compareOpenMask.href = "#";
+      els.compareDownloadMask.href = "#";
     }
-  }
 
-  function navLightbox(step) {
-    if (state.visibleSamples.length === 0) {
-      return;
+    els.compareMeta.innerHTML = `
+      <div><strong>Subset:</strong> ${escapeHtml(subset.material)} (${escapeHtml(subset.condition)}, ${escapeHtml(subset.magnification)})</div>
+      <div><strong>Original:</strong> ${escapeHtml(originalTitle)}</div>
+      <div><strong>Mask:</strong> ${escapeHtml(maskTitle)}</div>
+    `;
+
+    if (!els.compareModal.open) {
+      els.compareModal.showModal();
     }
-    const total = state.visibleSamples.length;
-    const next = (state.lightboxIndex + step + total) % total;
-    fillLightbox(next);
   }
 
   function bindEvents() {
@@ -399,11 +531,18 @@
     });
 
     els.downloadAllBtn.addEventListener("click", () => {
-      const urls = state.dataset.downloads.categories.map(item => item.url);
+      const urls = [];
+      state.dataset.downloads.categories.forEach(item => {
+        urls.push(item.rootUrl || item.url);
+        if (item.processedUrl) {
+          urls.push(item.processedUrl);
+        }
+      });
+
       urls.forEach((url, index) => {
         setTimeout(() => {
           window.open(url, "_blank", "noopener,noreferrer");
-        }, index * 180);
+        }, index * 170);
       });
     });
 
@@ -421,21 +560,12 @@
       setTimeout(() => URL.revokeObjectURL(blobUrl), 800);
     });
 
-    els.lightboxPrev.addEventListener("click", () => navLightbox(-1));
-    els.lightboxNext.addEventListener("click", () => navLightbox(1));
-
     document.addEventListener("keydown", event => {
-      if (!els.lightbox.open) {
+      if (!els.compareModal.open) {
         return;
       }
-      if (event.key === "ArrowRight") {
-        navLightbox(1);
-      }
-      if (event.key === "ArrowLeft") {
-        navLightbox(-1);
-      }
       if (event.key === "Escape") {
-        els.lightbox.close();
+        els.compareModal.close();
       }
     });
   }
