@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AMAM benchmark report: why this dataset is a strong benchmark for metallography segmentation.">
+  <title>AMAM Benchmark Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-shell">
+      <a href="index.html#top" class="brand" aria-label="AMAM Home">
+        <span class="brand-mark">AM</span>
+        <span class="brand-text">AMAM Benchmark Dataset</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="index.html#overview">Overview</a>
+        <a href="index.html#downloads">Downloads</a>
+        <a href="index.html#explorer">Explorer</a>
+        <a href="report.html">Benchmark Report</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="report-main">
+    <section class="report-hero panel">
+      <div class="report-hero-main">
+        <p class="kicker">Benchmark Rationale and Evaluation Framing</p>
+        <h1 id="reportHeadline">AMAM Benchmark Report</h1>
+        <p id="reportOverview" class="hero-overview">Loading benchmark profile...</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#explorer">Open Dataset Explorer</a>
+          <a class="btn btn-ghost" href="assets/data/amam-dataset.json" download>Download Benchmark Metadata</a>
+        </div>
+      </div>
+      <aside class="report-hero-side">
+        <h2>Core Claim</h2>
+        <p>
+          AMAM is benchmark-relevant because it combines multiple microstructure segmentation regimes in one curated resource,
+          while preserving per-subset label semantics and full-image context.
+        </p>
+        <ul class="report-list">
+          <li>Multi-material microstructures (steel and cast iron in this release)</li>
+          <li>Multiple imaging regimes and magnification styles</li>
+          <li>Expert-guided iterative annotation workflow with known edge cases</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Why Benchmarking This Problem Is Hard</h2>
+        <p>Metallography segmentation is not one task; it is a family of related tasks with shifting appearance, scale, and class semantics.</p>
+      </div>
+      <div class="challenge-grid">
+        <article class="challenge-card">
+          <h3>Semantic Drift Across Materials</h3>
+          <p>Class definitions vary by subset (for example ferrite/pearlite versus dendrite/interdendritic regions), so one global label map is often invalid.</p>
+        </article>
+        <article class="challenge-card">
+          <h3>Scale and Morphology Shift</h3>
+          <p>Low and high magnification expose different structures. A model that works on one scale can fail sharply on another.</p>
+        </article>
+        <article class="challenge-card">
+          <h3>Artifact Sensitivity</h3>
+          <p>Scratches, pores, glare, and blurry interfaces are common failure drivers and can be confused with true phases if not benchmarked explicitly.</p>
+        </article>
+        <article class="challenge-card">
+          <h3>Monolithic Scoring Can Mislead</h3>
+          <p>Single aggregate scores can hide minority-subset failures. Benchmark design must preserve subset-level reporting and OOD evaluation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Verified Dataset Evidence</h2>
+        <p>All values below are computed directly from the local release metadata and pair mappings.</p>
+      </div>
+
+      <div class="report-metrics-grid" id="reportMetrics"></div>
+
+      <div class="report-chart-grid">
+        <article class="chart-card">
+          <h3>Pairs by Material Family</h3>
+          <div id="familyChart" class="bar-chart" aria-live="polite"></div>
+        </article>
+        <article class="chart-card">
+          <h3>Pairs by Magnification Regime</h3>
+          <div id="magChart" class="bar-chart" aria-live="polite"></div>
+        </article>
+      </div>
+
+      <article class="subset-table-card">
+        <h3>Subset-Level Coverage</h3>
+        <p>Coverage = matched original-label pairs divided by local originals in the subset.</p>
+        <div class="table-wrap">
+          <table class="subset-table">
+            <thead>
+              <tr>
+                <th>Subset</th>
+                <th>Family</th>
+                <th>Condition</th>
+                <th>Magnification</th>
+                <th>Pairs</th>
+                <th>Coverage</th>
+              </tr>
+            </thead>
+            <tbody id="subsetTableBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Annotation and Curation Workflow</h2>
+        <p>The workflow follows the local AMAM documentation: expert partial labels, model-assisted completion, iterative correction, and final dense labels.</p>
+      </div>
+      <div class="workflow-layout">
+        <figure class="workflow-card">
+          <img src="assets/images/amam-workflow.png" alt="AMAM annotation and refinement workflow">
+          <figcaption>AMAM annotation and refinement workflow.</figcaption>
+        </figure>
+        <div>
+          <ol class="workflow-steps" id="workflowSteps"></ol>
+          <div class="quality-box">
+            <h3>Documented Edge Cases</h3>
+            <ul class="report-list">
+              <li>Pores/scratches can be confused with true phase regions</li>
+              <li>Scale bar or mounting media can be mistakenly segmented</li>
+              <li>Blurry phase boundaries can drive local under/over-labeling</li>
+              <li>Reflective precipitates can invert local contrast appearance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Representative Labeled Tuples</h2>
+        <p>One original-mask pair preview from each included subset, for quick visual inspection of task diversity.</p>
+      </div>
+      <div id="samplePairsGrid" class="sample-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Recommended Benchmark Protocol</h2>
+        <p>To avoid monolithic ranking artifacts, evaluation should stay subset-aware and include out-of-distribution checks.</p>
+      </div>
+      <div class="protocol-grid">
+        <article class="protocol-card">
+          <h3>Track A: Within-Subset Segmentation</h3>
+          <p>Evaluate each subset in its native label space. Report per-subset IoU/Dice and macro-average across subsets.</p>
+        </article>
+        <article class="protocol-card">
+          <h3>Track B: Cross-Material OOD</h3>
+          <p>Hold out one material group at a time and report generalization drop relative to in-domain training.</p>
+        </article>
+        <article class="protocol-card">
+          <h3>Track C: Cross-Scale OOD</h3>
+          <p>Use magnification-separated splits to quantify robustness to feature-scale shift.</p>
+        </article>
+        <article class="protocol-card">
+          <h3>Track D: Artifact Stress Tests</h3>
+          <p>Build fixed slices for scratches, blurry boundaries, and reflective regions, then report targeted robustness metrics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Current Limits and Next Steps</h2>
+      </div>
+      <div class="limits-grid">
+        <article class="limits-card">
+          <h3>Already Strong</h3>
+          <ul class="report-list">
+            <li>Paired original-mask tuples with transparent subset definitions</li>
+            <li>Full-image context rather than only small crop patches</li>
+            <li>Clear path to subset-level and OOD benchmarking</li>
+          </ul>
+        </article>
+        <article class="limits-card">
+          <h3>To Reach Full Community Benchmark Governance</h3>
+          <ul class="report-list" id="nextStepsList">
+            <li>Freeze immutable test splits and version identifiers</li>
+            <li>Add hidden test evaluation workflow and submission rules</li>
+            <li>Publish audit-style annotation reliability statistics</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>AMAM Benchmark Report • Built from local AMAM release artifacts and verified dataset metadata.</p>
+  </footer>
+
+  <script src="assets/js/report.js" defer></script>
+</body>
+</html>
