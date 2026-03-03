@@ -1,0 +1,386 @@
+{
+  "name": "Annotated Metallic Alloys Microstructures (AMAM)",
+  "shortName": "AMAM",
+  "version": "v1",
+  "totalImages": 208,
+  "totalSubsets": 8,
+  "materialFamilies": ["Steel", "Cast Iron", "Aluminum"],
+  "overview": "AMAM is a benchmark-grade segmentation dataset for quantitative metallography, covering diverse alloys, magnifications, and physical phenomena with full-image annotations.",
+  "method": {
+    "tool": "Clemex Studio",
+    "workflowSummary": "Experts partially label representative regions, an ad-hoc U-Net predicts full-image labels, and iterative review/refinement continues until acceptable quality is reached.",
+    "steps": [
+      "Select representative micrographs for each material condition.",
+      "Create partial labels for key regions and phases.",
+      "Train a segmentation model to predict unlabeled regions.",
+      "Review predictions, add corrective labels, and iterate.",
+      "Finalize full-image labels for benchmark release."
+    ]
+  },
+  "downloads": {
+    "categories": [
+      {
+        "id": "4130-steel",
+        "name": "4130 Steel (Normalized)",
+        "url": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link"
+      },
+      {
+        "id": "6280-cast-iron-low",
+        "name": "6280 Gray Cast Iron (Low Magnification)",
+        "url": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link"
+      },
+      {
+        "id": "6280-cast-iron-high",
+        "name": "6280 Gray Cast Iron (High Magnification)",
+        "url": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link"
+      },
+      {
+        "id": "5884-armor-steel",
+        "name": "5884 Armor Steel",
+        "url": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link"
+      },
+      {
+        "id": "7075-aluminum-low",
+        "name": "7075 Aluminum T6 (Low Magnification)",
+        "url": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link"
+      },
+      {
+        "id": "3105-aluminum-high",
+        "name": "3105 Aluminum T6 (High Magnification)",
+        "url": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link"
+      },
+      {
+        "id": "418-17-4ph-x5",
+        "name": "418 Printed 17-4 PH Steel (x5)",
+        "url": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link"
+      },
+      {
+        "id": "418-17-4ph-x20",
+        "name": "418 Printed 17-4 PH Steel (x20)",
+        "url": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link"
+      }
+    ]
+  },
+  "subsets": [
+    {
+      "id": "4130-steel",
+      "material": "4130 Steel",
+      "family": "Steel",
+      "condition": "Normalized",
+      "magnification": "Standard",
+      "images": 40,
+      "description": "Ferrite and pearlite morphology with clear phase contrast.",
+      "annotationNotes": "Ferrite is labeled in blue and pearlite in red. Some pores/scratches can be confused with pearlite.",
+      "phases": ["Ferrite", "Pearlite"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link",
+      "samples": [
+        {
+          "id": "4130-steel-original",
+          "image": "assets/images/4130-steel-original.png",
+          "kind": "Original",
+          "title": "4130 Steel Original",
+          "properties": {
+            "material": "4130 Steel",
+            "condition": "Normalized",
+            "magnification": "Standard",
+            "classes": "Ferrite / Pearlite",
+            "notes": "Bright ferrite, dark pearlite"
+          }
+        },
+        {
+          "id": "4130-steel-labeled",
+          "image": "assets/images/4130-steel-labeled.png",
+          "kind": "Labeled",
+          "title": "4130 Steel Labeled",
+          "properties": {
+            "material": "4130 Steel",
+            "condition": "Normalized",
+            "magnification": "Standard",
+            "classes": "Ferrite / Pearlite",
+            "notes": "Segmentation overlay from Clemex workflow"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6280-cast-iron-low",
+      "material": "6280 Gray Cast Iron",
+      "family": "Cast Iron",
+      "condition": "As-Cast",
+      "magnification": "Low",
+      "images": 25,
+      "description": "Large ferrite dendrites with an interdendritic region rich in ferrite and graphite flakes.",
+      "annotationNotes": "Dendrites are highlighted in red and interdendritic area in blue. Some low-graphite regions may be misannotated.",
+      "phases": ["Ferrite Dendrites", "Interdendritic Region", "Graphite Flakes"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link",
+      "samples": [
+        {
+          "id": "6280-cast-iron-low-original",
+          "image": "assets/images/6280-cast-iron-low-original.jpg",
+          "kind": "Original",
+          "title": "6280 Cast Iron Low-Mag Original",
+          "properties": {
+            "material": "6280 Gray Cast Iron",
+            "condition": "As-Cast",
+            "magnification": "Low",
+            "classes": "Dendrites / Interdendritic",
+            "notes": "Two-phase behavior at macro scale"
+          }
+        },
+        {
+          "id": "6280-cast-iron-low-labeled",
+          "image": "assets/images/6280-cast-iron-low-labeled.jpg",
+          "kind": "Labeled",
+          "title": "6280 Cast Iron Low-Mag Labeled",
+          "properties": {
+            "material": "6280 Gray Cast Iron",
+            "condition": "As-Cast",
+            "magnification": "Low",
+            "classes": "Dendrites / Interdendritic",
+            "notes": "Annotated dendritic boundaries"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6280-cast-iron-high",
+      "material": "6280 Gray Cast Iron",
+      "family": "Cast Iron",
+      "condition": "As-Cast",
+      "magnification": "High",
+      "images": 21,
+      "description": "High-magnification view resolves ferrite matrix and graphite flakes.",
+      "annotationNotes": "Thin graphite flakes increase annotation difficulty and may require near pixel-level labeling.",
+      "phases": ["Ferrite Matrix", "Graphite Flakes"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link",
+      "samples": [
+        {
+          "id": "6280-cast-iron-high-original",
+          "image": "assets/images/6280-cast-iron-high-original.jpg",
+          "kind": "Original",
+          "title": "6280 Cast Iron High-Mag Original",
+          "properties": {
+            "material": "6280 Gray Cast Iron",
+            "condition": "As-Cast",
+            "magnification": "High",
+            "classes": "Ferrite / Graphite",
+            "notes": "Graphite morphology captured at high detail"
+          }
+        },
+        {
+          "id": "6280-cast-iron-high-labeled",
+          "image": "assets/images/6280-cast-iron-high-labeled.jpg",
+          "kind": "Labeled",
+          "title": "6280 Cast Iron High-Mag Labeled",
+          "properties": {
+            "material": "6280 Gray Cast Iron",
+            "condition": "As-Cast",
+            "magnification": "High",
+            "classes": "Ferrite / Graphite",
+            "notes": "Good performance despite thin flakes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5884-armor-steel",
+      "material": "5884 Armor Steel",
+      "family": "Steel",
+      "condition": "Quenched and Tempered",
+      "magnification": "Mixed",
+      "images": 21,
+      "description": "Etched to reveal pre-austenite grains with challenging blurry grain boundaries.",
+      "annotationNotes": "Dendrites are marked in red and interdendritic areas in blue; boundary blur can produce small local errors.",
+      "phases": ["Pre-Austenite Dendrites", "Interdendritic Region"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link",
+      "samples": [
+        {
+          "id": "5884-armor-steel-original",
+          "image": "assets/images/5884-armor-steel-original.jpg",
+          "kind": "Original",
+          "title": "5884 Armor Steel Original",
+          "properties": {
+            "material": "5884 Armor Steel",
+            "condition": "Quenched and Tempered",
+            "magnification": "Low",
+            "classes": "Dendrites / Interdendritic",
+            "notes": "Pre-austenite dendrites revealed by etching"
+          }
+        },
+        {
+          "id": "5884-armor-steel-high-mag",
+          "image": "assets/images/5884-armor-steel-high-mag.jpg",
+          "kind": "High Magnification",
+          "title": "5884 Armor Steel High Magnification",
+          "properties": {
+            "material": "5884 Armor Steel",
+            "condition": "Quenched and Tempered",
+            "magnification": "High",
+            "classes": "Dendrite Boundaries",
+            "notes": "Blurry boundaries increase ambiguity"
+          }
+        },
+        {
+          "id": "5884-armor-steel-labeled",
+          "image": "assets/images/5884-armor-steel-labeled.jpg",
+          "kind": "Labeled",
+          "title": "5884 Armor Steel Labeled",
+          "properties": {
+            "material": "5884 Armor Steel",
+            "condition": "Quenched and Tempered",
+            "magnification": "Low",
+            "classes": "Dendrites / Interdendritic",
+            "notes": "Final annotation output"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7075-aluminum-low",
+      "material": "7075 Aluminum T6",
+      "family": "Aluminum",
+      "condition": "T6",
+      "magnification": "Low",
+      "images": 20,
+      "description": "Rolled elongated grains with precipitate-rich and precipitate-poor zones.",
+      "annotationNotes": "Three classes are labeled: matrix free of precipitates (green), matrix rich in precipitates (blue), and large elongated precipitates (red).",
+      "phases": ["Matrix (Low-Precipitate)", "Matrix (High-Precipitate)", "Elongated Precipitates"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link",
+      "samples": [
+        {
+          "id": "7075-aluminum-low-original",
+          "image": "assets/images/7075-aluminum-low-original.jpg",
+          "kind": "Original",
+          "title": "7075 Aluminum Low-Mag Original",
+          "properties": {
+            "material": "7075 Aluminum T6",
+            "condition": "T6",
+            "magnification": "Low",
+            "classes": "3-class segmentation",
+            "notes": "Elongated structure due to rolling"
+          }
+        },
+        {
+          "id": "7075-aluminum-low-labeled",
+          "image": "assets/images/7075-aluminum-low-labeled.jpg",
+          "kind": "Labeled",
+          "title": "7075 Aluminum Low-Mag Labeled",
+          "properties": {
+            "material": "7075 Aluminum T6",
+            "condition": "T6",
+            "magnification": "Low",
+            "classes": "Matrix free/rich + elongated precipitates",
+            "notes": "Some scratches can be misclassified"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3105-aluminum-high",
+      "material": "3105 Aluminum",
+      "family": "Aluminum",
+      "condition": "T6",
+      "magnification": "High",
+      "images": 35,
+      "description": "High-magnification matrix and precipitate morphology with reflective edges.",
+      "annotationNotes": "Two classes are labeled: matrix (blue) and precipitates (red). Reflective precipitate edges increase training complexity.",
+      "phases": ["Matrix", "Precipitates"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link",
+      "samples": [
+        {
+          "id": "7075-aluminum-high-original",
+          "image": "assets/images/7075-aluminum-high-original.jpg",
+          "kind": "Original",
+          "title": "Aluminum High-Mag Original",
+          "properties": {
+            "material": "3105 Aluminum / 7075-style high-mag example",
+            "condition": "T6",
+            "magnification": "High",
+            "classes": "Matrix / Precipitates",
+            "notes": "Bright reflection around precipitates"
+          }
+        },
+        {
+          "id": "7075-aluminum-high-labeled",
+          "image": "assets/images/7075-aluminum-high-labeled.jpg",
+          "kind": "Labeled",
+          "title": "Aluminum High-Mag Labeled",
+          "properties": {
+            "material": "3105 Aluminum / 7075-style high-mag example",
+            "condition": "T6",
+            "magnification": "High",
+            "classes": "Matrix / Precipitates",
+            "notes": "Final two-class annotation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "418-17-4ph-x5",
+      "material": "418 Printed 17-4 PH Steel",
+      "family": "Steel",
+      "condition": "As-Sintered",
+      "magnification": "x5",
+      "images": 25,
+      "description": "Sintered ferrite particles with subtle contrast between grains and intergranular regions.",
+      "annotationNotes": "Good overall annotation quality after iterative training, with occasional difficult regions.",
+      "phases": ["Equiaxed Ferrite Grains", "Intergranular Ferrite"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link",
+      "samples": [
+        {
+          "id": "418-17-4ph-x5-original",
+          "image": "assets/images/418-17-4ph-x5-original.jpg",
+          "kind": "Original",
+          "title": "17-4 PH x5 Original",
+          "properties": {
+            "material": "418 Printed 17-4 PH Steel",
+            "condition": "As-Sintered",
+            "magnification": "x5",
+            "classes": "Grains / Intergranular",
+            "notes": "Same phase, different texture contrast"
+          }
+        },
+        {
+          "id": "418-17-4ph-x5-labeled",
+          "image": "assets/images/418-17-4ph-x5-labeled.jpg",
+          "kind": "Labeled",
+          "title": "17-4 PH x5 Labeled",
+          "properties": {
+            "material": "418 Printed 17-4 PH Steel",
+            "condition": "As-Sintered",
+            "magnification": "x5",
+            "classes": "Grains / Intergranular",
+            "notes": "Typical successful annotation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "418-17-4ph-x20",
+      "material": "418 Printed 17-4 PH Steel",
+      "family": "Steel",
+      "condition": "As-Sintered",
+      "magnification": "x20",
+      "images": 21,
+      "description": "Higher magnification of printed ferritic morphology; includes more difficult local annotation regions.",
+      "annotationNotes": "Some samples remain challenging and can exhibit incomplete segmentation in local areas.",
+      "phases": ["Equiaxed Ferrite Grains", "Intergranular Ferrite"],
+      "downloadUrl": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link",
+      "samples": [
+        {
+          "id": "418-17-4ph-x20-difficult",
+          "image": "assets/images/418-17-4ph-x20-difficult.jpg",
+          "kind": "Difficult Example",
+          "title": "17-4 PH x20 Challenging Example",
+          "properties": {
+            "material": "418 Printed 17-4 PH Steel",
+            "condition": "As-Sintered",
+            "magnification": "x20",
+            "classes": "Grains / Intergranular",
+            "notes": "Representative hard case for benchmarking"
+          }
+        }
+      ]
+    }
+  ]
+}

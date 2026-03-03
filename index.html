@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AMAM benchmark dataset for segmentation in quantitative metallography.">
+  <title>AMAM Dataset Benchmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-shell">
+      <a href="#top" class="brand" aria-label="AMAM Home">
+        <span class="brand-mark">AM</span>
+        <span class="brand-text">AMAM Benchmark Dataset</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#explorer">Explorer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="overview">
+      <div class="hero-content reveal">
+        <p class="kicker">Benchmark Dataset for Metallography Segmentation</p>
+        <h1 id="heroTitle">Annotated Metallic Alloys Microstructures (AMAM)</h1>
+        <p id="heroOverview" class="hero-overview"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#explorer">Browse Dataset</a>
+          <button class="btn btn-ghost" id="downloadAllBtn" type="button">Download All Categories</button>
+        </div>
+      </div>
+      <div class="hero-stats reveal" id="summaryStats" aria-live="polite"></div>
+    </section>
+
+    <section class="method panel" id="method">
+      <div class="panel-head reveal">
+        <h2>How AMAM Was Created</h2>
+        <p>Annotation was performed in Clemex Studio using an iterative human-in-the-loop segmentation workflow.</p>
+      </div>
+      <div class="method-grid">
+        <figure class="workflow-card reveal">
+          <img src="assets/images/amam-workflow.png" alt="AMAM workflow diagram from partial labeling to full prediction refinement">
+          <figcaption>AMAM annotation and refinement workflow.</figcaption>
+        </figure>
+        <div class="method-steps reveal" id="methodSteps"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="stats">
+      <div class="panel-head reveal">
+        <h2>Dataset Statistics</h2>
+        <p>Coverage spans multiple alloys, magnifications, and segmentation difficulty modes.</p>
+      </div>
+      <div class="stats-grid" id="materialBars" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" id="downloads">
+      <div class="panel-head reveal">
+        <h2>Download Center</h2>
+        <p>Download by category, export metadata, or open all AMAM category folders.</p>
+      </div>
+      <div class="download-shell reveal">
+        <label for="categoryDownloadSelect">Download one dataset category</label>
+        <div class="download-row">
+          <select id="categoryDownloadSelect" aria-label="Choose category to download"></select>
+          <button class="btn btn-primary" type="button" id="downloadCategoryBtn">Open Category</button>
+          <button class="btn btn-secondary" type="button" id="downloadManifestBtn">Download Metadata JSON</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="explorer">
+      <div class="panel-head reveal">
+        <h2>Section-by-Section Explorer</h2>
+        <p>Browse each AMAM subset, inspect representative images, and zoom to benchmark-level detail.</p>
+      </div>
+
+      <div class="controls reveal">
+        <div class="field-group">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="search" placeholder="material, phase, condition..." autocomplete="off">
+        </div>
+        <div class="field-group">
+          <label for="familyFilter">Material family</label>
+          <select id="familyFilter">
+            <option value="all">All Families</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="magFilter">Magnification</label>
+          <select id="magFilter">
+            <option value="all">All Modes</option>
+          </select>
+        </div>
+      </div>
+
+      <nav class="subset-jump reveal" id="subsetJump" aria-label="Jump to dataset section"></nav>
+
+      <div id="subsetContainer" class="subset-container"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>AMAM Dataset • Built for benchmark publication and reproducible segmentation evaluation.</p>
+  </footer>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Image viewer">
+    <form method="dialog" class="lightbox-backdrop">
+      <button class="lightbox-close" aria-label="Close image viewer" value="cancel" type="submit">×</button>
+    </form>
+    <div class="lightbox-content">
+      <button id="lightboxPrev" class="lightbox-nav" type="button" aria-label="Previous image">‹</button>
+      <figure>
+        <img id="lightboxImage" alt="Expanded microstructure preview">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button id="lightboxNext" class="lightbox-nav" type="button" aria-label="Next image">›</button>
+    </div>
+    <div class="lightbox-props" id="lightboxProps"></div>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
