@@ -78,12 +78,10 @@
     };
 
     els.summaryStats.innerHTML = `
-      <div class="summary-grid">
-        <article class="stat-card"><span class="stat-value">${dataset.totalImages}</span><span class="stat-label">Benchmark full labels (paper)</span></article>
-        <article class="stat-card"><span class="stat-value">${dataset.includedSubsets || dataset.subsets.length}</span><span class="stat-label">Included subsets (strict local rule)</span></article>
-        <article class="stat-card"><span class="stat-value">${g.totalOriginals}</span><span class="stat-label">Local original images</span></article>
-        <article class="stat-card"><span class="stat-value">${g.totalPairs}</span><span class="stat-label">Detected local original-label pairs</span></article>
-      </div>
+      <article class="stat-chip"><span class="stat-value">${dataset.totalImages}</span><span class="stat-label">Benchmark full labels (paper)</span></article>
+      <article class="stat-chip"><span class="stat-value">${dataset.includedSubsets || dataset.subsets.length}</span><span class="stat-label">Included subsets (strict local rule)</span></article>
+      <article class="stat-chip"><span class="stat-value">${g.totalOriginals}</span><span class="stat-label">Local original images</span></article>
+      <article class="stat-chip"><span class="stat-value">${g.totalPairs}</span><span class="stat-label">Detected local original-label pairs</span></article>
     `;
 
     els.methodSteps.innerHTML = dataset.method.steps
