@@ -65,24 +65,16 @@
     <section class="panel" id="downloads">
       <div class="panel-head reveal">
         <h2>Download Center</h2>
-        <p>Download by category, open root/original folders, and jump directly to processed folders (masks/labels where provided).</p>
+        <p>All files are served from this GitHub repository. Download full repo or trigger category-level local downloads.</p>
       </div>
       <div class="download-shell reveal">
         <label for="categoryDownloadSelect">Download one dataset category</label>
         <div class="download-row">
           <select id="categoryDownloadSelect" aria-label="Choose category to download"></select>
-          <button class="btn btn-primary" type="button" id="downloadCategoryBtn">Open Category</button>
+          <button class="btn btn-primary" type="button" id="downloadCategoryBtn">Download Category Files</button>
           <button class="btn btn-secondary" type="button" id="downloadManifestBtn">Download Metadata JSON</button>
         </div>
       </div>
-    </section>
-
-    <section class="panel" id="drive-structure">
-      <div class="panel-head reveal">
-        <h2>All Categories and Drive Structure</h2>
-        <p>Every category is listed with its root folder and detected nested folders (including processed branches and deeper subdirectories).</p>
-      </div>
-      <div id="driveMatrix" class="drive-matrix"></div>
     </section>
 
     <section class="panel" id="explorer">

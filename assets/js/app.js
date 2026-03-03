@@ -12,7 +12,6 @@
     summaryStats: document.getElementById("summaryStats"),
     methodSteps: document.getElementById("methodSteps"),
     materialBars: document.getElementById("materialBars"),
-    driveMatrix: document.getElementById("driveMatrix"),
     subsetJump: document.getElementById("subsetJump"),
     subsetContainer: document.getElementById("subsetContainer"),
     familyFilter: document.getElementById("familyFilter"),
@@ -59,20 +58,21 @@
     scope.querySelectorAll(".reveal").forEach(node => observer.observe(node));
   }
 
-  function hiResThumbnail(url) {
-    if (!url) {
-      return "";
-    }
-    return url.replace("sz=w1000", "sz=w1800");
+  function toAssetUrl(path) {
+    return encodeURI(path);
   }
 
   function initStaticContent(dataset) {
     document.title = `${dataset.shortName} Dataset Benchmark`;
     els.heroTitle.textContent = dataset.name;
-    els.heroOverview.textContent = dataset.overview;
+
+    const excluded = dataset.excludedSubsets && dataset.excludedSubsets.length > 0
+      ? ` Excluded by rule: ${dataset.excludedSubsets.join(", ")} (no detectable label subfolder from provided links).`
+      : "";
+    els.heroOverview.textContent = `${dataset.overview} ${dataset.localDataNote || ""}${excluded}`;
 
     const g = dataset.gallerySummary || {
-      totalOriginals: dataset.totalImages,
+      totalOriginals: 0,
       totalMasks: 0,
       totalPairs: 0
     };
@@ -80,9 +80,9 @@
     els.summaryStats.innerHTML = `
       <div class="summary-grid">
         <article class="stat-card"><span class="stat-value">${dataset.totalImages}</span><span class="stat-label">Benchmark full labels (paper)</span></article>
-        <article class="stat-card"><span class="stat-value">${dataset.totalSubsets}</span><span class="stat-label">Dataset subsets</span></article>
-        <article class="stat-card"><span class="stat-value">${g.totalOriginals}</span><span class="stat-label">Root/original images exposed</span></article>
-        <article class="stat-card"><span class="stat-value">${g.totalPairs}</span><span class="stat-label">Detected original-mask pairs</span></article>
+        <article class="stat-card"><span class="stat-value">${dataset.includedSubsets || dataset.subsets.length}</span><span class="stat-label">Included subsets (strict local rule)</span></article>
+        <article class="stat-card"><span class="stat-value">${g.totalOriginals}</span><span class="stat-label">Local original images</span></article>
+        <article class="stat-card"><span class="stat-value">${g.totalPairs}</span><span class="stat-label">Detected local original-label pairs</span></article>
       </div>
     `;
 
@@ -99,95 +99,11 @@
   }
 
   function initDownloadSelect(dataset) {
-    els.categoryDownloadSelect.innerHTML = dataset.downloads.categories
+    els.categoryDownloadSelect.innerHTML = dataset.subsets
       .map(
-        category =>
-          `<option value="${escapeHtml(category.rootUrl || category.url)}">${escapeHtml(category.name)}</option>`
+        subset => `<option value="${escapeHtml(subset.id)}">${escapeHtml(subset.material)} · ${escapeHtml(subset.magnification)}</option>`
       )
       .join("");
-  }
-
-  function flattenDriveFolders(node) {
-    if (!node) {
-      return [];
-    }
-    const children = Array.isArray(node.children) ? node.children : [];
-    return children.reduce((acc, child) => {
-      acc.push(child);
-      return acc.concat(flattenDriveFolders(child));
-    }, []);
-  }
-
-  function findProcessedFolder(node) {
-    const folders = flattenDriveFolders(node);
-    return folders.find(folder => folder.name.toLowerCase().includes("processed"));
-  }
-
-  function renderDriveTree(node) {
-    if (!node) {
-      return "";
-    }
-    const children = Array.isArray(node.children) ? node.children : [];
-    if (children.length === 0) {
-      return "";
-    }
-
-    return `
-      <ul class="drive-tree">
-        ${children
-          .map(
-            child => `
-              <li>
-                <div class="drive-tree-item">
-                  <a target="_blank" rel="noopener noreferrer" href="${escapeHtml(child.url)}">${escapeHtml(child.name)}</a>
-                  <span>${Number(child.imageCount || 0)} images</span>
-                </div>
-                ${renderDriveTree(child)}
-              </li>
-            `
-          )
-          .join("")}
-      </ul>
-    `;
-  }
-
-  function renderDriveMatrix(dataset) {
-    if (!els.driveMatrix) {
-      return;
-    }
-
-    const rows = dataset.subsets
-      .map(subset => {
-        const root = subset.driveTree;
-        const processed = findProcessedFolder(root);
-        const rootUrl = root?.url || subset.downloadUrl;
-        const driveNote = dataset.driveStructureNote
-          ? `<p class="drive-note">${escapeHtml(dataset.driveStructureNote)}</p>`
-          : "";
-
-        return `
-          <article class="drive-row reveal">
-            <div class="drive-row-head">
-              <h3>${escapeHtml(subset.material)} · ${escapeHtml(subset.magnification)}</h3>
-              <div class="drive-row-links">
-                <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
-                ${
-                  processed
-                    ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
-                    : ""
-                }
-              </div>
-            </div>
-            ${driveNote}
-            <p class="drive-note">Expected benchmark images: ${subset.images}. Root currently exposes ${Number(root?.imageCount || 0)} images.</p>
-            ${renderDriveTree(root)}
-          </article>
-        `;
-      })
-      .join("");
-
-    els.driveMatrix.innerHTML = rows;
-    observeReveals(els.driveMatrix);
   }
 
   function initFilters(dataset) {
@@ -289,12 +205,10 @@
       } else {
         viewport.scrollBy({ left: step, behavior: "smooth" });
       }
+    } else if (viewport.scrollLeft <= step * 0.3) {
+      viewport.scrollTo({ left: Math.max(0, viewport.scrollWidth - viewport.clientWidth), behavior: "smooth" });
     } else {
-      if (viewport.scrollLeft <= step * 0.3) {
-        viewport.scrollTo({ left: Math.max(0, viewport.scrollWidth - viewport.clientWidth), behavior: "smooth" });
-      } else {
-        viewport.scrollBy({ left: -step, behavior: "smooth" });
-      }
+      viewport.scrollBy({ left: -step, behavior: "smooth" });
     }
   }
 
@@ -340,26 +254,35 @@
     });
   }
 
-  function buildGalleryFallback(subset) {
-    const originals = (subset.samples || []).map(sample => ({
-      id: sample.id,
-      name: sample.title,
-      thumbnailUrl: sample.image,
-      viewUrl: sample.image,
-      downloadUrl: sample.image,
-      maskId: null,
-      maskName: null
-    }));
+  function extractFileName(path) {
+    const parts = path.split("/");
+    return parts[parts.length - 1] || "file";
+  }
 
-    return {
-      originals,
-      masks: [],
-      pairCount: 0,
-      originalCount: originals.length,
-      maskCount: 0,
-      hasMaskPairs: false,
-      notes: "Fallback gallery from local representative samples."
-    };
+  function triggerDownload(path, filename) {
+    const a = document.createElement("a");
+    a.href = toAssetUrl(path);
+    a.download = filename || extractFileName(path);
+    document.body.append(a);
+    a.click();
+    a.remove();
+  }
+
+  function downloadCategoryFiles(subsetId) {
+    const subset = state.dataset.subsets.find(item => item.id === subsetId);
+    if (!subset) {
+      return;
+    }
+
+    const originals = (subset.gallery?.originals || []).map(item => ({ path: item.path || item.downloadUrl, name: item.name }));
+    const labels = (subset.gallery?.masks || []).map(item => ({ path: item.path || item.downloadUrl, name: item.name }));
+    const files = [...originals, ...labels].filter(item => item.path);
+
+    files.forEach((item, idx) => {
+      setTimeout(() => {
+        triggerDownload(item.path, item.name);
+      }, idx * 130);
+    });
   }
 
   function renderSubsets(subsets) {
@@ -374,10 +297,8 @@
 
     const markup = subsets
       .map(subset => {
-        const gallery = subset.gallery || buildGalleryFallback(subset);
+        const gallery = subset.gallery || { originals: [], masks: [], originalCount: 0, maskCount: 0, pairCount: 0, notes: "" };
         const masksById = new Map((gallery.masks || []).map(item => [item.id, item]));
-        const processed = findProcessedFolder(subset.driveTree);
-        const rootUrl = subset.driveTree?.url || subset.downloadUrl;
 
         const slides = (gallery.originals || [])
           .map(original => {
@@ -385,8 +306,8 @@
             const mask = original.maskId ? masksById.get(original.maskId) || null : null;
             state.compareLookup.set(compareKey, { subset, original, mask });
 
-            const source = original.thumbnailUrl || original.image;
-            const label = original.name || original.title || original.id;
+            const source = toAssetUrl(original.path || original.thumbnailUrl);
+            const label = original.name || original.id;
             const tag = mask
               ? '<span class="pair-tag mask">Mask Pair Available</span>'
               : '<span class="pair-tag nomask">No Paired Mask</span>';
@@ -411,25 +332,20 @@
               <div>
                 <h3>${escapeHtml(subset.material)}</h3>
                 <div class="subset-meta">
-                  <span class="badge">${subset.images} images (paper)</span>
+                  <span class="badge">${subset.images} root images</span>
                   <span class="badge">${escapeHtml(subset.family)}</span>
                   <span class="badge">${escapeHtml(subset.condition)}</span>
                   <span class="badge">${escapeHtml(subset.magnification)}</span>
                 </div>
               </div>
               <div class="subset-actions">
-                <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
-                ${
-                  processed
-                    ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
-                    : `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(subset.downloadUrl)}">Open Category</a>`
-                }
+                <button class="btn btn-secondary js-download-category" data-category-id="${escapeHtml(subset.id)}" type="button">Download Category Files</button>
               </div>
             </header>
             <p>${escapeHtml(subset.description)}</p>
             <p><strong>Annotation notes:</strong> ${escapeHtml(subset.annotationNotes)}</p>
             <p><strong>Phase classes:</strong> ${subset.phases.map(phase => escapeHtml(phase)).join(", ")}</p>
-            <p class="category-gallery-meta">Showing ${gallery.originalCount} originals, ${gallery.maskCount} masks, ${gallery.pairCount} matched pairs. ${escapeHtml(gallery.notes || "")}</p>
+            <p class="category-gallery-meta">Showing ${gallery.originalCount} originals, ${gallery.maskCount} labels, ${gallery.pairCount} matched pairs. ${escapeHtml(gallery.notes || "")}</p>
 
             <div class="carousel-shell js-carousel-shell">
               <button type="button" class="carousel-btn js-carousel-prev" aria-label="Previous images">‹</button>
@@ -456,6 +372,15 @@
       });
     });
 
+    els.subsetContainer.querySelectorAll(".js-download-category").forEach(node => {
+      node.addEventListener("click", event => {
+        const categoryId = event.currentTarget.getAttribute("data-category-id");
+        if (categoryId) {
+          downloadCategoryFiles(categoryId);
+        }
+      });
+    });
+
     initCarousels();
     observeReveals(els.subsetContainer);
   }
@@ -474,42 +399,39 @@
     }
 
     const { subset, original, mask } = entry;
-
-    const originalTitle = original.name || original.title || original.id;
-    const maskTitle = mask?.name || "No paired mask";
+    const originalTitle = original.name || original.id;
+    const maskTitle = mask?.name || "No paired label";
 
     els.compareTitle.textContent = `${subset.material} • ${subset.magnification} • ${originalTitle}`;
-    els.compareOriginalImage.src = hiResThumbnail(original.thumbnailUrl || original.image || "");
+    els.compareOriginalImage.src = toAssetUrl(original.path || original.thumbnailUrl || "");
     els.compareOriginalImage.alt = originalTitle;
 
-    const originalView = original.viewUrl || original.thumbnailUrl || original.image || "#";
-    const originalDownload = original.downloadUrl || original.thumbnailUrl || original.image || "#";
-    els.compareOpenOriginal.href = originalView;
-    els.compareDownloadOriginal.href = originalDownload;
+    const originalPath = toAssetUrl(original.path || original.thumbnailUrl || "#");
+    els.compareOpenOriginal.href = originalPath;
+    els.compareDownloadOriginal.href = originalPath;
 
     if (mask) {
+      const maskPath = toAssetUrl(mask.path || mask.thumbnailUrl || "");
       els.compareMaskPane.style.display = "";
       els.compareNoMask.classList.remove("show");
-      els.compareMaskImage.src = hiResThumbnail(mask.thumbnailUrl || "");
+      els.compareMaskImage.src = maskPath;
       els.compareMaskImage.alt = maskTitle;
       els.compareOpenMask.hidden = false;
       els.compareDownloadMask.hidden = false;
-      els.compareOpenMask.href = mask.viewUrl || mask.thumbnailUrl || "#";
-      els.compareDownloadMask.href = mask.downloadUrl || mask.thumbnailUrl || "#";
+      els.compareOpenMask.href = maskPath;
+      els.compareDownloadMask.href = maskPath;
     } else {
       els.compareMaskPane.style.display = "none";
       els.compareNoMask.classList.add("show");
       els.compareMaskImage.src = "";
       els.compareOpenMask.hidden = true;
       els.compareDownloadMask.hidden = true;
-      els.compareOpenMask.href = "#";
-      els.compareDownloadMask.href = "#";
     }
 
     els.compareMeta.innerHTML = `
       <div><strong>Subset:</strong> ${escapeHtml(subset.material)} (${escapeHtml(subset.condition)}, ${escapeHtml(subset.magnification)})</div>
       <div><strong>Original:</strong> ${escapeHtml(originalTitle)}</div>
-      <div><strong>Mask:</strong> ${escapeHtml(maskTitle)}</div>
+      <div><strong>Label:</strong> ${escapeHtml(maskTitle)}</div>
     `;
 
     if (!els.compareModal.open) {
@@ -524,26 +446,17 @@
     els.searchInput.addEventListener("input", render);
 
     els.downloadCategoryBtn.addEventListener("click", () => {
-      const url = els.categoryDownloadSelect.value;
-      if (url) {
-        window.open(url, "_blank", "noopener,noreferrer");
+      const categoryId = els.categoryDownloadSelect.value;
+      if (categoryId) {
+        downloadCategoryFiles(categoryId);
       }
     });
 
     els.downloadAllBtn.addEventListener("click", () => {
-      const urls = [];
-      state.dataset.downloads.categories.forEach(item => {
-        urls.push(item.rootUrl || item.url);
-        if (item.processedUrl) {
-          urls.push(item.processedUrl);
-        }
-      });
-
-      urls.forEach((url, index) => {
-        setTimeout(() => {
-          window.open(url, "_blank", "noopener,noreferrer");
-        }, index * 170);
-      });
+      const link = state.dataset.downloadAllRepoZip;
+      if (link) {
+        window.open(link, "_blank", "noopener,noreferrer");
+      }
     });
 
     els.downloadManifestBtn.addEventListener("click", () => {
@@ -581,7 +494,6 @@
       initStaticContent(state.dataset);
       initDownloadSelect(state.dataset);
       initFilters(state.dataset);
-      renderDriveMatrix(state.dataset);
       bindEvents();
       render();
       observeReveals(document);
