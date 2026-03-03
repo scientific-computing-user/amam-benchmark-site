@@ -65,7 +65,7 @@
     <section class="panel" id="downloads">
       <div class="panel-head reveal">
         <h2>Download Center</h2>
-        <p>Download by category, export metadata, or open all AMAM category folders.</p>
+        <p>Download by category, open root/original folders, and jump directly to processed folders (masks/labels where provided).</p>
       </div>
       <div class="download-shell reveal">
         <label for="categoryDownloadSelect">Download one dataset category</label>
@@ -75,6 +75,14 @@
           <button class="btn btn-secondary" type="button" id="downloadManifestBtn">Download Metadata JSON</button>
         </div>
       </div>
+    </section>
+
+    <section class="panel" id="drive-structure">
+      <div class="panel-head reveal">
+        <h2>All Categories and Drive Structure</h2>
+        <p>Every category is listed with its root folder and detected nested folders (including processed branches and deeper subdirectories).</p>
+      </div>
+      <div id="driveMatrix" class="drive-matrix"></div>
     </section>
 
     <section class="panel" id="explorer">

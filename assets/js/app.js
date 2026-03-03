@@ -12,6 +12,7 @@
     summaryStats: document.getElementById("summaryStats"),
     methodSteps: document.getElementById("methodSteps"),
     materialBars: document.getElementById("materialBars"),
+    driveMatrix: document.getElementById("driveMatrix"),
     subsetJump: document.getElementById("subsetJump"),
     subsetContainer: document.getElementById("subsetContainer"),
     familyFilter: document.getElementById("familyFilter"),
@@ -83,9 +84,91 @@
     els.categoryDownloadSelect.innerHTML = dataset.downloads.categories
       .map(
         category =>
-          `<option value="${escapeHtml(category.url)}">${escapeHtml(category.name)}</option>`
+          `<option value="${escapeHtml(category.rootUrl || category.url)}">${escapeHtml(category.name)}</option>`
       )
       .join("");
+  }
+
+  function flattenDriveFolders(node) {
+    if (!node) {
+      return [];
+    }
+    const children = Array.isArray(node.children) ? node.children : [];
+    return children.reduce((acc, child) => {
+      acc.push(child);
+      return acc.concat(flattenDriveFolders(child));
+    }, []);
+  }
+
+  function findProcessedFolder(node) {
+    const folders = flattenDriveFolders(node);
+    return folders.find(folder => folder.name.toLowerCase().includes("processed"));
+  }
+
+  function renderDriveTree(node) {
+    if (!node) {
+      return "";
+    }
+    const children = Array.isArray(node.children) ? node.children : [];
+    if (children.length === 0) {
+      return "";
+    }
+    return `
+      <ul class="drive-tree">
+        ${children
+          .map(
+            child => `
+              <li>
+                <div class="drive-tree-item">
+                  <a target="_blank" rel="noopener noreferrer" href="${escapeHtml(child.url)}">${escapeHtml(child.name)}</a>
+                  <span>${Number(child.imageCount || 0)} images</span>
+                </div>
+                ${renderDriveTree(child)}
+              </li>
+            `
+          )
+          .join("")}
+      </ul>
+    `;
+  }
+
+  function renderDriveMatrix(dataset) {
+    if (!els.driveMatrix) {
+      return;
+    }
+
+    const rows = dataset.subsets
+      .map(subset => {
+        const root = subset.driveTree;
+        const processed = findProcessedFolder(root);
+        const rootUrl = root?.url || subset.downloadUrl;
+        const driveNote = dataset.driveStructureNote
+          ? `<p class="drive-note">${escapeHtml(dataset.driveStructureNote)}</p>`
+          : "";
+
+        return `
+          <article class="drive-row reveal">
+            <div class="drive-row-head">
+              <h3>${escapeHtml(subset.material)} · ${escapeHtml(subset.magnification)}</h3>
+              <div class="drive-row-links">
+                <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
+                ${
+                  processed
+                    ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
+                    : ""
+                }
+              </div>
+            </div>
+            ${driveNote}
+            <p class="drive-note">Expected benchmark images: ${subset.images}. Root currently exposes ${Number(root?.imageCount || 0)} images.</p>
+            ${renderDriveTree(root)}
+          </article>
+        `;
+      })
+      .join("");
+
+    els.driveMatrix.innerHTML = rows;
+    observeReveals(els.driveMatrix);
   }
 
   function initFilters(dataset) {
@@ -176,6 +259,8 @@
     const sampleRefs = [];
     const markup = subsets
       .map(subset => {
+        const processed = findProcessedFolder(subset.driveTree);
+        const rootUrl = subset.driveTree?.url || subset.downloadUrl;
         const subsetHeader = `
           <header class="subset-head">
             <div>
@@ -188,7 +273,12 @@
               </div>
             </div>
             <div class="subset-actions">
-              <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(subset.downloadUrl)}">Download Category</a>
+              <a class="btn btn-ghost" target="_blank" rel="noopener noreferrer" href="${escapeHtml(rootUrl)}">Open Root</a>
+              ${
+                processed
+                  ? `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(processed.url)}">Open Processed/Masks</a>`
+                  : `<a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="${escapeHtml(subset.downloadUrl)}">Open Category</a>`
+              }
             </div>
           </header>
           <p>${escapeHtml(subset.description)}</p>
@@ -361,6 +451,7 @@
       initStaticContent(state.dataset);
       initDownloadSelect(state.dataset);
       initFilters(state.dataset);
+      renderDriveMatrix(state.dataset);
       bindEvents();
       render();
       observeReveals(document);

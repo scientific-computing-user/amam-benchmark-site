@@ -4,7 +4,11 @@
   "version": "v1",
   "totalImages": 208,
   "totalSubsets": 8,
-  "materialFamilies": ["Steel", "Cast Iron", "Aluminum"],
+  "materialFamilies": [
+    "Steel",
+    "Cast Iron",
+    "Aluminum"
+  ],
   "overview": "AMAM is a benchmark-grade segmentation dataset for quantitative metallography, covering diverse alloys, magnifications, and physical phenomena with full-image annotations.",
   "method": {
     "tool": "Clemex Studio",
@@ -22,42 +26,56 @@
       {
         "id": "4130-steel",
         "name": "4130 Steel (Normalized)",
-        "url": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/1w_BnmGXx8KjLS412WDR1Hz1B2CpbALc0?usp=drive_link"
       },
       {
         "id": "6280-cast-iron-low",
         "name": "6280 Gray Cast Iron (Low Magnification)",
-        "url": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/1NC57UUVj-wSSXDE9q0KVrCp4bSUevIS0?usp=drive_link"
       },
       {
         "id": "6280-cast-iron-high",
         "name": "6280 Gray Cast Iron (High Magnification)",
-        "url": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/1RMqEuxU13GYSa4oSEuLRXT3JWWhC4o9N?usp=drive_link"
       },
       {
         "id": "5884-armor-steel",
         "name": "5884 Armor Steel",
-        "url": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/17tl3_EfBmtpABqaTUc0OtaV1095CbRsW?usp=drive_link"
       },
       {
         "id": "7075-aluminum-low",
         "name": "7075 Aluminum T6 (Low Magnification)",
-        "url": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link"
       },
       {
         "id": "3105-aluminum-high",
         "name": "3105 Aluminum T6 (High Magnification)",
-        "url": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link"
       },
       {
         "id": "418-17-4ph-x5",
         "name": "418 Printed 17-4 PH Steel (x5)",
-        "url": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/15UukGH5ljSgxiqeH3UnaD2xAC4rZGeiZ?usp=drive_link"
       },
       {
         "id": "418-17-4ph-x20",
         "name": "418 Printed 17-4 PH Steel (x20)",
-        "url": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link"
+        "url": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link",
+        "rootUrl": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link",
+        "processedUrl": "https://drive.google.com/drive/folders/1whUpRQix09Hmoj5m4t2TfbHxxYG4Jd5y?usp=drive_link"
       }
     ]
   },
@@ -71,7 +89,10 @@
       "images": 40,
       "description": "Ferrite and pearlite morphology with clear phase contrast.",
       "annotationNotes": "Ferrite is labeled in blue and pearlite in red. Some pores/scratches can be confused with pearlite.",
-      "phases": ["Ferrite", "Pearlite"],
+      "phases": [
+        "Ferrite",
+        "Pearlite"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link",
       "samples": [
         {
@@ -100,7 +121,22 @@
             "notes": "Segmentation overlay from Clemex workflow"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1yXer5WtbeXo9s_o05hd86y0BO0WGPk96",
+        "name": "4130 Steel Root",
+        "url": "https://drive.google.com/drive/folders/1yXer5WtbeXo9s_o05hd86y0BO0WGPk96?usp=drive_link",
+        "imageCount": 46,
+        "children": [
+          {
+            "id": "1w_BnmGXx8KjLS412WDR1Hz1B2CpbALc0",
+            "name": "4130 (6362) x10/x20 - processed",
+            "url": "https://drive.google.com/drive/folders/1w_BnmGXx8KjLS412WDR1Hz1B2CpbALc0?usp=drive_link",
+            "imageCount": 40,
+            "children": []
+          }
+        ]
+      }
     },
     {
       "id": "6280-cast-iron-low",
@@ -111,7 +147,11 @@
       "images": 25,
       "description": "Large ferrite dendrites with an interdendritic region rich in ferrite and graphite flakes.",
       "annotationNotes": "Dendrites are highlighted in red and interdendritic area in blue. Some low-graphite regions may be misannotated.",
-      "phases": ["Ferrite Dendrites", "Interdendritic Region", "Graphite Flakes"],
+      "phases": [
+        "Ferrite Dendrites",
+        "Interdendritic Region",
+        "Graphite Flakes"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link",
       "samples": [
         {
@@ -140,7 +180,22 @@
             "notes": "Annotated dendritic boundaries"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny",
+        "name": "6280 Cast Iron Low Root",
+        "url": "https://drive.google.com/drive/folders/1IpWzR_4lgK9JUG3u1GM8FyWDrRYIhcny?usp=drive_link",
+        "imageCount": 11,
+        "children": [
+          {
+            "id": "1NC57UUVj-wSSXDE9q0KVrCp4bSUevIS0",
+            "name": "Cast Iron x10 - processed",
+            "url": "https://drive.google.com/drive/folders/1NC57UUVj-wSSXDE9q0KVrCp4bSUevIS0?usp=drive_link",
+            "imageCount": 11,
+            "children": []
+          }
+        ]
+      }
     },
     {
       "id": "6280-cast-iron-high",
@@ -151,7 +206,10 @@
       "images": 21,
       "description": "High-magnification view resolves ferrite matrix and graphite flakes.",
       "annotationNotes": "Thin graphite flakes increase annotation difficulty and may require near pixel-level labeling.",
-      "phases": ["Ferrite Matrix", "Graphite Flakes"],
+      "phases": [
+        "Ferrite Matrix",
+        "Graphite Flakes"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link",
       "samples": [
         {
@@ -180,7 +238,22 @@
             "notes": "Good performance despite thin flakes"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb",
+        "name": "6280 Cast Iron High Root",
+        "url": "https://drive.google.com/drive/folders/1ka1mPQi4Qf0SRPJqTBeKWxVJLVp8jvKb?usp=drive_link",
+        "imageCount": 10,
+        "children": [
+          {
+            "id": "1RMqEuxU13GYSa4oSEuLRXT3JWWhC4o9N",
+            "name": "Cast Iron x20 - processed",
+            "url": "https://drive.google.com/drive/folders/1RMqEuxU13GYSa4oSEuLRXT3JWWhC4o9N?usp=drive_link",
+            "imageCount": 10,
+            "children": []
+          }
+        ]
+      }
     },
     {
       "id": "5884-armor-steel",
@@ -191,7 +264,10 @@
       "images": 21,
       "description": "Etched to reveal pre-austenite grains with challenging blurry grain boundaries.",
       "annotationNotes": "Dendrites are marked in red and interdendritic areas in blue; boundary blur can produce small local errors.",
-      "phases": ["Pre-Austenite Dendrites", "Interdendritic Region"],
+      "phases": [
+        "Pre-Austenite Dendrites",
+        "Interdendritic Region"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link",
       "samples": [
         {
@@ -233,7 +309,51 @@
             "notes": "Final annotation output"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S",
+        "name": "5884 Armor Steel Root",
+        "url": "https://drive.google.com/drive/folders/1i_Q0XrY5heSf7NolSClzZIuJAhqgSv6S?usp=drive_link",
+        "imageCount": 22,
+        "children": [
+          {
+            "id": "17tl3_EfBmtpABqaTUc0OtaV1095CbRsW",
+            "name": "Armor Steel - processed",
+            "url": "https://drive.google.com/drive/folders/17tl3_EfBmtpABqaTUc0OtaV1095CbRsW?usp=drive_link",
+            "imageCount": 0,
+            "children": [
+              {
+                "id": "1i4LdOlokKIi257pXmLwRqwEqBNtXz7-S",
+                "name": "5884 x5",
+                "url": "https://drive.google.com/drive/folders/1i4LdOlokKIi257pXmLwRqwEqBNtXz7-S?usp=drive_link",
+                "imageCount": 5,
+                "children": []
+              },
+              {
+                "id": "1Be8iud43JvfiK-CLFgcAudQ2KYZ8bsRf",
+                "name": "5884 x10 (+20) (S)",
+                "url": "https://drive.google.com/drive/folders/1Be8iud43JvfiK-CLFgcAudQ2KYZ8bsRf?usp=drive_link",
+                "imageCount": 12,
+                "children": []
+              },
+              {
+                "id": "1w8LvRmvakOrrPyU6olTa6FUqPtytsrS8",
+                "name": "5884 x50 (S)",
+                "url": "https://drive.google.com/drive/folders/1w8LvRmvakOrrPyU6olTa6FUqPtytsrS8?usp=drive_link",
+                "imageCount": 4,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "1LALJec79wqGmAIwbLhjs-GEeCWBq7_Ag",
+            "name": "Leica metadata",
+            "url": "https://drive.google.com/drive/folders/1LALJec79wqGmAIwbLhjs-GEeCWBq7_Ag?usp=drive_link",
+            "imageCount": 0,
+            "children": []
+          }
+        ]
+      }
     },
     {
       "id": "7075-aluminum-low",
@@ -244,7 +364,11 @@
       "images": 20,
       "description": "Rolled elongated grains with precipitate-rich and precipitate-poor zones.",
       "annotationNotes": "Three classes are labeled: matrix free of precipitates (green), matrix rich in precipitates (blue), and large elongated precipitates (red).",
-      "phases": ["Matrix (Low-Precipitate)", "Matrix (High-Precipitate)", "Elongated Precipitates"],
+      "phases": [
+        "Matrix (Low-Precipitate)",
+        "Matrix (High-Precipitate)",
+        "Elongated Precipitates"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link",
       "samples": [
         {
@@ -273,7 +397,14 @@
             "notes": "Some scratches can be misclassified"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8",
+        "name": "7075 Aluminum Low Root",
+        "url": "https://drive.google.com/drive/folders/1VPHqjeyjtXPhHYsN3Z3LNEqO2Pws9QT8?usp=drive_link",
+        "imageCount": 20,
+        "children": []
+      }
     },
     {
       "id": "3105-aluminum-high",
@@ -284,7 +415,10 @@
       "images": 35,
       "description": "High-magnification matrix and precipitate morphology with reflective edges.",
       "annotationNotes": "Two classes are labeled: matrix (blue) and precipitates (red). Reflective precipitate edges increase training complexity.",
-      "phases": ["Matrix", "Precipitates"],
+      "phases": [
+        "Matrix",
+        "Precipitates"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link",
       "samples": [
         {
@@ -313,7 +447,14 @@
             "notes": "Final two-class annotation"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es",
+        "name": "3105 Aluminum High Root",
+        "url": "https://drive.google.com/drive/folders/1AjNIdC5jReizWhne2zo3GrxEQ3M8E6es?usp=drive_link",
+        "imageCount": 35,
+        "children": []
+      }
     },
     {
       "id": "418-17-4ph-x5",
@@ -324,7 +465,10 @@
       "images": 25,
       "description": "Sintered ferrite particles with subtle contrast between grains and intergranular regions.",
       "annotationNotes": "Good overall annotation quality after iterative training, with occasional difficult regions.",
-      "phases": ["Equiaxed Ferrite Grains", "Intergranular Ferrite"],
+      "phases": [
+        "Equiaxed Ferrite Grains",
+        "Intergranular Ferrite"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link",
       "samples": [
         {
@@ -353,7 +497,22 @@
             "notes": "Typical successful annotation"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr",
+        "name": "17-4 PH x5 Root",
+        "url": "https://drive.google.com/drive/folders/1QSf-wOnCNAWApcRdjtYmvYCx749H2DIr?usp=drive_link",
+        "imageCount": 25,
+        "children": [
+          {
+            "id": "15UukGH5ljSgxiqeH3UnaD2xAC4rZGeiZ",
+            "name": "Printed steel x5 - processed",
+            "url": "https://drive.google.com/drive/folders/15UukGH5ljSgxiqeH3UnaD2xAC4rZGeiZ?usp=drive_link",
+            "imageCount": 25,
+            "children": []
+          }
+        ]
+      }
     },
     {
       "id": "418-17-4ph-x20",
@@ -364,7 +523,10 @@
       "images": 21,
       "description": "Higher magnification of printed ferritic morphology; includes more difficult local annotation regions.",
       "annotationNotes": "Some samples remain challenging and can exhibit incomplete segmentation in local areas.",
-      "phases": ["Equiaxed Ferrite Grains", "Intergranular Ferrite"],
+      "phases": [
+        "Equiaxed Ferrite Grains",
+        "Intergranular Ferrite"
+      ],
       "downloadUrl": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link",
       "samples": [
         {
@@ -380,7 +542,23 @@
             "notes": "Representative hard case for benchmarking"
           }
         }
-      ]
+      ],
+      "driveTree": {
+        "id": "1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4",
+        "name": "17-4 PH x20 Root",
+        "url": "https://drive.google.com/drive/folders/1Z4qY2cQ1YpCegnsDehB9cVLHyWRdZlC4?usp=drive_link",
+        "imageCount": 22,
+        "children": [
+          {
+            "id": "1whUpRQix09Hmoj5m4t2TfbHxxYG4Jd5y",
+            "name": "Printed steel x20 - processed",
+            "url": "https://drive.google.com/drive/folders/1whUpRQix09Hmoj5m4t2TfbHxxYG4Jd5y?usp=drive_link",
+            "imageCount": 21,
+            "children": []
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "driveStructureNote": "Root links contain originals; processed subfolders (where present) contain processed/annotation outputs and can include full masks."
 }

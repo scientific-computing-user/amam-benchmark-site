@@ -301,6 +301,71 @@ main {
   margin-top: 0.45rem;
 }
 
+.drive-matrix {
+  margin-top: 0.95rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.drive-row {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: #fcfdfd;
+}
+
+.drive-row-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.drive-row-head h3 {
+  font-size: 1.03rem;
+}
+
+.drive-row-links {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.drive-note {
+  margin: 0.45rem 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.drive-tree {
+  margin: 0.4rem 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.drive-tree li {
+  border-left: 2px solid #d8e3ea;
+  padding-left: 0.6rem;
+}
+
+.drive-tree-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.drive-tree-item a {
+  color: var(--steel);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .controls {
   margin-top: 1rem;
   display: grid;
