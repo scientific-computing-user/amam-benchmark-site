@@ -570,11 +570,6 @@ select {
   background: #def4e8;
 }
 
-.pair-tag.nomask {
-  color: #7a4a14;
-  background: #ffeccf;
-}
-
 .btn {
   border: 1px solid transparent;
   border-radius: 10px;
@@ -674,21 +669,6 @@ select {
   font-size: 0.84rem;
 }
 
-.compare-empty {
-  display: none;
-  grid-column: 2;
-  align-self: center;
-  text-align: center;
-  color: #f7d9b1;
-  border: 1px dashed rgba(240, 188, 117, 0.35);
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-.compare-empty.show {
-  display: block;
-}
-
 .compare-meta {
   border-top: 1px solid rgba(189, 208, 222, 0.22);
   padding: 0.6rem 1rem 0.4rem;
@@ -732,10 +712,6 @@ select {
 
   .compare-grid {
     grid-template-columns: 1fr;
-  }
-
-  .compare-empty {
-    grid-column: 1;
   }
 
   .carousel-shell {

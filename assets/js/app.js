@@ -3,7 +3,8 @@
     dataset: null,
     filteredSubsets: [],
     compareLookup: new Map(),
-    carouselTimers: []
+    carouselTimers: [],
+    pairCache: new Map()
   };
 
   const els = {
@@ -26,7 +27,6 @@
     compareOriginalImage: document.getElementById("compareOriginalImage"),
     compareMaskImage: document.getElementById("compareMaskImage"),
     compareMaskPane: document.getElementById("compareMaskPane"),
-    compareNoMask: document.getElementById("compareNoMask"),
     compareMeta: document.getElementById("compareMeta"),
     compareOpenOriginal: document.getElementById("compareOpenOriginal"),
     compareDownloadOriginal: document.getElementById("compareDownloadOriginal"),
@@ -60,6 +60,36 @@
 
   function toAssetUrl(path) {
     return encodeURI(path);
+  }
+
+  function getSubsetPairs(subset) {
+    const cached = state.pairCache.get(subset.id);
+    if (cached) {
+      return cached;
+    }
+
+    const gallery = subset.gallery || { originals: [], masks: [] };
+    const masksById = new Map(
+      (gallery.masks || [])
+        .filter(item => item && item.id && (item.path || item.thumbnailUrl || item.downloadUrl))
+        .map(item => [item.id, item])
+    );
+
+    const pairs = (gallery.originals || []).reduce((acc, original) => {
+      const originalPath = original?.path || original?.thumbnailUrl || original?.downloadUrl;
+      if (!originalPath || !original?.maskId) {
+        return acc;
+      }
+      const mask = masksById.get(original.maskId);
+      if (!mask) {
+        return acc;
+      }
+      acc.push({ original, mask });
+      return acc;
+    }, []);
+
+    state.pairCache.set(subset.id, pairs);
+    return pairs;
   }
 
   function initStaticContent(dataset) {
@@ -97,7 +127,8 @@
   }
 
   function initDownloadSelect(dataset) {
-    els.categoryDownloadSelect.innerHTML = dataset.subsets
+    const pairedSubsets = dataset.subsets.filter(subset => getSubsetPairs(subset).length > 0);
+    els.categoryDownloadSelect.innerHTML = pairedSubsets
       .map(
         subset => `<option value="${escapeHtml(subset.id)}">${escapeHtml(subset.material)} · ${escapeHtml(subset.magnification)}</option>`
       )
@@ -105,8 +136,9 @@
   }
 
   function initFilters(dataset) {
-    const families = [...new Set(dataset.subsets.map(item => item.family))].sort();
-    const magnifications = [...new Set(dataset.subsets.map(item => item.magnification))].sort();
+    const pairedSubsets = dataset.subsets.filter(subset => getSubsetPairs(subset).length > 0);
+    const families = [...new Set(pairedSubsets.map(item => item.family))].sort();
+    const magnifications = [...new Set(pairedSubsets.map(item => item.magnification))].sort();
 
     families.forEach(family => {
       els.familyFilter.insertAdjacentHTML(
@@ -129,6 +161,11 @@
     const query = els.searchInput.value.trim().toLowerCase();
 
     return state.dataset.subsets.filter(subset => {
+      const pairCount = getSubsetPairs(subset).length;
+      if (pairCount === 0) {
+        return false;
+      }
+
       const familyMatch = family === "all" || subset.family === family;
       const magMatch = mag === "all" || subset.magnification === mag;
       const queryHaystack = [
@@ -149,7 +186,7 @@
 
   function renderMaterialStats(subsets) {
     const grouped = subsets.reduce((acc, subset) => {
-      acc[subset.family] = (acc[subset.family] || 0) + subset.images;
+      acc[subset.family] = (acc[subset.family] || 0) + getSubsetPairs(subset).length;
       return acc;
     }, {});
 
@@ -162,7 +199,7 @@
           <article class="material-card">
             <div class="material-meta">
               <strong>${escapeHtml(family)}</strong>
-              <span>${count} images (${pct}%)</span>
+              <span>${count} paired images (${pct}%)</span>
             </div>
             <div class="progress"><span style="width:${pct}%"></span></div>
           </article>
@@ -272,9 +309,21 @@
       return;
     }
 
-    const originals = (subset.gallery?.originals || []).map(item => ({ path: item.path || item.downloadUrl, name: item.name }));
-    const labels = (subset.gallery?.masks || []).map(item => ({ path: item.path || item.downloadUrl, name: item.name }));
-    const files = [...originals, ...labels].filter(item => item.path);
+    const files = [];
+    const seen = new Set();
+    getSubsetPairs(subset).forEach(({ original, mask }) => {
+      const originalPath = original.path || original.downloadUrl || original.thumbnailUrl;
+      const maskPath = mask.path || mask.downloadUrl || mask.thumbnailUrl;
+
+      if (originalPath && !seen.has(originalPath)) {
+        seen.add(originalPath);
+        files.push({ path: originalPath, name: original.name });
+      }
+      if (maskPath && !seen.has(maskPath)) {
+        seen.add(maskPath);
+        files.push({ path: maskPath, name: mask.name });
+      }
+    });
 
     files.forEach((item, idx) => {
       setTimeout(() => {
@@ -295,20 +344,19 @@
 
     const markup = subsets
       .map(subset => {
-        const gallery = subset.gallery || { originals: [], masks: [], originalCount: 0, maskCount: 0, pairCount: 0, notes: "" };
-        const masksById = new Map((gallery.masks || []).map(item => [item.id, item]));
+        const gallery = subset.gallery || { notes: "" };
+        const pairs = getSubsetPairs(subset);
+        if (pairs.length === 0) {
+          return "";
+        }
 
-        const slides = (gallery.originals || [])
-          .map(original => {
+        const slides = pairs
+          .map(({ original, mask }) => {
             const compareKey = `${subset.id}::${original.id}`;
-            const mask = original.maskId ? masksById.get(original.maskId) || null : null;
             state.compareLookup.set(compareKey, { subset, original, mask });
 
-            const source = toAssetUrl(original.path || original.thumbnailUrl);
+            const source = toAssetUrl(original.path || original.thumbnailUrl || original.downloadUrl);
             const label = original.name || original.id;
-            const tag = mask
-              ? '<span class="pair-tag mask">Mask Pair Available</span>'
-              : '<span class="pair-tag nomask">No Paired Mask</span>';
 
             return `
               <article class="carousel-slide">
@@ -316,7 +364,7 @@
                   <img src="${escapeHtml(source)}" alt="${escapeHtml(label)}" loading="lazy">
                   <div class="carousel-caption">
                     <strong>${escapeHtml(label)}</strong>
-                    ${tag}
+                    <span class="pair-tag mask">Mask Pair Available</span>
                   </div>
                 </button>
               </article>
@@ -330,7 +378,7 @@
               <div>
                 <h3>${escapeHtml(subset.material)}</h3>
                 <div class="subset-meta">
-                  <span class="badge">${subset.images} root images</span>
+                  <span class="badge">${pairs.length} matched pairs</span>
                   <span class="badge">${escapeHtml(subset.family)}</span>
                   <span class="badge">${escapeHtml(subset.condition)}</span>
                   <span class="badge">${escapeHtml(subset.magnification)}</span>
@@ -343,7 +391,7 @@
             <p>${escapeHtml(subset.description)}</p>
             <p><strong>Annotation notes:</strong> ${escapeHtml(subset.annotationNotes)}</p>
             <p><strong>Phase classes:</strong> ${subset.phases.map(phase => escapeHtml(phase)).join(", ")}</p>
-            <p class="category-gallery-meta">Showing ${gallery.originalCount} originals, ${gallery.maskCount} labels, ${gallery.pairCount} matched pairs. ${escapeHtml(gallery.notes || "")}</p>
+            <p class="category-gallery-meta">Showing ${pairs.length} matched original-label pairs only. ${escapeHtml(gallery.notes || "")}</p>
 
             <div class="carousel-shell js-carousel-shell">
               <button type="button" class="carousel-btn js-carousel-prev" aria-label="Previous images">‹</button>
@@ -358,6 +406,13 @@
         `;
       })
       .join("");
+
+    if (!markup.trim()) {
+      clearCarouselTimers();
+      els.subsetContainer.innerHTML =
+        '<article class="subset"><h3>No paired items for current filters</h3><p>Only image+mask pairs are shown on this benchmark explorer.</p></article>';
+      return;
+    }
 
     els.subsetContainer.innerHTML = markup;
 
@@ -397,8 +452,12 @@
     }
 
     const { subset, original, mask } = entry;
+    if (!mask) {
+      return;
+    }
+
     const originalTitle = original.name || original.id;
-    const maskTitle = mask?.name || "No paired label";
+    const maskTitle = mask.name || mask.id;
 
     els.compareTitle.textContent = `${subset.material} • ${subset.magnification} • ${originalTitle}`;
     els.compareOriginalImage.src = toAssetUrl(original.path || original.thumbnailUrl || "");
@@ -408,23 +467,14 @@
     els.compareOpenOriginal.href = originalPath;
     els.compareDownloadOriginal.href = originalPath;
 
-    if (mask) {
-      const maskPath = toAssetUrl(mask.path || mask.thumbnailUrl || "");
-      els.compareMaskPane.style.display = "";
-      els.compareNoMask.classList.remove("show");
-      els.compareMaskImage.src = maskPath;
-      els.compareMaskImage.alt = maskTitle;
-      els.compareOpenMask.hidden = false;
-      els.compareDownloadMask.hidden = false;
-      els.compareOpenMask.href = maskPath;
-      els.compareDownloadMask.href = maskPath;
-    } else {
-      els.compareMaskPane.style.display = "none";
-      els.compareNoMask.classList.add("show");
-      els.compareMaskImage.src = "";
-      els.compareOpenMask.hidden = true;
-      els.compareDownloadMask.hidden = true;
-    }
+    const maskPath = toAssetUrl(mask.path || mask.thumbnailUrl || mask.downloadUrl || "");
+    els.compareMaskPane.style.display = "";
+    els.compareMaskImage.src = maskPath;
+    els.compareMaskImage.alt = maskTitle;
+    els.compareOpenMask.hidden = false;
+    els.compareDownloadMask.hidden = false;
+    els.compareOpenMask.href = maskPath;
+    els.compareDownloadMask.href = maskPath;
 
     els.compareMeta.innerHTML = `
       <div><strong>Subset:</strong> ${escapeHtml(subset.material)} (${escapeHtml(subset.condition)}, ${escapeHtml(subset.magnification)})</div>
@@ -488,6 +538,7 @@
         throw new Error(`Failed loading dataset (${response.status})`);
       }
       state.dataset = await response.json();
+      state.pairCache.clear();
 
       initStaticContent(state.dataset);
       initDownloadSelect(state.dataset);
