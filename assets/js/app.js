@@ -95,11 +95,7 @@
   function initStaticContent(dataset) {
     document.title = `${dataset.shortName} Dataset Benchmark`;
     els.heroTitle.textContent = dataset.name;
-
-    const excluded = dataset.excludedSubsets && dataset.excludedSubsets.length > 0
-      ? ` Excluded by rule: ${dataset.excludedSubsets.join(", ")} (no detectable label subfolder from provided links).`
-      : "";
-    els.heroOverview.textContent = `${dataset.overview} ${dataset.localDataNote || ""}${excluded}`;
+    els.heroOverview.textContent = dataset.overview || "";
 
     const pairedSubsets = dataset.subsets.filter(subset => getSubsetPairs(subset).length > 0);
     const totalPairs = pairedSubsets.reduce((sum, subset) => sum + getSubsetPairs(subset).length, 0);
