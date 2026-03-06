@@ -16,7 +16,7 @@ All model testing is executed locally from these scripts (not via a hosted infer
 ## One-Command Full Reproduction
 
 ```bash
-cd /Users/galoren/.codex/workspaces/default/amam-site
+# from repository root
 bash repro/benchmark/run_all_repro.sh
 ```
 

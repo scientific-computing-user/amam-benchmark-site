@@ -14,7 +14,7 @@ Interactive dataset website for the **Annotated Metallic Alloys Microstructures 
 ## Local preview
 
 ```bash
-cd /Users/galoren/.codex/workspaces/default/amam-site
+# from repository root
 python3 -m http.server 4177
 # open http://127.0.0.1:4177
 ```
@@ -31,7 +31,7 @@ python3 -m http.server 4177
 ## Reproduce benchmark results
 
 ```bash
-cd /Users/galoren/.codex/workspaces/default/amam-site
+# from repository root
 bash repro/benchmark/run_all_repro.sh
 ```
 

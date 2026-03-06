@@ -13,7 +13,7 @@ This folder contains the full code and outputs used to build the benchmark resul
 ## Quick Start
 
 ```bash
-cd /Users/galoren/.codex/workspaces/default/amam-site
+# from repository root
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r repro/requirements.txt
@@ -22,7 +22,7 @@ pip install -r repro/requirements.txt
 ## Run Full Reproduction
 
 ```bash
-cd /Users/galoren/.codex/workspaces/default/amam-site
+# from repository root
 bash repro/benchmark/run_all_repro.sh
 ```
 
