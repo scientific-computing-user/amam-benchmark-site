@@ -107,4 +107,17 @@ This command fails if any model id is missing/misaligned across result files, or
 - `repro/external/TextureSAM`
 - `repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt`
 
-If unavailable, other foundation/edge methods still run.
+Exact sources used in this benchmark:
+
+- TextureSAM repository: `https://github.com/Scientific-Computing-Lab/TextureSAM`
+- TextureSAM checkpoints drive: `https://drive.google.com/drive/folders/1pUJLa898WYEcb4Y_sOaXsSVe-CsPkwRv`
+
+Example setup:
+
+```bash
+mkdir -p repro/external
+git clone https://github.com/Scientific-Computing-Lab/TextureSAM repro/external/TextureSAM
+mkdir -p repro/external/TextureSAM_Datasets/checkpoints
+# then place sam2.1_hiera_small_0.3.pt at:
+# repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt
+```

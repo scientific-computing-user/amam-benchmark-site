@@ -58,6 +58,11 @@ SKIP_FOUNDATION=1 bash repro/benchmark/run_all_repro.sh
 
 If missing, the script still runs the other foundation/edge models.
 
+Exact sources used:
+
+- `https://github.com/Scientific-Computing-Lab/TextureSAM`
+- `https://drive.google.com/drive/folders/1pUJLa898WYEcb4Y_sOaXsSVe-CsPkwRv`
+
 ## Per-Model Checkpoint Provenance
 
 The full 45-row model checkpoint/source manifest is generated at:

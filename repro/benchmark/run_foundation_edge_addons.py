@@ -280,9 +280,17 @@ def run_model_hed(detector, img_rgb: np.ndarray, k: int) -> np.ndarray:
 def load_texturesam_generator(repo_dir: Path, checkpoint_path: Path):
     sam2_root = repo_dir / "sam2"
     if not sam2_root.exists():
-        raise FileNotFoundError(f"TextureSAM repo not found: {sam2_root}")
+        raise FileNotFoundError(
+            "TextureSAM repo not found: "
+            f"{sam2_root}\n"
+            "Expected source: https://github.com/Scientific-Computing-Lab/TextureSAM"
+        )
     if not checkpoint_path.exists():
-        raise FileNotFoundError(f"TextureSAM checkpoint missing: {checkpoint_path}")
+        raise FileNotFoundError(
+            "TextureSAM checkpoint missing: "
+            f"{checkpoint_path}\n"
+            "Expected source: https://drive.google.com/drive/folders/1pUJLa898WYEcb4Y_sOaXsSVe-CsPkwRv"
+        )
 
     sam2_root_str = str(sam2_root)
     if sam2_root_str not in sys.path:
