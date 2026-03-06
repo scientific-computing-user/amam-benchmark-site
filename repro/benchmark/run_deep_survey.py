@@ -3,8 +3,8 @@
 AMAM deep-learning benchmark extension.
 
 This script runs two model sweeps on the strict 128-pair release:
-1) 10 general-purpose deep segmentation models
-2) 10 metallography-oriented deep variants
+1) 14 general-purpose deep segmentation models
+2) 15 metallography-oriented deep variants
 
 Outputs are written to:
   amam-site/repro/results/deep_survey/

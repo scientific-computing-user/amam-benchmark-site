@@ -36,6 +36,7 @@ bash repro/benchmark/run_all_repro.sh
 ```
 
 Detailed instructions are in `repro/README.md`.
+Execution details for every model family are in `repro/benchmark/README.md`.
 
 ## Deployment notes
 

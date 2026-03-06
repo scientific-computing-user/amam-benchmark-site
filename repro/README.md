@@ -26,6 +26,10 @@ cd /Users/galoren/.codex/workspaces/default/amam-site
 bash repro/benchmark/run_all_repro.sh
 ```
 
+For a script-by-script execution map (exact model families, outputs, and protocol files), see:
+
+- `repro/benchmark/README.md`
+
 This executes:
 
 1. `run_benchmark.py` (10 classical methods)
@@ -52,4 +56,3 @@ SKIP_FOUNDATION=1 bash repro/benchmark/run_all_repro.sh
 - `repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt`
 
 If missing, the script still runs the other foundation/edge models.
-
