@@ -1,13 +1,12 @@
 # Reproducibility Package (AMAM-128)
 
-This folder contains the full code and outputs used to build the benchmark results, figures, and paper artifacts.
+This folder contains the full code and outputs used to build the benchmark results and figures.
 
 ## What Is Included
 
 - `benchmark/`: all benchmark execution scripts (classical, deep, foundation/edge, plotting, appendix assets, site publishing).
 - `results/`: generated CSV summaries and per-image/per-subset outputs.
 - `figures/`: generated benchmark figures and appendix visual assets.
-- `paper/`: latest LaTeX source snapshot and compiled PDF used in this project stage.
 - `requirements.txt`: Python dependencies for reruns.
 
 ## Quick Start

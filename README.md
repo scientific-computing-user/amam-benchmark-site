@@ -26,7 +26,7 @@ python3 -m http.server 4177
 - `assets/js/app.js`: rendering, filters, lightbox, downloads
 - `assets/data/amam-dataset.json`: dataset metadata + links
 - `assets/images/*`: representative microstructure samples
-- `repro/*`: full reproducibility package (all benchmark code, outputs, and paper assets)
+- `repro/*`: full reproducibility package (benchmark code, outputs, and figures)
 
 ## Reproduce benchmark results
 
