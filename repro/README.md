@@ -1,0 +1,55 @@
+# Reproducibility Package (AMAM-128)
+
+This folder contains the full code and outputs used to build the benchmark results, figures, and paper artifacts.
+
+## What Is Included
+
+- `benchmark/`: all benchmark execution scripts (classical, deep, foundation/edge, plotting, appendix assets, site publishing).
+- `results/`: generated CSV summaries and per-image/per-subset outputs.
+- `figures/`: generated benchmark figures and appendix visual assets.
+- `paper/`: latest LaTeX source snapshot and compiled PDF used in this project stage.
+- `requirements.txt`: Python dependencies for reruns.
+
+## Quick Start
+
+```bash
+cd /Users/galoren/.codex/workspaces/default/amam-site
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r repro/requirements.txt
+```
+
+## Run Full Reproduction
+
+```bash
+cd /Users/galoren/.codex/workspaces/default/amam-site
+bash repro/benchmark/run_all_repro.sh
+```
+
+This executes:
+
+1. `run_benchmark.py` (10 classical methods)
+2. `run_deep_survey.py` (general + metallography-oriented supervised deep models)
+3. `run_foundation_edge_addons.py` (SAM/SlimSAM + edge add-ons)
+4. `plot_benchmark_gap_figure.py`
+5. `build_appendix_representative_assets.py`
+6. `publish_results_to_site.py` (syncs report CSVs into `assets/data/results/`)
+
+## Optional Fast Modes
+
+Skip expensive stages:
+
+```bash
+SKIP_DEEP=1 bash repro/benchmark/run_all_repro.sh
+SKIP_FOUNDATION=1 bash repro/benchmark/run_all_repro.sh
+```
+
+## External Optional Dependency (TextureSAM)
+
+`run_foundation_edge_addons.py` can use TextureSAM if checkpoints/repos are available under:
+
+- `repro/external/TextureSAM`
+- `repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt`
+
+If missing, the script still runs the other foundation/edge models.
+

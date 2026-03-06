@@ -1,0 +1,30 @@
+{
+  "seed": 17,
+  "img_size": [
+    256,
+    256
+  ],
+  "train_fraction": 0.8,
+  "n_pairs": 128,
+  "test_images": 25,
+  "methods": [
+    "kmeans_rgb",
+    "gmm_rgb",
+    "canny_watershed",
+    "sobel_watershed",
+    "slic_cluster",
+    "felzenszwalb_cluster",
+    "lbp_kmeans",
+    "gabor_kmeans",
+    "rf_pixel",
+    "svm_pixel"
+  ],
+  "subset_test_counts": {
+    "4130-steel": 8,
+    "6280-cast-iron-low": 2,
+    "6280-cast-iron-high": 2,
+    "5884-armor-steel": 4,
+    "418-17-4ph-x5": 5,
+    "418-17-4ph-x20": 4
+  }
+}

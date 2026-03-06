@@ -1,0 +1,10 @@
+{
+  "seed": 17,
+  "img_size": 192,
+  "train_fraction": 0.8,
+  "n_pairs": 128,
+  "test_images": 25,
+  "models": [
+    "texturesam_03"
+  ]
+}

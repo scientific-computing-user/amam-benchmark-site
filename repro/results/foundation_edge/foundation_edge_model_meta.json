@@ -1,0 +1,20 @@
+{
+  "sam_vit_base": {
+    "runtime_sec": 573.7503921985626
+  },
+  "slimsam_50": {
+    "runtime_sec": 600.3793678283691
+  },
+  "slimsam_77": {
+    "runtime_sec": 534.2577290534973
+  },
+  "hed_watershed": {
+    "runtime_sec": 10.538023948669434
+  },
+  "pidi_watershed": {
+    "runtime_sec": 14.360891103744507
+  },
+  "texturesam_03": {
+    "runtime_sec": 504.7167100906372
+  }
+}

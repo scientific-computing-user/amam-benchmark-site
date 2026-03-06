@@ -26,10 +26,19 @@ python3 -m http.server 4177
 - `assets/js/app.js`: rendering, filters, lightbox, downloads
 - `assets/data/amam-dataset.json`: dataset metadata + links
 - `assets/images/*`: representative microstructure samples
+- `repro/*`: full reproducibility package (all benchmark code, outputs, and paper assets)
+
+## Reproduce benchmark results
+
+```bash
+cd /Users/galoren/.codex/workspaces/default/amam-site
+bash repro/benchmark/run_all_repro.sh
+```
+
+Detailed instructions are in `repro/README.md`.
 
 ## Deployment notes
 
 - A `.nojekyll` file is included so GitHub Pages serves static assets directly.
 - For private-only GitHub Pages publication, GitHub requires enterprise access-control support.
 - On personal `GitHub Free`, GitHub Pages is not private-access controlled.
-
