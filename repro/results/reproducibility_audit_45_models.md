@@ -1,7 +1,7 @@
 # AMAM-128 Reproducibility Audit (45 Models)
 
 - Status: **PASS**
-- Git commit: `8d997ca74b71bb1bb48f055ec9eee57242e94cf0`
+- Git commit: `7c3036b4de5e27c7a36cccb377d6fc50e82df811`
 - Model counts:
   - Classical: 10
   - Deep general: 14
@@ -16,7 +16,7 @@
 - Provenance manifest matches results IDs: `True`
 
 ## Key Artifacts (SHA256)
-- `repro/results/classical/benchmark_summary.csv`: `12287b01f0bcac54c30bc4d4c401ca557db9ef3fe9426044f7c6726c88e5662f`
+- `repro/results/classical/benchmark_summary.csv`: `59ea2daa61828ea99e7f362a7715f9e4997edcde15b010b24a7a969dfdba51bb`
 - `repro/results/classical/benchmark_raw_per_image.csv`: `fa65da35b21da685601ba91aaa9744bc862117efb32c19cefa29c3ddcfffbab0`
 - `repro/results/classical/benchmark_per_subset.csv`: `2f908f440c9822cb5bc989c35bed64dca4bbac9ae452bc94b2c6a74aa77b777a`
 - `repro/results/deep_survey/deep_general_summary.csv`: `9fd9d6e33c6681985f0b39c1e5f12d50234774bc42afe76106c00a5e6dd97eef`
@@ -29,4 +29,4 @@
 - `repro/results/classical/benchmark_protocol.json`: `6db5cfbfaeab7bc8ee63cdafc426cce49752ed725b465a3b64aa4d74c149ad16`
 - `repro/results/deep_survey/deep_protocol.json`: `a9fdd197533d74490b6472924d2c9c6b5fa3f7cceb89cce59777b7e33e4ec1df`
 - `repro/results/foundation_edge/foundation_edge_protocol.json`: `2853d10f60e30349dab230aaf9e71c6a486dfde83e5395764081f03598481665`
-- `repro/results/model_provenance_manifest.csv`: `000936b0ebad56c730459b2d0a64ea447e5aa62629a64bf12dce6ce649dd6b69`
+- `repro/results/model_provenance_manifest.csv`: `436fc44adea38600601d74bb4ba890b977808d469fac33c440a148bed635670e`

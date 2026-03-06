@@ -451,20 +451,21 @@ def run():
     )
     per_subset.to_csv(RESULT_DIR / "benchmark_per_subset.csv", index=False)
 
-    summary = (
+    micro_summary = (
         df.groupby(["method", "category"], as_index=False)[["miou", "dice", "pixel_acc"]]
         .mean()
         .sort_values("miou", ascending=False)
     )
-    summary.to_csv(RESULT_DIR / "benchmark_summary.csv", index=False)
+    micro_summary.to_csv(RESULT_DIR / "benchmark_micro_over_images.csv", index=False)
 
-    # macro over subsets
+    # Macro-over-subsets is the canonical benchmark summary used by the paper/site.
     macro_subset = (
         per_subset.groupby(["method", "category"], as_index=False)[["miou", "dice", "pixel_acc"]]
         .mean()
         .sort_values("miou", ascending=False)
     )
     macro_subset.to_csv(RESULT_DIR / "benchmark_macro_over_subsets.csv", index=False)
+    macro_subset.to_csv(RESULT_DIR / "benchmark_summary.csv", index=False)
 
     # markdown table for the paper
     md_lines = [

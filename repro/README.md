@@ -9,6 +9,8 @@ This folder contains the full code and outputs used to build the benchmark resul
 - `figures/`: generated benchmark figures and appendix visual assets.
 - `requirements.txt`: Python dependencies for reruns.
 
+For classical methods, `repro/results/classical/benchmark_summary.csv` is the canonical subset-macro table used by the paper/site, and `benchmark_micro_over_images.csv` is also exported for image-level reference.
+
 ## Quick Start
 
 ```bash

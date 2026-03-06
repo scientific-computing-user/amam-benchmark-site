@@ -61,8 +61,12 @@ python3 repro/benchmark/run_foundation_edge_addons.py --img-size 192 --device au
 ### Classical (10)
 
 - `repro/results/classical/benchmark_summary.csv`
+- `repro/results/classical/benchmark_macro_over_subsets.csv`
+- `repro/results/classical/benchmark_micro_over_images.csv`
 - `repro/results/classical/benchmark_per_subset.csv`
 - `repro/results/classical/benchmark_raw_per_image.csv`
+
+`benchmark_summary.csv` is the canonical subset-macro summary used by the paper and website.
 
 ### Supervised Deep (29)
 

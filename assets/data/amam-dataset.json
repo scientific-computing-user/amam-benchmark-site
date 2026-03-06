@@ -3,7 +3,7 @@
   "shortName": "AMAM",
   "version": "v2-local-git",
   "overview": "AMAM is a benchmark for segmentation of metallic microstructures across diverse alloys, conditions, and magnifications, designed for robust and comparable evaluation under real morphological variability. The dataset provides expert-refined image-label tuples to support fair method comparison and reproducible reporting.",
-  "totalImages": 208,
+  "totalImages": 136,
   "includedSubsets": 6,
   "excludedSubsets": [
     "3105-aluminum-high",
