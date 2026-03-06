@@ -22,6 +22,7 @@
         <a href="index.html#overview">Overview</a>
         <a href="index.html#downloads">Downloads</a>
         <a href="index.html#explorer">Explorer</a>
+        <a href="#model-results">Model Results</a>
         <a href="report.html">Benchmark Report</a>
       </nav>
     </div>
@@ -115,6 +116,65 @@
           </table>
         </div>
       </article>
+    </section>
+
+    <section class="panel" id="model-results">
+      <div class="panel-head">
+        <h2>Model Benchmark Results (All 43 Runs)</h2>
+        <p>Complete benchmark table across 10 classical baselines, 28 supervised deep models, and 5 foundation/edge inference add-ons.</p>
+      </div>
+
+      <div class="results-summary" id="resultsSummary"></div>
+
+      <div class="results-tools">
+        <div class="field-group">
+          <label for="resultsGroupFilter">Model group</label>
+          <select id="resultsGroupFilter">
+            <option value="all">All groups</option>
+            <option value="classical">Classical baselines</option>
+            <option value="deep_general">Deep supervised (general)</option>
+            <option value="deep_metallography">Deep supervised (metallography)</option>
+            <option value="foundation_edge">Foundation/edge add-ons</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="resultsSortBy">Sort by</label>
+          <select id="resultsSortBy">
+            <option value="miou">mIoU</option>
+            <option value="dice">Dice</option>
+            <option value="pixelAcc">Pixel Accuracy</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="resultsSearch">Search model/category</label>
+          <input id="resultsSearch" type="search" placeholder="e.g. segformer, edge, clahe..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="results-downloads">
+        <a class="btn btn-ghost" href="assets/data/results/benchmark_summary.csv" download>Download Classical CSV</a>
+        <a class="btn btn-ghost" href="assets/data/results/deep_macro_over_subsets.csv" download>Download Deep CSV</a>
+        <a class="btn btn-ghost" href="assets/data/results/foundation_edge_summary.csv" download>Download Foundation/Edge CSV</a>
+      </div>
+
+      <p class="results-status" id="resultsStatus">Loading benchmark results...</p>
+
+      <div class="table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Model</th>
+              <th>Group</th>
+              <th>Category</th>
+              <th>mIoU</th>
+              <th>Dice</th>
+              <th>Pixel Acc</th>
+            </tr>
+          </thead>
+          <tbody id="resultsTableBody"></tbody>
+        </table>
+      </div>
     </section>
 
     <section class="panel">

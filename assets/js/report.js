@@ -1,4 +1,49 @@
 (() => {
+  const state = {
+    modelRows: []
+  };
+
+  const GROUP_LABELS = {
+    classical: "Classical baselines",
+    deep_general: "Deep supervised (general)",
+    deep_metallography: "Deep supervised (metallography)",
+    foundation_edge: "Foundation/edge add-ons"
+  };
+
+  const CLASSICAL_METHOD_NAMES = {
+    svm_pixel: "Linear SVM (pixel features)",
+    rf_pixel: "RF (pixel features)",
+    gmm_rgb: "GMM-RGB",
+    gabor_kmeans: "Gabor+KMeans",
+    slic_cluster: "SLIC+KMeans",
+    kmeans_rgb: "KMeans-RGB",
+    felzenszwalb_cluster: "Felzenszwalb+GMM",
+    lbp_kmeans: "LBP+KMeans",
+    canny_watershed: "Canny+Watershed",
+    sobel_watershed: "Sobel+Watershed"
+  };
+
+  const CLASSICAL_CATEGORY_NAMES = {
+    metallography_learned: "Metallography-learned",
+    contour_region: "Contour/region",
+    baseline: "Baseline",
+    texture: "Texture",
+    edge: "Edge"
+  };
+
+  const FOUNDATION_MODEL_NAMES = {
+    sam_vit_base: "SAM ViT-Base (auto-mask)",
+    slimsam_50: "SlimSAM-50 (auto-mask)",
+    slimsam_77: "SlimSAM-77 (auto-mask)",
+    hed_watershed: "HED + Watershed",
+    pidi_watershed: "PidiNet + Watershed"
+  };
+
+  const FOUNDATION_CATEGORY_NAMES = {
+    foundation_sam: "Foundation SAM",
+    deep_edge: "Deep Edge"
+  };
+
   const els = {
     reportHeadline: document.getElementById("reportHeadline"),
     reportOverview: document.getElementById("reportOverview"),
@@ -8,7 +53,13 @@
     subsetTableBody: document.getElementById("subsetTableBody"),
     workflowSteps: document.getElementById("workflowSteps"),
     samplePairsGrid: document.getElementById("samplePairsGrid"),
-    nextStepsList: document.getElementById("nextStepsList")
+    nextStepsList: document.getElementById("nextStepsList"),
+    resultsSummary: document.getElementById("resultsSummary"),
+    resultsGroupFilter: document.getElementById("resultsGroupFilter"),
+    resultsSortBy: document.getElementById("resultsSortBy"),
+    resultsSearch: document.getElementById("resultsSearch"),
+    resultsStatus: document.getElementById("resultsStatus"),
+    resultsTableBody: document.getElementById("resultsTableBody")
   };
 
   function escapeHtml(value) {
@@ -22,6 +73,68 @@
 
   function toAssetUrl(path) {
     return encodeURI(path);
+  }
+
+  function humanizeToken(value) {
+    return String(value || "")
+      .replaceAll("_", " ")
+      .replaceAll("-", " ")
+      .replace(/\b\w/g, char => char.toUpperCase());
+  }
+
+  function parseCsv(text) {
+    const lines = String(text || "")
+      .trim()
+      .split(/\r?\n/)
+      .filter(Boolean);
+    if (lines.length < 2) {
+      return [];
+    }
+
+    const headers = lines[0].split(",").map(header => header.trim());
+    return lines.slice(1).map(line => {
+      const cells = line.split(",");
+      return headers.reduce((acc, header, idx) => {
+        acc[header] = (cells[idx] || "").trim();
+        return acc;
+      }, {});
+    });
+  }
+
+  function toNumber(value) {
+    const n = Number.parseFloat(value);
+    return Number.isFinite(n) ? n : NaN;
+  }
+
+  function formatMetric(value) {
+    return Number.isFinite(value) ? value.toFixed(4) : "—";
+  }
+
+  function formatGroupLabel(groupKey) {
+    return GROUP_LABELS[groupKey] || humanizeToken(groupKey);
+  }
+
+  function getFilteredAndSortedResults() {
+    const groupFilter = els.resultsGroupFilter.value;
+    const search = els.resultsSearch.value.trim().toLowerCase();
+    const sortBy = els.resultsSortBy.value;
+
+    const filtered = state.modelRows.filter(row => {
+      const groupMatch = groupFilter === "all" || row.groupKey === groupFilter;
+      const haystack = [row.model, row.groupLabel, row.category].join(" ").toLowerCase();
+      const searchMatch = search.length === 0 || haystack.includes(search);
+      return groupMatch && searchMatch;
+    });
+
+    filtered.sort((a, b) => {
+      const delta = (b[sortBy] || 0) - (a[sortBy] || 0);
+      if (delta !== 0) {
+        return delta;
+      }
+      return (b.miou || 0) - (a.miou || 0);
+    });
+
+    return filtered;
   }
 
   function getSubsetPairs(subset) {
@@ -215,8 +328,161 @@
     els.nextStepsList.append(li);
   }
 
+  function renderResultsSummary() {
+    if (!els.resultsSummary) {
+      return;
+    }
+
+    const rows = state.modelRows;
+    const counts = rows.reduce((acc, row) => {
+      acc[row.groupKey] = (acc[row.groupKey] || 0) + 1;
+      return acc;
+    }, {});
+
+    const topOverall = [...rows].sort((a, b) => (b.miou || 0) - (a.miou || 0))[0];
+
+    els.resultsSummary.innerHTML = `
+      <article class="metric-tile result-metric">
+        <span class="metric-value">${rows.length}</span>
+        <span class="metric-label">Total benchmarked models</span>
+      </article>
+      <article class="metric-tile result-metric">
+        <span class="metric-value">${counts.classical || 0}</span>
+        <span class="metric-label">Classical baselines</span>
+      </article>
+      <article class="metric-tile result-metric">
+        <span class="metric-value">${(counts.deep_general || 0) + (counts.deep_metallography || 0)}</span>
+        <span class="metric-label">Supervised deep models</span>
+      </article>
+      <article class="metric-tile result-metric">
+        <span class="metric-value">${counts.foundation_edge || 0}</span>
+        <span class="metric-label">Foundation/edge add-ons</span>
+      </article>
+      <article class="metric-tile result-metric result-metric-wide">
+        <span class="metric-value">${topOverall ? topOverall.miou.toFixed(4) : "—"}</span>
+        <span class="metric-label">Best mIoU overall: ${topOverall ? escapeHtml(topOverall.model) : "N/A"}</span>
+      </article>
+    `;
+  }
+
+  function renderResultsTable() {
+    if (!els.resultsTableBody) {
+      return;
+    }
+
+    const rows = getFilteredAndSortedResults();
+    const sortByLabel = els.resultsSortBy.value === "pixelAcc" ? "Pixel Accuracy" : els.resultsSortBy.value.toUpperCase();
+
+    if (rows.length === 0) {
+      els.resultsTableBody.innerHTML = `
+        <tr>
+          <td colspan="7">No models match the current filters.</td>
+        </tr>
+      `;
+      if (els.resultsStatus) {
+        els.resultsStatus.textContent = "No models match the current filter/search.";
+      }
+      return;
+    }
+
+    els.resultsTableBody.innerHTML = rows
+      .map(
+        (row, idx) => `
+          <tr class="${idx < 3 ? "top-row" : ""}">
+            <td>${idx + 1}</td>
+            <td>${escapeHtml(row.model)}</td>
+            <td>${escapeHtml(row.groupLabel)}</td>
+            <td>${escapeHtml(row.category)}</td>
+            <td>${formatMetric(row.miou)}</td>
+            <td>${formatMetric(row.dice)}</td>
+            <td>${formatMetric(row.pixelAcc)}</td>
+          </tr>
+        `
+      )
+      .join("");
+
+    if (els.resultsStatus) {
+      els.resultsStatus.textContent = `Showing ${rows.length} of ${state.modelRows.length} models. Sorted by ${sortByLabel}.`;
+    }
+  }
+
+  function bindResultsControls() {
+    if (!els.resultsGroupFilter || !els.resultsSortBy || !els.resultsSearch) {
+      return;
+    }
+
+    els.resultsGroupFilter.addEventListener("change", renderResultsTable);
+    els.resultsSortBy.addEventListener("change", renderResultsTable);
+    els.resultsSearch.addEventListener("input", renderResultsTable);
+  }
+
+  async function loadModelResults() {
+    const [classicalCsv, deepCsv, foundationCsv] = await Promise.all([
+      fetch("assets/data/results/benchmark_summary.csv").then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed loading classical results (${response.status})`);
+        }
+        return response.text();
+      }),
+      fetch("assets/data/results/deep_macro_over_subsets.csv").then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed loading deep results (${response.status})`);
+        }
+        return response.text();
+      }),
+      fetch("assets/data/results/foundation_edge_summary.csv").then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed loading foundation/edge results (${response.status})`);
+        }
+        return response.text();
+      })
+    ]);
+
+    const classicalRows = parseCsv(classicalCsv).map(row => ({
+      model: CLASSICAL_METHOD_NAMES[row.method] || humanizeToken(row.method),
+      groupKey: "classical",
+      groupLabel: formatGroupLabel("classical"),
+      category: CLASSICAL_CATEGORY_NAMES[row.category] || humanizeToken(row.category),
+      miou: toNumber(row.miou),
+      dice: toNumber(row.dice),
+      pixelAcc: toNumber(row.pixel_acc)
+    }));
+
+    const deepRows = parseCsv(deepCsv).map(row => {
+      const groupKey = row.group === "metallography" ? "deep_metallography" : "deep_general";
+      return {
+        model: row.display_name || humanizeToken(row.model_id),
+        groupKey,
+        groupLabel: formatGroupLabel(groupKey),
+        category: humanizeToken(row.category),
+        miou: toNumber(row.miou),
+        dice: toNumber(row.dice),
+        pixelAcc: toNumber(row.pixel_acc)
+      };
+    });
+
+    const foundationRows = parseCsv(foundationCsv).map(row => ({
+      model: FOUNDATION_MODEL_NAMES[row.model_id] || humanizeToken(row.model_id),
+      groupKey: "foundation_edge",
+      groupLabel: formatGroupLabel("foundation_edge"),
+      category: FOUNDATION_CATEGORY_NAMES[row.category] || humanizeToken(row.category),
+      miou: toNumber(row.miou),
+      dice: toNumber(row.dice),
+      pixelAcc: toNumber(row.pixel_acc)
+    }));
+
+    const merged = [...classicalRows, ...deepRows, ...foundationRows].filter(
+      row => Number.isFinite(row.miou) && Number.isFinite(row.dice) && Number.isFinite(row.pixelAcc)
+    );
+
+    merged.sort((a, b) => b.miou - a.miou);
+    return merged;
+  }
+
   async function init() {
     try {
+      bindResultsControls();
+
       const response = await fetch("assets/data/amam-dataset.json");
       if (!response.ok) {
         throw new Error(`Failed loading dataset metadata (${response.status})`);
@@ -230,6 +496,10 @@
       renderWorkflow(dataset.method || {});
       renderSamples(subsets);
       renderDynamicNotes(dataset);
+
+      state.modelRows = await loadModelResults();
+      renderResultsSummary();
+      renderResultsTable();
     } catch (error) {
       els.reportHeadline.textContent = "AMAM Benchmark Report";
       els.reportOverview.textContent = `Unable to load benchmark metadata: ${error.message}`;
@@ -239,6 +509,15 @@
       els.subsetTableBody.innerHTML = "";
       els.workflowSteps.innerHTML = "";
       els.samplePairsGrid.innerHTML = "";
+      if (els.resultsSummary) {
+        els.resultsSummary.innerHTML = "";
+      }
+      if (els.resultsStatus) {
+        els.resultsStatus.textContent = `Unable to load model results: ${error.message}`;
+      }
+      if (els.resultsTableBody) {
+        els.resultsTableBody.innerHTML = "";
+      }
     }
   }
 
