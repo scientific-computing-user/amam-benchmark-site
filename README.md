@@ -37,6 +37,7 @@ bash repro/benchmark/run_all_repro.sh
 
 Detailed instructions are in `repro/README.md`.
 Execution details for every model family are in `repro/benchmark/README.md`.
+Per-model checkpoint/source traceability is in `repro/results/model_provenance_manifest.csv`.
 
 ## Deployment notes
 

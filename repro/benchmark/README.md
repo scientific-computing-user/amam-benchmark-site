@@ -12,6 +12,7 @@ All model testing is executed locally from these scripts (not via a hosted infer
 - `plot_benchmark_gap_figure.py`: main benchmark-gap figure.
 - `build_appendix_representative_assets.py`: appendix visual audit assets.
 - `publish_results_to_site.py`: syncs reproducibility outputs into website CSV artifacts.
+- `build_model_provenance_manifest.py`: writes a 45-row per-model checkpoint/source manifest.
 
 ## One-Command Full Reproduction
 
@@ -28,6 +29,7 @@ Pipeline order:
 4. Gap figure generation
 5. Representative appendix assets generation
 6. Publish CSVs to `assets/data/results/`
+7. Build `repro/results/model_provenance_manifest.csv` and `.md`
 
 ## Run Families Separately
 
@@ -79,6 +81,11 @@ python3 repro/benchmark/run_foundation_edge_addons.py --img-size 192 --device au
 - `assets/data/results/benchmark_summary.csv`
 - `assets/data/results/deep_macro_over_subsets.csv`
 - `assets/data/results/foundation_edge_summary.csv`
+
+### Checkpoint / Source Manifest (All 45 Models)
+
+- `repro/results/model_provenance_manifest.csv`
+- `repro/results/model_provenance_manifest.md`
 
 ## Optional TextureSAM Dependency
 

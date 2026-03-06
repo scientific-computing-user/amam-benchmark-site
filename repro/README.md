@@ -38,6 +38,7 @@ This executes:
 4. `plot_benchmark_gap_figure.py`
 5. `build_appendix_representative_assets.py`
 6. `publish_results_to_site.py` (syncs report CSVs into `assets/data/results/`)
+7. `build_model_provenance_manifest.py` (writes per-model checkpoint/source manifest)
 
 ## Optional Fast Modes
 
@@ -56,3 +57,10 @@ SKIP_FOUNDATION=1 bash repro/benchmark/run_all_repro.sh
 - `repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt`
 
 If missing, the script still runs the other foundation/edge models.
+
+## Per-Model Checkpoint Provenance
+
+The full 45-row model checkpoint/source manifest is generated at:
+
+- `repro/results/model_provenance_manifest.csv`
+- `repro/results/model_provenance_manifest.md`

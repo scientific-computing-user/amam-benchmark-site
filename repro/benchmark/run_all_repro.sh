@@ -27,7 +27,10 @@ python3 repro/benchmark/plot_benchmark_gap_figure.py
 echo "[5/6] Representative appendix prediction assets"
 python3 repro/benchmark/build_appendix_representative_assets.py
 
-echo "[6/6] Publish results to website assets"
+echo "[6/7] Publish results to website assets"
 python3 repro/benchmark/publish_results_to_site.py
+
+echo "[7/7] Build per-model provenance manifest"
+python3 repro/benchmark/build_model_provenance_manifest.py
 
 echo "[done] Repro pipeline complete."
