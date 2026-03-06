@@ -38,6 +38,7 @@ This executes:
 5. `build_appendix_representative_assets.py`
 6. `publish_results_to_site.py` (syncs report CSVs into `assets/data/results/`)
 7. `build_model_provenance_manifest.py` (writes per-model checkpoint/source manifest)
+8. `verify_45_model_repro.py` (hard consistency audit for all 45 model rows)
 
 ## Optional Fast Modes
 
@@ -63,3 +64,8 @@ The full 45-row model checkpoint/source manifest is generated at:
 
 - `repro/results/model_provenance_manifest.csv`
 - `repro/results/model_provenance_manifest.md`
+
+Hard reproducibility audit outputs:
+
+- `repro/results/reproducibility_audit_45_models.json`
+- `repro/results/reproducibility_audit_45_models.md`

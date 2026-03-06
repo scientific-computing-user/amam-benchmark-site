@@ -13,6 +13,7 @@ All model testing is executed locally from these scripts (not via a hosted infer
 - `build_appendix_representative_assets.py`: appendix visual audit assets.
 - `publish_results_to_site.py`: syncs reproducibility outputs into website CSV artifacts.
 - `build_model_provenance_manifest.py`: writes a 45-row per-model checkpoint/source manifest.
+- `verify_45_model_repro.py`: hard verification that all 45 model ids/checkpoint rows/results are consistent.
 
 ## One-Command Full Reproduction
 
@@ -30,6 +31,7 @@ Pipeline order:
 5. Representative appendix assets generation
 6. Publish CSVs to `assets/data/results/`
 7. Build `repro/results/model_provenance_manifest.csv` and `.md`
+8. Build `repro/results/reproducibility_audit_45_models.json` and `.md`
 
 ## Run Families Separately
 
@@ -86,6 +88,17 @@ python3 repro/benchmark/run_foundation_edge_addons.py --img-size 192 --device au
 
 - `repro/results/model_provenance_manifest.csv`
 - `repro/results/model_provenance_manifest.md`
+
+## Hard Proof Command (45 Models)
+
+```bash
+python3 repro/benchmark/verify_45_model_repro.py
+```
+
+This command fails if any model id is missing/misaligned across result files, or if the provenance manifest is incomplete. On success, it writes:
+
+- `repro/results/reproducibility_audit_45_models.json`
+- `repro/results/reproducibility_audit_45_models.md`
 
 ## Optional TextureSAM Dependency
 

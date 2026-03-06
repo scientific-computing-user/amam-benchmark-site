@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "git_commit": "f02c0a7ee00d2ad74de3ffa85e6f777c98e5f46d",
+  "counts": {
+    "classical": 10,
+    "deep_general": 14,
+    "deep_metallography": 15,
+    "foundation_edge": 6,
+    "total_unique_models": 45
+  },
+  "consistency": {
+    "classical_consistent": true,
+    "deep_consistent": true,
+    "foundation_consistent": true,
+    "manifest_matches_results": true
+  },
+  "artifact_sha256": {
+    "repro/results/classical/benchmark_summary.csv": "12287b01f0bcac54c30bc4d4c401ca557db9ef3fe9426044f7c6726c88e5662f",
+    "repro/results/classical/benchmark_raw_per_image.csv": "fa65da35b21da685601ba91aaa9744bc862117efb32c19cefa29c3ddcfffbab0",
+    "repro/results/classical/benchmark_per_subset.csv": "2f908f440c9822cb5bc989c35bed64dca4bbac9ae452bc94b2c6a74aa77b777a",
+    "repro/results/deep_survey/deep_general_summary.csv": "9fd9d6e33c6681985f0b39c1e5f12d50234774bc42afe76106c00a5e6dd97eef",
+    "repro/results/deep_survey/deep_metallography_summary.csv": "e0d9d765d209b5ede75f2bd703132356fc019e6e77f1371988dd0c4698bccab6",
+    "repro/results/deep_survey/deep_per_image.csv": "71364e52c22d8530cfb667946e33f18665977ae75e41a91d49fe80058341b639",
+    "repro/results/deep_survey/deep_per_subset.csv": "bbad9acc6ee18a05aec0791fa0f8984348d6aa4a51c5d54c6f23238831b40e15",
+    "repro/results/foundation_edge/foundation_edge_summary.csv": "030492186028fe0f9db47c70a7f32bca506881923288dbbab3b4b7c50714079a",
+    "repro/results/foundation_edge/foundation_edge_per_image.csv": "95536886244b614115f471e9cbe6e9e9a41d046b48c4709a0f01f5b91638bbe3",
+    "repro/results/foundation_edge/foundation_edge_per_subset.csv": "56646c792047b8b494ebf3f498d211f30a0041288bb3011504ebc3e188d38197",
+    "repro/results/classical/benchmark_protocol.json": "6db5cfbfaeab7bc8ee63cdafc426cce49752ed725b465a3b64aa4d74c149ad16",
+    "repro/results/deep_survey/deep_protocol.json": "a9fdd197533d74490b6472924d2c9c6b5fa3f7cceb89cce59777b7e33e4ec1df",
+    "repro/results/foundation_edge/foundation_edge_protocol.json": "2853d10f60e30349dab230aaf9e71c6a486dfde83e5395764081f03598481665",
+    "repro/results/model_provenance_manifest.csv": "000936b0ebad56c730459b2d0a64ea447e5aa62629a64bf12dce6ce649dd6b69"
+  }
+}

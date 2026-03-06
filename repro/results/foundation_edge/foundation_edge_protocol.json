@@ -5,6 +5,28 @@
   "n_pairs": 128,
   "test_images": 25,
   "models": [
+    "sam_vit_base",
+    "slimsam_50",
+    "slimsam_77",
+    "texturesam_03",
+    "hed_watershed",
+    "pidi_watershed"
+  ],
+  "selected_models": [
+    "sam_vit_base",
+    "slimsam_50",
+    "slimsam_77",
+    "texturesam_03",
+    "hed_watershed",
+    "pidi_watershed"
+  ],
+  "completed_models": [
+    "hed_watershed",
+    "pidi_watershed",
+    "sam_vit_base",
+    "slimsam_50",
+    "slimsam_77",
     "texturesam_03"
-  ]
+  ],
+  "resume_enabled": true
 }

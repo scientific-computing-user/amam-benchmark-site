@@ -353,7 +353,7 @@ def main() -> None:
         checkpoint_path=Path(args.texturesam_ckpt),
     )
 
-    models = [
+    all_models = [
         ("sam_vit_base", "foundation_sam", lambda img, k: run_model_sam(sam_base, img, k)),
         ("slimsam_50", "foundation_sam", lambda img, k: run_model_sam(slim_50, img, k)),
         ("slimsam_77", "foundation_sam", lambda img, k: run_model_sam(slim_77, img, k)),
@@ -361,6 +361,7 @@ def main() -> None:
         ("hed_watershed", "deep_edge", lambda img, k: run_model_hed(hed, img, k)),
         ("pidi_watershed", "deep_edge", lambda img, k: run_model_hed(pidi, img, k)),
     ]
+    models = list(all_models)
 
     if args.models.strip():
         wanted = {m.strip() for m in args.models.split(",") if m.strip()}
@@ -453,7 +454,10 @@ def main() -> None:
         "train_fraction": TRAIN_FRACTION,
         "n_pairs": len(pairs),
         "test_images": len(test_samples),
-        "models": [m for m, _, _ in models],
+        "models": [m for m, _, _ in all_models],
+        "selected_models": [m for m, _, _ in models],
+        "completed_models": sorted(df["model_id"].unique().tolist()),
+        "resume_enabled": (not args.no_resume),
     }
     (OUT_DIR / "foundation_edge_protocol.json").write_text(json.dumps(protocol, indent=2))
 

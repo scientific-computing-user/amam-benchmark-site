@@ -48,6 +48,7 @@ FOUNDATION_META = {
         "checkpoint_identifier": "facebook/sam-vit-base",
         "checkpoint_loader": "transformers.pipeline('mask-generation', model='facebook/sam-vit-base')",
         "checkpoint_source_location": "Hugging Face model id: facebook/sam-vit-base",
+        "checkpoint_source_url": "https://huggingface.co/facebook/sam-vit-base",
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
     },
     "slimsam_50": {
@@ -56,6 +57,7 @@ FOUNDATION_META = {
         "checkpoint_identifier": "nielsr/slimsam-50-uniform",
         "checkpoint_loader": "transformers.pipeline('mask-generation', model='nielsr/slimsam-50-uniform')",
         "checkpoint_source_location": "Hugging Face model id: nielsr/slimsam-50-uniform",
+        "checkpoint_source_url": "https://huggingface.co/nielsr/slimsam-50-uniform",
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
     },
     "slimsam_77": {
@@ -64,6 +66,7 @@ FOUNDATION_META = {
         "checkpoint_identifier": "nielsr/slimsam-77-uniform",
         "checkpoint_loader": "transformers.pipeline('mask-generation', model='nielsr/slimsam-77-uniform')",
         "checkpoint_source_location": "Hugging Face model id: nielsr/slimsam-77-uniform",
+        "checkpoint_source_url": "https://huggingface.co/nielsr/slimsam-77-uniform",
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
     },
     "texturesam_03": {
@@ -75,6 +78,10 @@ FOUNDATION_META = {
             "Local optional dependency: repro/external/TextureSAM "
             "+ repro/external/TextureSAM_Datasets/checkpoints/sam2.1_hiera_small_0.3.pt"
         ),
+        "checkpoint_source_url": (
+            "https://github.com/Scientific-Computing-Lab/TextureSAM ; "
+            "https://drive.google.com/drive/folders/1pUJLa898WYEcb4Y_sOaXsSVe-CsPkwRv"
+        ),
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
     },
     "hed_watershed": {
@@ -83,6 +90,7 @@ FOUNDATION_META = {
         "checkpoint_identifier": "lllyasviel/Annotators (HED)",
         "checkpoint_loader": "controlnet_aux.HEDdetector.from_pretrained('lllyasviel/Annotators')",
         "checkpoint_source_location": "ControlNet Aux pretrained annotator package",
+        "checkpoint_source_url": "https://huggingface.co/lllyasviel/Annotators",
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
     },
     "pidi_watershed": {
@@ -91,7 +99,37 @@ FOUNDATION_META = {
         "checkpoint_identifier": "lllyasviel/Annotators (PidiNet)",
         "checkpoint_loader": "controlnet_aux.PidiNetDetector.from_pretrained('lllyasviel/Annotators')",
         "checkpoint_source_location": "ControlNet Aux pretrained annotator package",
+        "checkpoint_source_url": "https://huggingface.co/lllyasviel/Annotators",
         "repro_script": "repro/benchmark/run_foundation_edge_addons.py",
+    },
+}
+
+
+DEEP_ENCODER_SOURCE = {
+    "resnet34": {
+        "checkpoint_identifier": "smp-hub/resnet34.imagenet",
+        "checkpoint_source_location": "Hugging Face SMP encoder weights (imagenet) via segmentation_models_pytorch",
+        "checkpoint_source_url": "https://huggingface.co/smp-hub/resnet34.imagenet",
+    },
+    "mit_b0": {
+        "checkpoint_identifier": "smp-hub/mit_b0.imagenet",
+        "checkpoint_source_location": "Hugging Face SMP encoder weights (imagenet) via segmentation_models_pytorch",
+        "checkpoint_source_url": "https://huggingface.co/smp-hub/mit_b0.imagenet",
+    },
+    "mit_b2": {
+        "checkpoint_identifier": "smp-hub/mit_b2.imagenet",
+        "checkpoint_source_location": "Hugging Face SMP encoder weights (imagenet) via segmentation_models_pytorch",
+        "checkpoint_source_url": "https://huggingface.co/smp-hub/mit_b2.imagenet",
+    },
+    "tu-efficientnet_b0": {
+        "checkpoint_identifier": "timm/efficientnet_b0.ra_in1k",
+        "checkpoint_source_location": "timm universal encoder weights (imagenet) loaded through segmentation_models_pytorch",
+        "checkpoint_source_url": "https://huggingface.co/timm/efficientnet_b0.ra_in1k",
+    },
+    "vgg16": {
+        "checkpoint_identifier": "smp-hub/vgg16.imagenet",
+        "checkpoint_source_location": "Hugging Face SMP encoder weights (imagenet) via segmentation_models_pytorch",
+        "checkpoint_source_url": "https://huggingface.co/smp-hub/vgg16.imagenet",
     },
 }
 
@@ -117,6 +155,7 @@ def build_classical_rows(df: pd.DataFrame) -> List[Dict[str, str]]:
                     "scikit-learn / scikit-image classical methods executed in "
                     "repro/benchmark/run_benchmark.py"
                 ),
+                "checkpoint_source_url": "https://scikit-learn.org/stable/ ; https://scikit-image.org/docs/stable/",
                 "repro_script": "repro/benchmark/run_benchmark.py",
                 "result_source_csv": "repro/results/classical/benchmark_summary.csv",
             }
@@ -133,23 +172,27 @@ def build_deep_rows(df: pd.DataFrame, group_name: str) -> List[Dict[str, str]]:
         no_external_ckpt = model_id == "metal_mlography_unet_vgg16_gray"
         if no_external_ckpt:
             ckpt_kind = "random_init"
+            enc_meta = DEEP_ENCODER_SOURCE.get(encoder, {})
             ckpt_id = f"{encoder}; encoder_weights=None"
             ckpt_loader = (
                 f"smp.create_model('{r['architecture']}', encoder_name='{encoder}', "
                 "encoder_weights=None)"
             )
             ckpt_source = "No external checkpoint; model initialized from scratch and trained on AMAM."
+            ckpt_url = enc_meta.get("checkpoint_source_url", "none")
         else:
+            enc_meta = DEEP_ENCODER_SOURCE.get(encoder, {})
             ckpt_kind = "pretrained_encoder"
-            ckpt_id = f"{encoder}; encoder_weights='imagenet'"
+            ckpt_id = enc_meta.get("checkpoint_identifier", f"{encoder}; encoder_weights='imagenet'")
             ckpt_loader = (
                 f"smp.create_model('{r['architecture']}', encoder_name='{encoder}', "
                 "encoder_weights='imagenet')"
             )
-            ckpt_source = (
-                "ImageNet encoder checkpoint loaded through segmentation_models_pytorch "
-                "and timm encoder registry."
+            ckpt_source = enc_meta.get(
+                "checkpoint_source_location",
+                "ImageNet encoder checkpoint loaded through segmentation_models_pytorch.",
             )
+            ckpt_url = enc_meta.get("checkpoint_source_url", "none")
 
         rows.append(
             {
@@ -168,6 +211,7 @@ def build_deep_rows(df: pd.DataFrame, group_name: str) -> List[Dict[str, str]]:
                 "checkpoint_identifier": ckpt_id,
                 "checkpoint_loader": ckpt_loader,
                 "checkpoint_source_location": ckpt_source,
+                "checkpoint_source_url": ckpt_url,
                 "repro_script": "repro/benchmark/run_deep_survey.py",
                 "result_source_csv": (
                     "repro/results/deep_survey/deep_general_summary.csv"
@@ -198,6 +242,7 @@ def build_foundation_rows(df: pd.DataFrame) -> List[Dict[str, str]]:
                 "checkpoint_identifier": meta["checkpoint_identifier"],
                 "checkpoint_loader": meta["checkpoint_loader"],
                 "checkpoint_source_location": meta["checkpoint_source_location"],
+                "checkpoint_source_url": meta["checkpoint_source_url"],
                 "repro_script": meta["repro_script"],
                 "result_source_csv": "repro/results/foundation_edge/foundation_edge_summary.csv",
             }
@@ -217,15 +262,15 @@ def write_markdown(df: pd.DataFrame, out_path: Path) -> None:
         f"- Deep metallography: {(df['model_group'] == 'deep_metallography').sum()}",
         f"- Foundation/edge: {(df['model_group'] == 'foundation_edge').sum()}",
         "",
-        "| Group | Rank | Model | Category | mIoU | Checkpoint kind | Checkpoint identifier | Checkpoint source | Script |",
-        "|---|---:|---|---|---:|---|---|---|---|",
+        "| Group | Rank | Model | Category | mIoU | Checkpoint kind | Checkpoint identifier | Checkpoint source | Source URL | Script |",
+        "|---|---:|---|---|---:|---|---|---|---|---|",
     ]
 
     for _, r in df.iterrows():
         lines.append(
             "| "
             + f"{r['model_group']} | {r['rank_within_group']} | {r['display_name']} | {r['category']} | {r['miou']} | "
-            + f"{r['checkpoint_kind']} | {r['checkpoint_identifier']} | {r['checkpoint_source_location']} | {r['repro_script']} |"
+            + f"{r['checkpoint_kind']} | {r['checkpoint_identifier']} | {r['checkpoint_source_location']} | {r['checkpoint_source_url']} | {r['repro_script']} |"
         )
 
     out_path.write_text("\n".join(lines))
