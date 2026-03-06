@@ -35,6 +35,7 @@
     sam_vit_base: "SAM ViT-Base (auto-mask)",
     slimsam_50: "SlimSAM-50 (auto-mask)",
     slimsam_77: "SlimSAM-77 (auto-mask)",
+    texturesam_03: "TextureSAM-0.3 (auto-mask)",
     hed_watershed: "HED + Watershed",
     pidi_watershed: "PidiNet + Watershed"
   };
