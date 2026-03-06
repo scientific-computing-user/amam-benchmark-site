@@ -40,20 +40,20 @@
 \maketitle
 
 \begin{abstract}
-Metallography segmentation is hard to benchmark because semantics, magnification, and artifact profile change across material systems. Existing datasets are often strong for one regime but weak for cross-regime stress testing. We present \datasetfull{} (\datasetname{}), a strict pair-only benchmark release with \paircount{} original--label tuples across \subsetcount{} curated subsets. Unlike ad-hoc photo collections, \datasetname{} is curated along explicit benchmarking axes (material family, processing condition, magnification regime, and artifact profile), while preserving subset-native phase semantics; each subset acts as a controlled stress slice rather than a random image pool. We report three benchmark layers: a 10-method classical baseline survey, a 29-model supervised deep sweep (14 general + 15 metallography-oriented, including MLography-style U-Net), and a 6-model foundation/edge add-on survey (SAM, SlimSAM, TextureSAM, HED, PidiNet). The key empirical insight is that all evaluated model families still underperform for this task (best macro mIoU 0.6519), including specialized variants, confirming large open headroom for methodology advances. This multi-layer, multi-objective design therefore functions as a representative stress benchmark for in-domain quality, cross-material transfer, cross-scale transfer, and artifact robustness. Benchmark website (interactive explorer and downloadable artifacts): \url{https://scientific-computing-user.github.io/amam-benchmark-site/}.
+Metallography segmentation benchmarks often overestimate progress because semantics, magnification, and artifact profiles shift across material systems. Existing datasets are commonly strong in one regime but weak for cross-regime stress testing. We present \datasetfull{} (\datasetname{}), a strict pair-only benchmark release with \paircount{} original--label tuples across \subsetcount{} curated subsets. Unlike ad-hoc photo collections, \datasetname{} is constructed along explicit benchmarking axes (material family, processing condition, magnification regime, artifact profile) while preserving subset-native phase semantics, so each subset acts as a controlled stress slice rather than a random image pool. We report three benchmark layers: a 10-method classical survey, a 29-model supervised deep survey (14 general + 15 metallography-oriented, including an MLography-style U-Net variant), and a 6-model foundation/edge add-on survey (SAM, SlimSAM, TextureSAM, HED, PidiNet). The central empirical result is that all evaluated families still underperform on this benchmark (best macro mIoU 0.6519; gap-to-perfect 0.3481), confirming substantial open headroom for new methods. This multi-layer, multi-objective design therefore provides a representative stress benchmark for in-domain quality, cross-material transfer, cross-scale transfer, and artifact robustness. Benchmark website (interactive explorer and downloadable artifacts): \url{https://scientific-computing-user.github.io/amam-benchmark-site/}.
 \end{abstract}
 
 \section{Introduction}
-Automated microstructure segmentation is foundational for quantitative metallography, but robust benchmark design remains underdeveloped. The key issue is not only label count: different alloys and process conditions induce different visual primitives, magnification alters morphology and boundary thickness, and artifact types (scratches, pores, reflective regions, scale-bar interference) can dominate local contrast. A benchmark that collapses all settings into one monolithic regime can therefore inflate apparent progress while hiding generalization failures.
+Automated microstructure segmentation is foundational for quantitative metallography, but benchmark methodology remains underdeveloped. The core issue is not only label count: different alloys and process conditions induce different visual primitives, magnification alters morphology and boundary thickness, and artifact types (scratches, pores, reflective regions, scale-bar interference) can dominate local contrast. A benchmark that collapses all settings into one monolithic regime can therefore inflate apparent progress while hiding generalization failures.
 
-Prior resources have enabled important progress, including quantitative UHCS-oriented studies, broader materials-segmentation analyses, and Gal Oren's metallography pipelines from MLography through end-to-end quantitative metallography~\citep{decost2017uhcsdb,decost2019high,decost2020scientific,luengo2022tutorial,rusanovsky2020mlography,rusanovsky2022end}. However, most public settings remain narrower in at least one axis that matters for robust benchmarking: material family diversity, magnification-regime coverage, artifact disclosure, or split protocol rigor. In parallel, recent foundation-segmentation systems show impressive transfer behavior in natural imagery, but real micrographs still pose texture-heavy phase boundaries and artifact confounds that often violate natural-image assumptions~\citep{kirillov2023segment,ji2023segment,ma2024segment,rusanovsky2023universal,rusanovsky2025texturesam}. These gaps motivate a benchmark formulation that emphasizes regime shift and reporting discipline rather than only aggregate score maximization.
+Prior resources have enabled important progress, including quantitative UHCS-oriented studies, broader materials-segmentation analyses, and Gal Oren's metallography pipelines from MLography through end-to-end quantitative metallography~\citep{decost2017uhcsdb,decost2019high,decost2020scientific,luengo2022tutorial,rusanovsky2020mlography,rusanovsky2022end}. However, most public settings remain narrow along at least one axis that matters for robust benchmarking: material-family breadth, magnification-regime coverage, artifact disclosure, or split protocol rigor. In parallel, recent foundation segmentation systems show strong transfer in natural imagery, but real micrographs still present texture-heavy phase boundaries and artifact confounds that violate natural-image assumptions~\citep{kirillov2023segment,ji2023segment,ma2024segment,rusanovsky2023universal,rusanovsky2025texturesam}. These gaps motivate a benchmark framing that emphasizes regime shift and reporting discipline, not only aggregate score maximization.
 
 \datasetfull{} (\datasetname{}) targets this gap with a strict rule: only image--mask pairs are included. The release contains \paircount{} paired tuples from \origcount{} local originals (\paircoverage{} pairing rate), with no unpaired samples in evaluation. The benchmark spans two material families (steel, cast iron), four processing conditions, and six magnification regimes, while preserving each subset's native phase semantics. This is not a random gallery of micrographs: inclusion is regime-driven, and each subset is intentionally selected to probe specific transfer and robustness failure modes.
 
-The contribution is benchmark-centric rather than question-centric: (i) a strict pair-only release specification and deterministic split protocol for reproducible comparisons; (ii) a multi-regime benchmark design that explicitly couples material, process, magnification, and artifact stressors; and (iii) a broad 45-method audit (10 classical, 29 supervised deep, 6 foundation/edge) showing that even the strongest methods remain well below saturation (best macro mIoU 0.6519). This directly demonstrates that the benchmarking gap is real and technically consequential.
+Our contribution is benchmark-centric rather than question-centric: (i) a strict pair-only release specification with deterministic splits for reproducible comparison; (ii) a multi-regime benchmark design that explicitly couples material, process, magnification, and artifact stressors; and (iii) a broad 45-method audit (10 classical, 29 supervised deep, 6 foundation/edge) showing that even the strongest methods remain well below saturation (best macro mIoU 0.6519). Together, these results make the benchmarking gap measurable rather than anecdotal.
 
 \section{The AMAM-128 Benchmark}
-\textbf{Benchmark design.} \datasetname{} includes six subsets: 4130 steel (standard), 5884 armor steel (mixed magnification), 418 printed 17-4 PH (x5 and x20), and 6280 gray cast iron (low and high magnification). Label spaces remain subset-specific to avoid invalid class merging across materially different phase taxonomies.
+\textbf{Benchmark design.} \datasetname{} includes six subsets: 4130 steel (standard), 5884 armor steel (mixed magnification), 418 printed 17-4 PH (x5 and x20), and 6280 gray cast iron (low and high magnification). Label spaces remain subset-specific to avoid invalid class merging across materially different phase taxonomies. Figure~\ref{fig:workflow} summarizes the annotation/refinement pipeline used to construct the final paired release.
 
 \begin{figure}[t]
     \centering
@@ -62,12 +62,12 @@ The contribution is benchmark-centric rather than question-centric: (i) a strict
     \label{fig:workflow}
 \end{figure}
 
-\textbf{Why this benchmark is stronger than monolithic alternatives.} Prior materials segmentation resources are valuable but frequently narrower in semantic spread, material breadth, or benchmarking protocol strictness. \datasetname{} is intentionally compact but heterogeneous: it mixes ferrite/pearlite separation, dendrite/interdendritic structure, graphite-flake segmentation, and sintered-steel grain patterns in one benchmark suite. This exposes model behavior under true regime change rather than repetitive single-regime fitting.
+\textbf{Why this benchmark is stronger than monolithic alternatives.} Prior materials segmentation resources are valuable but frequently narrower in semantic spread, material breadth, or protocol strictness. \datasetname{} is intentionally compact but heterogeneous: it mixes ferrite/pearlite separation, dendrite/interdendritic structure, graphite-flake segmentation, and sintered-steel grain patterns in one benchmark suite. This exposes model behavior under true regime change rather than repetitive single-regime fitting.
 
-\textbf{Evaluation tracks.} We recommend three primary tracks: (i) within-subset semantic segmentation, (ii) cross-material transfer (steel$\leftrightarrow$cast iron), and (iii) cross-scale transfer (held-out magnification regimes). Reporting should prioritize subset-macro mIoU to prevent large subsets from dominating scores.
+\textbf{Evaluation tracks.} We recommend three primary tracks: (i) within-subset semantic segmentation, (ii) cross-material transfer (steel$\leftrightarrow$cast iron), and (iii) cross-scale transfer (held-out magnification regimes). Reporting should prioritize subset-macro mIoU (with Dice and Pixel Accuracy as secondary metrics) to prevent large subsets from dominating scores.
 \textbf{Release accounting and representative category audit.} Verified release statistics are reported in Appendix~B (Table~\ref{tab:globalstats}), and expanded aligned image-level evidence is reported in Appendix~E (Tables~\ref{tab:rep_visual_diversity} and~\ref{tab:rep_visual_diversity_part2}) where each included subset is mapped to explicit benchmark categories (material, scale, condition, and artifact focus).
 
-\section{Model Testing Across Three Families}
+\section{Model Audit Across Three Families}
 \textbf{Benchmarking design.} We evaluate three model families: (i) classical methods (10), (ii) supervised deep models (29, including general-purpose and metallography-oriented variants), and (iii) foundation/edge add-ons (6, inference-only). All families follow strict pair-only inclusion and subset-macro reporting, with deterministic splits and seeds (full protocol details in Appendix~H).
 
 \textbf{Main empirical evidence.} Figure~\ref{fig:gap_overview} summarizes all 45 tested methods together. The left panel shows family-wise distributions (with best-in-family stars), while the right panel shows the global ranking and the unresolved gap to perfect segmentation. The strongest result remains 0.6519 mIoU and the median over all methods is 0.5362, confirming that the benchmark is not saturated even with broad architectural and preprocessing coverage.
@@ -81,16 +81,16 @@ The contribution is benchmark-centric rather than question-centric: (i) a strict
     \label{fig:gap_overview}
 \end{figure*}
 
-\textbf{Cross-family findings.} Three trends are consistent: (1) no family saturates this benchmark; (2) metallurgy-aware deep variants help but still leave substantial error; and (3) prompt-free foundation transfer remains clearly below trained supervised models. This supports \datasetname{} as a meaningful benchmark for method innovation rather than incremental score polishing.
+\textbf{Cross-family findings.} Three trends are consistent: (1) no family saturates this benchmark; (2) metallurgy-aware deep variants improve robustness but still leave substantial error; and (3) prompt-free foundation transfer remains clearly below trained supervised models in this setting. This supports \datasetname{} as a benchmark for genuine method innovation rather than incremental score polishing.
 
 \section{Significance and Benchmarking Guidance}
-\textbf{What we learn scientifically from this benchmark.} The main value of \datasetname{} is not only archival; it is analytical. Even the strongest models remain far from saturation: the best macro mIoU in this release is 0.6519 (classical RF) and the best supervised deep variant reaches 0.6427, leaving substantial error mass on a benchmark that can appear visually simple at first glance. The gap is larger for transfer-first methods (best foundation variant: mIoU 0.4565), showing that apparent texture familiarity does not imply solved segmentation under material and scale shift.
+\textbf{What we learn scientifically from this benchmark.} The main value of \datasetname{} is analytical, not only archival. Even the strongest models remain far from saturation: the best macro mIoU in this release is 0.6519 (classical RF), leaving a 0.3481 gap to perfect overlap, and the best supervised deep variant reaches 0.6427. The gap is larger for transfer-first methods (best foundation variant: mIoU 0.4565), showing that apparent texture familiarity does not imply solved segmentation under material and scale shift.
 
 At the same time, the strongest classical pixel-feature baseline (RF, mIoU 0.6519) remained highly competitive, slightly exceeding the best supervised deep run under the current lightweight-training budget. This is a useful caution for leaderboard interpretation: compact datasets can reward inductive-bias choices and preprocessing discipline as much as raw model capacity. Reporting only a single global score would hide this behavior.
 
-\textbf{Why this underperformance matters.} The observed gap pattern is scientifically informative: performance drops are concentrated in regime transitions (family and magnification holdouts) and in artifact-heavy fields where boundaries are weak or contrast-inverted. This indicates that the unresolved challenge is not only phase recognition, but stable region delineation under shifts in microstructure scale and acquisition artifacts. In other words, models that look strong on one narrow slice do not reliably transfer when the local image formation regime changes.
+\textbf{Why this underperformance matters.} The observed gap pattern is scientifically informative: performance drops concentrate in regime transitions (family and magnification holdouts) and in artifact-heavy fields where boundaries are weak or contrast-inverted. This indicates that the unresolved challenge is not only phase recognition, but stable region delineation under shifts in microstructure scale and acquisition artifacts. In short, models that look strong on one narrow slice do not reliably transfer when the local image-formation regime changes.
 
-\textbf{Implication for next-generation methods.} Results suggest that future gains will likely come from jointly modeling texture, boundary, and regime context rather than scaling a single architecture family in isolation. Benchmark progress should therefore be judged by subset-aware robustness and transfer behavior, not only by a single global mean. This is exactly the use case that \datasetname{} was designed to expose.
+\textbf{Implication for next-generation methods.} Results suggest that future gains will likely come from jointly modeling texture, boundary, and regime context rather than scaling a single architecture family in isolation. Benchmark progress should therefore be judged by subset-aware robustness and transfer behavior, not only by a single global mean. This is the central use case \datasetname{} was designed to expose.
 
 Detailed reporting requirements, validity notes, and submission-packet guidance are provided in Appendix~I.
 
@@ -110,7 +110,7 @@ Metallography datasets such as UHCSDB and related quantitative studies demonstra
 
 \section{Release Statistics (Appendix)}
 Table~\ref{tab:globalstats} reports the verified global release accounting for strict pair-only AMAM-128.
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Verified release statistics for \datasetname{} (pair-only policy).}
@@ -131,7 +131,7 @@ Table~\ref{tab:globalstats} reports the verified global release accounting for s
 
 \section{Subset-Level Coverage (Appendix)}
 Table~\ref{tab:subsetcoverage} reports the strict pair coverage profile used in this release. The key benchmarking implication is that subset-level test sizes are intentionally uneven, so macro-averaged reporting is necessary to prevent large subsets from dominating conclusions.
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Subset-level pair coverage in \datasetname{}.}
@@ -154,7 +154,7 @@ Table~\ref{tab:subsetcoverage} reports the strict pair coverage profile used in 
 
 \section{OOD Split Cardinalities (Appendix)}
 Table~\ref{tab:oodsplits} reports the canonical out-of-distribution split sizes used in this release for family and magnification holdout analysis.
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Illustrative OOD split cardinalities from \datasetname{} (train/test pairs).}
@@ -177,7 +177,7 @@ Table~\ref{tab:oodsplits} reports the canonical out-of-distribution split sizes 
 \section{Representative Visual Diversity (Appendix)}
 Tables~\ref{tab:rep_visual_diversity} and~\ref{tab:rep_visual_diversity_part2} expand the representative visual audit to all six included subsets and tie each sample to explicit benchmark axes (material family, magnification, process condition, and artifact profile). For each sample, we show the aligned original, ground-truth mask, and best-per-family prediction selected from the main benchmarking tables: best classical (RF), best general supervised deep (U-Net EfficientNet-B0), and best metallography-oriented deep (Metal-U-Net++ CLAHE EfficientNet-B0).
 
-\begin{table*}[h]
+\begin{table*}[ht]
     \centering
     \tablefontsize
     \setlength{\tabcolsep}{2pt}
@@ -218,7 +218,7 @@ Tables~\ref{tab:rep_visual_diversity} and~\ref{tab:rep_visual_diversity_part2} e
     \end{tabular}
 \end{table*}
 
-\begin{table*}[h]
+\begin{table*}[ht]
     \centering
     \tablefontsize
     \setlength{\tabcolsep}{2pt}
@@ -261,7 +261,7 @@ Tables~\ref{tab:rep_visual_diversity} and~\ref{tab:rep_visual_diversity_part2} e
 
 \section{Model Survey Tables (Appendix)}
 Tables~\ref{tab:classical-full}, \ref{tab:deep-general}, \ref{tab:deep-metal}, and~\ref{tab:foundation-edge} provide complete rankings for all model families reported in this paper.
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Classical baseline models (10) on \datasetname{} (macro over subsets).}
@@ -284,7 +284,7 @@ Tables~\ref{tab:classical-full}, \ref{tab:deep-general}, \ref{tab:deep-metal}, a
     \end{tabular}
 \end{table}
 
-\begin{table*}[h]
+\begin{table*}[ht]
     \centering
     \tablefontsize
     \caption{General supervised deep models (14) on \datasetname{} (macro over subsets).}
@@ -311,7 +311,7 @@ Tables~\ref{tab:classical-full}, \ref{tab:deep-general}, \ref{tab:deep-metal}, a
     \end{tabular}
 \end{table*}
 
-\begin{table*}[h]
+\begin{table*}[ht]
     \centering
     \tablefontsize
     \caption{Metallography-oriented supervised deep models (15) on \datasetname{} (macro over subsets).}
@@ -339,7 +339,7 @@ Tables~\ref{tab:classical-full}, \ref{tab:deep-general}, \ref{tab:deep-metal}, a
     \end{tabular}
 \end{table*}
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Foundation/edge add-on models (6) on \datasetname{} (inference-only, macro over subsets).}
@@ -359,9 +359,9 @@ Tables~\ref{tab:classical-full}, \ref{tab:deep-general}, \ref{tab:deep-metal}, a
 \end{table}
 
 \section{Benchmark Website Usage Guide (Appendix)}
-The public benchmark companion website is available at \url{https://scientific-computing-user.github.io/amam-benchmark-site/}. It mirrors the same strict pair-only release used in this paper and provides an interactive view of subsets, masks, and benchmark result tables. Its role is to improve transparency and qualitative auditing (sample-level inspection, artifact-focused error review, and access to released result files), while the canonical evaluation protocol, splits, and reporting requirements remain those defined in the main paper.
+The public benchmark companion website is available at \url{https://scientific-computing-user.github.io/amam-benchmark-site/}. It mirrors the same strict pair-only release used in this paper and provides an interactive view of subsets, masks, and benchmark result tables. Its role is to improve transparency and qualitative auditing (sample-level inspection, artifact-focused error review, and access to released result files), while the canonical evaluation protocol, splits, and reporting requirements remain those defined in the main paper. Table~\ref{tab:website_artifacts} maps each website artifact to its practical value for reproducible benchmarking submissions.
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \tablefontsize
     \caption{Companion website artifacts and their benchmark-submission relevance.}
