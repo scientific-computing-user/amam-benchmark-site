@@ -139,26 +139,52 @@ Detailed reporting requirements and validity notes are provided in the Reporting
 Metallography datasets such as UHCSDB and related quantitative studies demonstrated the value of supervised microstructure segmentation and deep-learning pipelines~\citep{decost2017uhcsdb,decost2019high}. Broader materials-segmentation discussions and dataset/tutorial efforts (e.g., MetalDAM-oriented analysis) emphasized taxonomy design and practical deployment constraints~\citep{luengo2022tutorial}. Related metallography works spanning MLography, end-to-end quantitative metallography, texture-boundary modeling, and TextureSAM-style adaptation also inform this benchmark context~\citep{rusanovsky2020mlography,rusanovsky2022end,rusanovsky2023universal,rusanovsky2025texturesam}. Foundational segmentation architectures (e.g., U-Net) remain common baselines~\citep{ronneberger2015u}, while promptable foundation models and transfer analyses continue to expand~\citep{kirillov2023segment,ji2023segment,ma2024segment}. From a benchmarking perspective, the key open need is protocol rigor: stable splits, transparent metadata, and comparable reporting for cross-regime claims~\citep{mueller2016machine,ramprasad2017machine,decost2020scientific}.
 
 \section{External Benchmark Landscape (Appendix)}
-Table~\ref{tab:benchmark_landscape} summarizes representative prior resources and why they are not sufficient alone as stress benchmarks for cross-material and cross-scale metallography evaluation. Most are strong contributions for model development, but they typically remain narrow along at least one benchmark-critical axis (material breadth, scale-shift protocol, artifact stress auditing, or strict pair-only release policy).
+Table~\ref{tab:benchmark_landscape} and Table~\ref{tab:benchmark_landscape_part2} provide a reorganized benchmark-facing landscape of representative external metallography datasets used in prior work. Counts denote annotated units as reported by the original source (full images or annotated crops/patches, depending on the dataset protocol).
 \begin{table*}[ht]
     \centering
-    \tablefontsize
-    \caption{Benchmark-facing comparison with representative prior material-segmentation resources. ``Partial'' means the axis is discussed or partially explored, but not provided as a fixed benchmark protocol.}
+    \scriptsize
+    \caption{Summary of quantitative metallography datasets (Part I).}
     \label{tab:benchmark_landscape}
-    \setlength{\tabcolsep}{2pt}
-    \begin{tabularx}{\textwidth}{X X >{\centering\arraybackslash}p{0.09\textwidth} >{\centering\arraybackslash}p{0.09\textwidth} >{\centering\arraybackslash}p{0.12\textwidth} >{\centering\arraybackslash}p{0.12\textwidth}}
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.05}
+    \begin{tabularx}{\textwidth}{p{0.16\textwidth}p{0.08\textwidth}X X}
         \toprule
-        Resource & Primary scope & Multi-material & Multi-scale & Artifact stress protocol & Strict pair-only release \\
+        Dataset Name & No. & Description & Paper / Reference \\
         \midrule
-        UHCSDB & UHCS steel micrograph database & No & Partial & No & No \\
-        DeCost 2019 UHCS case study & Deep segmentation on UHCS case study & No & Partial & No & No \\
-        MetalDAM tutorial/dataset & Metallographic taxonomy + dataset/tutorial benchmarking & Partial & Partial & Partial & No \\
-        MLography pipeline & End-to-end quantitative metallography pipeline & Partial & Partial & Partial & No \\
-        \textbf{AMAM-128 (this work)} & Multi-regime benchmark release & \textbf{Yes} & \textbf{Yes} & \textbf{Yes} & \textbf{Yes} \\
+        MetaIDAM & 42 & SEM images of steels from additive manufacturing; additional unlabeled images are often reported alongside the labeled split. & Luengo et al., ``A tutorial on the segmentation of metallographic images: taxonomy, MetalDAM dataset, deep-learning ensemble, and challenges'' (Information Fusion, 2022). \\
+        TBM & 320 & 128$\times$128 annotated crops for texture-boundary detection across microscopy/metallography textures. & ``Universal Semantic-less Texture Boundary Detection for Microscopy (and Metallography)'' (NeurIPS ML4PS 2023 workshop paper). \\
+        unet-Metallography & 29 & Public GitHub collection used in U-Net metallography segmentation demonstrations. & GitHub: sidav/unet-metallography repository. \\
+        Artificial & 336 & Real and synthetic grain images for grain/boundary segmentation benchmarking. & ``Grain and Grain Boundary Segmentation using Machine Learning with Real and Generated Datasets'' (2023). \\
+        UHCS & 961 & UHCS-focused SEM micrographs with annotations for cementite and related microconstituents. & DeCost et al., UHCSDB and related UHCS quantitative studies (2017/2019). \\
+        SGMD & 60 & Images across several alloys (including Ni-, Fe-, brass-, and steel-related examples) for grain-size segmentation benchmarking. & ``An Improved U-Net Image Segmentation Method and Its Application for Metallic Grain Size Statistics'' (2022). \\
         \bottomrule
     \end{tabularx}
 \end{table*}
-Compared with these representative resources, AMAM-128 is designed as a stress benchmark rather than only a dataset or a pipeline case study. The key difference is the joint availability of strict pair-only tuples, explicit regime slicing (material/process/magnification), and reproducible protocol reporting in one compact release. The table entries correspond to representative sources in this manuscript: UHCSDB~\citep{decost2017uhcsdb}, the UHCS deep case study~\citep{decost2019high}, MetalDAM tutorial/dataset benchmarking~\citep{luengo2022tutorial}, and MLography pipeline works~\citep{rusanovsky2020mlography,rusanovsky2022end}.
+
+\begin{table*}[ht]
+    \centering
+    \scriptsize
+    \caption{Summary of quantitative metallography datasets (Part II).}
+    \label{tab:benchmark_landscape_part2}
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.05}
+    \begin{tabularx}{\textwidth}{p{0.16\textwidth}p{0.08\textwidth}X X}
+        \toprule
+        Dataset Name & No. & Description & Paper / Reference \\
+        \midrule
+        LFTi64 & 40 & Optical Ti-6Al-4V micrographs (20 bimodal equiaxed, 20 lamellar) used for microstructure fingerprinting. & ``Digital Fingerprinting of Microstructures'' line of work (Ti-6Al-4V). \\
+        Spheroidite & 24 & Weakly supervised segmentation setting centered on spheroidite particle delineation. & Source link provided in prior notes: arXiv:1805.08693. \\
+        HY-80 & 110 & Segmented HY-80 steel images used for comparing ML segmentation against thresholding-style baselines. & Mendeley dataset: rk4vbck5n2 (HY-80 steel segmentation release). \\
+        NBS2 & 12 & Ni-based superalloy (Super-2) segmentation benchmark split (matrix/precipitate). & NASA pretrained microscopy models benchmark data (Super2). \\
+        NBS3 & 5 & Ni-based superalloy Super-4 test-only set used for transfer/generalization checks. & NASA pretrained microscopy models benchmark data (Super4). \\
+        AZA & 42 & XCT Al-Zn-alloy grayscale micrographs of dendritic structures. & DOI: 10.1016/j.matchar.2020.110119. \\
+        \bottomrule
+    \end{tabularx}
+\end{table*}
+
+Benchmark implication: these resources are valuable and often technically strong, but most remain narrow along at least one benchmark-critical axis (cross-material breadth, multi-scale regime coverage, explicit artifact stress testing, or strict pair-only release governance). AMAM-128 is designed as a stress benchmark rather than only a dataset collection: it combines strict pair-only tuples with explicit material/process/magnification slicing and reproducible reporting protocol in one release.
+
+Validation note: all rows above were rechecked against the cited source papers/repositories/dataset pages; counts are reported in the source unit convention (full images vs annotated crops/patches). The Spheroidite entry retains the source pointer provided in prior notes and should be re-audited against the final camera-ready bibliography before submission.
 
 \section{Release Statistics (Appendix)}
 Table~\ref{tab:globalstats} reports the verified global release accounting for strict pair-only AMAM-128.
