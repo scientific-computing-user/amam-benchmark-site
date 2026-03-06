@@ -1,7 +1,7 @@
 # AMAM-128 Reproducibility Audit (45 Models)
 
 - Status: **PASS**
-- Git commit: `f02c0a7ee00d2ad74de3ffa85e6f777c98e5f46d`
+- Git commit: `8d997ca74b71bb1bb48f055ec9eee57242e94cf0`
 - Model counts:
   - Classical: 10
   - Deep general: 14
