@@ -12,6 +12,7 @@
     "canny_watershed",
     "gmm_rgb",
     "kmeans_rgb",
+    "slic_cluster",
     "sobel_watershed"
   ],
   "subset_test_counts": {
