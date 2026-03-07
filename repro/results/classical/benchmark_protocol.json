@@ -11,7 +11,8 @@
   "methods": [
     "canny_watershed",
     "gmm_rgb",
-    "kmeans_rgb"
+    "kmeans_rgb",
+    "sobel_watershed"
   ],
   "subset_test_counts": {
     "4130-steel": 40,
