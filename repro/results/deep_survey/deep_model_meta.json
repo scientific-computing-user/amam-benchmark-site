@@ -70,5 +70,17 @@
     "params_m": 21.493293,
     "train_seconds": 4.904197692871094,
     "device": "mps"
+  },
+  "dl_linknet_r34": {
+    "model_id": "dl_linknet_r34",
+    "display_name": "LinkNet (ResNet34)",
+    "group": "general",
+    "category": "lightweight",
+    "architecture": "Linknet",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 21.772333,
+    "train_seconds": 14.40543508529663,
+    "device": "mps"
   }
 }
