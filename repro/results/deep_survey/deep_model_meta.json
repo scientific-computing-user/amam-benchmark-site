@@ -250,5 +250,17 @@
     "params_m": 22.440541,
     "train_seconds": 27.292085886001587,
     "device": "mps"
+  },
+  "metal_fpn_gabor_r34": {
+    "model_id": "metal_fpn_gabor_r34",
+    "display_name": "Metal-FPN Gabor Stack (ResNet34)",
+    "group": "metallography",
+    "category": "texture-aware",
+    "architecture": "FPN",
+    "encoder": "resnet34",
+    "input_mode": "gabor3",
+    "params_m": 23.156941,
+    "train_seconds": 24.608868837356567,
+    "device": "mps"
   }
 }
