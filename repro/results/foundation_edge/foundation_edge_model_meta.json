@@ -10,5 +10,8 @@
   },
   "hed_watershed": {
     "runtime_sec": 46.734177112579346
+  },
+  "pidi_watershed": {
+    "runtime_sec": 57.361802101135254
   }
 }
