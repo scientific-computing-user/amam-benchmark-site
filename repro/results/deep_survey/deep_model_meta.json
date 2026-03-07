@@ -238,5 +238,17 @@
     "params_m": 26.074077,
     "train_seconds": 45.83568978309631,
     "device": "mps"
+  },
+  "metal_deeplabv3p_clahe_r34": {
+    "model_id": "metal_deeplabv3p_clahe_r34",
+    "display_name": "Metal-DeepLabV3+ CLAHE (ResNet34)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "DeepLabV3Plus",
+    "encoder": "resnet34",
+    "input_mode": "clahe_rgb",
+    "params_m": 22.440541,
+    "train_seconds": 27.292085886001587,
+    "device": "mps"
   }
 }
