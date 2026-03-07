@@ -334,5 +334,17 @@
     "params_m": 6.067961,
     "train_seconds": 18.235127210617065,
     "device": "mps"
+  },
+  "metal_mlography_unet_vgg16_gray": {
+    "model_id": "metal_mlography_unet_vgg16_gray",
+    "display_name": "MLography U-Net (2022-style)",
+    "group": "metallography",
+    "category": "metallography-original",
+    "architecture": "Unet",
+    "encoder": "vgg16",
+    "input_mode": "gray",
+    "params_m": 23.748829,
+    "train_seconds": 30.098703145980835,
+    "device": "mps"
   }
 }

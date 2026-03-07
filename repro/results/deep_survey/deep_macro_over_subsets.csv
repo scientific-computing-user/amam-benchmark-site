@@ -25,5 +25,6 @@ metal_segformer_gray_b2,Metal-SegFormer Gray (MiT-B2),metallography,micrograph-c
 metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,0.48837856714810024,0.6154504912387767,0.7109879285241427,24.438109,26.718668222427368,0.44531113704045616
 metal_unetpp_gray_r34,Metal-U-Net++ Gray (ResNet34),metallography,micrograph-contrast,UnetPlusPlus,resnet34,gray,0.47761594876749713,0.5968011375475918,0.6873544534154479,26.074077,45.83568978309631,0.7639281630516053
 metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,0.46415647011381905,0.5936709142105534,0.6780887791528253,21.775469,15.850100994110107,0.26416834990183513
+metal_mlography_unet_vgg16_gray,MLography U-Net (2022-style),metallography,metallography-original,Unet,vgg16,gray,0.4539591054574208,0.5625948611318441,0.7014608413821061,23.748829,30.098703145980835,0.5016450524330139
 metal_upernet_clahe_b2,Metal-UPerNet CLAHE (MiT-B2),metallography,micrograph-contrast,UPerNet,mit_b2,clahe_rgb,0.4412698980670758,0.5377586240196482,0.701547387511336,32.530893,302.05386900901794,5.034231150150299
 metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,0.4139056393846103,0.5113258466664687,0.6898842864642832,23.156941,24.608868837356567,0.4101478139559428
