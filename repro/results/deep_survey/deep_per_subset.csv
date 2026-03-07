@@ -101,6 +101,12 @@ metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aw
 metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,5884-armor-steel,0.45785793082486537,0.6024144704556029,0.6622605096726191
 metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,6280-cast-iron-high,0.41963819293749294,0.5632805004920003,0.6549858940972222
 metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,6280-cast-iron-low,0.30339339979049884,0.44250502811434517,0.5468774660669191
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,4130-steel,0.6928759884899972,0.8102874462052638,0.8128058539496529
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,418-17-4ph-x20,0.4683240184480005,0.5435343375139018,0.8322740988756614
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,418-17-4ph-x5,0.812695467695056,0.8862804570751602,0.9801193576388889
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,5884-armor-steel,0.6960491759427322,0.8126231660394738,0.8426016348379629
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,6280-cast-iron-high,0.5419181617096187,0.6549193341911058,0.8400580512152779
+metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,6280-cast-iron-low,0.5620693468658164,0.7130006908705331,0.7660886205808081
 metal_segformer_clahe_b0,Metal-SegFormer CLAHE (MiT-B0),metallography,micrograph-contrast,Segformer,mit_b0,clahe_rgb,4130-steel,0.5018757842693926,0.6624265775576246,0.6735161675347222
 metal_segformer_clahe_b0,Metal-SegFormer CLAHE (MiT-B0),metallography,micrograph-contrast,Segformer,mit_b0,clahe_rgb,418-17-4ph-x20,0.21205158893571413,0.25885481423247303,0.4203442770337301
 metal_segformer_clahe_b0,Metal-SegFormer CLAHE (MiT-B0),metallography,micrograph-contrast,Segformer,mit_b0,clahe_rgb,418-17-4ph-x5,0.8155606525724994,0.8877768424279937,0.9814301215277778

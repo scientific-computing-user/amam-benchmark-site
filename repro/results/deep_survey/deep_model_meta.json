@@ -310,5 +310,17 @@
     "params_m": 24.719181,
     "train_seconds": 262.38349294662476,
     "device": "cpu"
+  },
+  "metal_manet_edge4_effb0": {
+    "model_id": "metal_manet_edge4_effb0",
+    "display_name": "Metal-MAnet RGB+Sobel (EfficientNet-B0)",
+    "group": "metallography",
+    "category": "edge-aware",
+    "architecture": "MAnet",
+    "encoder": "tu-efficientnet_b0",
+    "input_mode": "edge4",
+    "params_m": 8.671727,
+    "train_seconds": 17.144299745559692,
+    "device": "mps"
   }
 }
