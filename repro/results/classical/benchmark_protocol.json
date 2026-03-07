@@ -9,6 +9,7 @@
   "train_images": 128,
   "test_images": 128,
   "methods": [
+    "gmm_rgb",
     "kmeans_rgb"
   ],
   "subset_test_counts": {
