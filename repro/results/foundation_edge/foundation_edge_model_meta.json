@@ -1,5 +1,8 @@
 {
   "sam_vit_base": {
     "runtime_sec": 2693.1178719997406
+  },
+  "slimsam_50": {
+    "runtime_sec": 2618.6897888183594
   }
 }
