@@ -1,7 +1,13 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,subset,miou,dice,pixel_acc
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,4130-steel,0.5312387024576954,0.6766173921982077,0.7094122992621528
-dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.3567868625639251,0.5947769407242064
+dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.35678686256392506,0.5947769407242064
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x5,0.7316227217315345,0.8212322235863642,0.9688140190972223
-dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,5884-armor-steel,0.5105790545899195,0.654594335825504,0.6726410073578043
+dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,5884-armor-steel,0.5105790545899194,0.654594335825504,0.6726410073578043
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,6280-cast-iron-high,0.5691320013766921,0.7063365919747049,0.7884006076388889
-dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,6280-cast-iron-low,0.4785684220749746,0.645942211538248,0.6577049794823232
+dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,6280-cast-iron-low,0.4785684220749745,0.645942211538248,0.6577049794823232
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,4130-steel,0.626595703921345,0.7643373528404316,0.7697970920138889
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,418-17-4ph-x20,0.3925768009994215,0.49112886350308815,0.6866280691964286
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,418-17-4ph-x5,0.7978219414155913,0.8752549330214363,0.9781629774305556
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,5884-armor-steel,0.48787084686261944,0.6250813261233529,0.6902798445767195
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,6280-cast-iron-high,0.5643810884183752,0.6950978290680616,0.8076795789930555
+dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,6280-cast-iron-low,0.48332059130383187,0.6436628273546354,0.7090238320707071

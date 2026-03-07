@@ -10,5 +10,17 @@
     "params_m": 24.438109,
     "train_seconds": 16.993568658828735,
     "device": "mps"
+  },
+  "dl_unetpp_r34": {
+    "model_id": "dl_unetpp_r34",
+    "display_name": "U-Net++ (ResNet34)",
+    "group": "general",
+    "category": "encoder-decoder",
+    "architecture": "UnetPlusPlus",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 26.080349,
+    "train_seconds": 29.275037050247192,
+    "device": "mps"
   }
 }

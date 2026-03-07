@@ -42,10 +42,11 @@
     "metal_mlography_unet_vgg16_gray"
   ],
   "selected_models": [
-    "dl_unet_r34"
+    "dl_unetpp_r34"
   ],
   "completed_models": [
-    "dl_unet_r34"
+    "dl_unet_r34",
+    "dl_unetpp_r34"
   ],
   "resume_enabled": true
 }
