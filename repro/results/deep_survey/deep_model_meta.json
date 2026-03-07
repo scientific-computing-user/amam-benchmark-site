@@ -34,5 +34,17 @@
     "params_m": 26.010189,
     "train_seconds": 39.0425488948822,
     "device": "mps"
+  },
+  "dl_deeplabv3p_r34": {
+    "model_id": "dl_deeplabv3p_r34",
+    "display_name": "DeepLabV3+ (ResNet34)",
+    "group": "general",
+    "category": "context-atrous",
+    "architecture": "DeepLabV3Plus",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 22.440541,
+    "train_seconds": 17.58085870742798,
+    "device": "mps"
   }
 }

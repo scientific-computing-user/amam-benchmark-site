@@ -1,10 +1,16 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,subset,miou,dice,pixel_acc
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,4130-steel,0.26931914823212233,0.3584665993540791,0.5224236382378472
-dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,418-17-4ph-x20,0.309279704922465,0.36143849817603907,0.6099033254794973
+dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,418-17-4ph-x20,0.3092797049224649,0.36143849817603907,0.6099033254794973
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,418-17-4ph-x5,0.47537760416666663,0.4872933595312871,0.9507552083333333
-dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,5884-armor-steel,0.2836705109913343,0.3648323268380926,0.5560812975363757
+dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,5884-armor-steel,0.2836705109913342,0.3648323268380926,0.5560812975363757
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-high,0.41277533637152775,0.45219387350315665,0.8255506727430555
-dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-low,0.16957066821299632,0.23054916997299132,0.4958693379103536
+dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-low,0.1695706682129963,0.2305491699729913,0.4958693379103536
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,4130-steel,0.5218238657216583,0.6793724299254336,0.688955349392361
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x20,0.469758217469763,0.5521918798819909,0.8185557208994709
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x5,0.7924369200070975,0.8707784598239194,0.9774641927083333
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,5884-armor-steel,0.631502304533108,0.7681324636041366,0.7867283089451058
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,6280-cast-iron-high,0.5543024424572328,0.6784991332296599,0.8211127387152779
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,6280-cast-iron-low,0.4741964692571564,0.6391372896100458,0.6831868489583334
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,4130-steel,0.5312387024576954,0.6766173921982077,0.7094122992621528
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.35678686256392506,0.5947769407242064
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x5,0.7316227217315345,0.8212322235863642,0.9688140190972223
