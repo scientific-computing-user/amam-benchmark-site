@@ -298,5 +298,17 @@
     "params_m": 32.530893,
     "train_seconds": 302.05386900901794,
     "device": "cpu"
+  },
+  "metal_segformer_gray_b2": {
+    "model_id": "metal_segformer_gray_b2",
+    "display_name": "Metal-SegFormer Gray (MiT-B2)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "Segformer",
+    "encoder": "mit_b2",
+    "input_mode": "gray",
+    "params_m": 24.719181,
+    "train_seconds": 262.38349294662476,
+    "device": "cpu"
   }
 }
