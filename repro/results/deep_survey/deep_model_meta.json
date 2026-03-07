@@ -322,5 +322,17 @@
     "params_m": 8.671727,
     "train_seconds": 17.144299745559692,
     "device": "mps"
+  },
+  "metal_unetpp_clahe_effb0": {
+    "model_id": "metal_unetpp_clahe_effb0",
+    "display_name": "Metal-U-Net++ CLAHE (EfficientNet-B0)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "UnetPlusPlus",
+    "encoder": "tu-efficientnet_b0",
+    "input_mode": "clahe_rgb",
+    "params_m": 6.067961,
+    "train_seconds": 18.235127210617065,
+    "device": "mps"
   }
 }

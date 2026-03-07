@@ -42,7 +42,7 @@
     "metal_mlography_unet_vgg16_gray"
   ],
   "selected_models": [
-    "metal_manet_edge4_effb0"
+    "metal_unetpp_clahe_effb0"
   ],
   "completed_models": [
     "dl_deeplabv3_r34",
@@ -70,6 +70,7 @@
     "metal_unet_gabor_r34",
     "metal_unet_gray_r34",
     "metal_unet_lbp_r34",
+    "metal_unetpp_clahe_effb0",
     "metal_unetpp_gray_r34",
     "metal_upernet_clahe_b2"
   ],

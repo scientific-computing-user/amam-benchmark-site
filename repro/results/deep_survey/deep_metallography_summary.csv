@@ -1,5 +1,6 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,miou,dice,pixel_acc,params_m,train_seconds,train_minutes
 metal_manet_edge4_effb0,Metal-MAnet RGB+Sobel (EfficientNet-B0),metallography,edge-aware,MAnet,tu-efficientnet_b0,edge4,0.6289886931918701,0.7367742386492399,0.845657936183042,8.671727,17.144299745559692,0.28573832909266156
+metal_unetpp_clahe_effb0,Metal-U-Net++ CLAHE (EfficientNet-B0),metallography,micrograph-contrast,UnetPlusPlus,tu-efficientnet_b0,clahe_rgb,0.5868886368565213,0.6949835476404442,0.8286919357693691,6.067961,18.235127210617065,0.3039187868436178
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,0.5727112026925583,0.6887754711808384,0.7785971495515359,24.431837,17.624907970428467,0.2937484661738078
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,0.5720929309760879,0.6930075276250774,0.8084238587355449,24.438109,25.303546905517578,0.4217257817586263
 metal_deeplabv3p_clahe_r34,Metal-DeepLabV3+ CLAHE (ResNet34),metallography,micrograph-contrast,DeepLabV3Plus,resnet34,clahe_rgb,0.5629090686204166,0.6830888862106038,0.7977171320056655,22.440541,27.292085886001587,0.45486809810002643
