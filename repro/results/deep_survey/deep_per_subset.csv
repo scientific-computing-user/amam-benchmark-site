@@ -24,7 +24,7 @@ dl_linknet_r34,LinkNet (ResNet34),general,lightweight,Linknet,resnet34,rgb,5884-
 dl_linknet_r34,LinkNet (ResNet34),general,lightweight,Linknet,resnet34,rgb,6280-cast-iron-high,0.5273553183001145,0.6570259373028462,0.7879204644097222
 dl_linknet_r34,LinkNet (ResNet34),general,lightweight,Linknet,resnet34,rgb,6280-cast-iron-low,0.41910843232039724,0.5856886401858165,0.6286596433080809
 dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,4130-steel,0.6455674902860935,0.7765180225672711,0.786273193359375
-dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,418-17-4ph-x20,0.31309802876728904,0.37371711176567923,0.6018518518518519
+dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,418-17-4ph-x20,0.313098028767289,0.3737171117656792,0.6018518518518519
 dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,418-17-4ph-x5,0.8030752971748621,0.878588167097633,0.9802658420138889
 dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,5884-armor-steel,0.4791938997456344,0.6285757675774685,0.67564044932209
 dl_manet_r34,MAnet (ResNet34),general,attention,MAnet,resnet34,rgb,6280-cast-iron-high,0.5654878491770815,0.702905159053397,0.7879774305555556
@@ -35,6 +35,12 @@ dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,418-17-4ph-x
 dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,5884-armor-steel,0.5299752284493631,0.6754729981805406,0.7064615885416666
 dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,6280-cast-iron-high,0.16603918616547858,0.28275481798234037,0.2864501953125
 dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,6280-cast-iron-low,0.3091649919750762,0.45929471064587357,0.5122662168560607
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,4130-steel,0.4847178700300411,0.644480622574346,0.663204616970486
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,418-17-4ph-x20,0.4611476486123155,0.5318261714269232,0.8311399429563492
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,418-17-4ph-x5,0.8246064180356687,0.8942373389761236,0.9834743923611111
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,5884-armor-steel,0.6923418140453464,0.8133704899624047,0.8330465649801587
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,6280-cast-iron-high,0.5421984889450476,0.6506151918664042,0.8532036675347223
+dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,6280-cast-iron-low,0.4202936397743818,0.5849459790024283,0.6430762705176768
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,4130-steel,0.5312387024576954,0.6766173921982077,0.7094122992621528
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.35678686256392506,0.5947769407242064
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x5,0.7316227217315345,0.8212322235863642,0.9688140190972223

@@ -94,5 +94,17 @@
     "params_m": 31.785373,
     "train_seconds": 20.794602870941162,
     "device": "mps"
+  },
+  "dl_segformer_b0": {
+    "model_id": "dl_segformer_b0",
+    "display_name": "SegFormer (MiT-B0)",
+    "group": "general",
+    "category": "transformer",
+    "architecture": "Segformer",
+    "encoder": "mit_b0",
+    "input_mode": "rgb",
+    "params_m": 3.717485,
+    "train_seconds": 71.13828086853027,
+    "device": "cpu"
   }
 }
