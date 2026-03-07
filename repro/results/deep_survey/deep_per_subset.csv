@@ -5,6 +5,12 @@ dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,5884-armor-steel,0.2836705109913342,0.3648323268380926,0.5560812975363757
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-high,0.41277533637152775,0.45219387350315665,0.8255506727430555
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-low,0.1695706682129963,0.2305491699729913,0.4958693379103536
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,4130-steel,0.553979003229119,0.7072803740713531,0.7110677083333333
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,418-17-4ph-x20,0.4494059858550073,0.5086259106785237,0.8345243262235449
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,418-17-4ph-x5,0.8099170909194342,0.8839682355604556,0.980341796875
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,5884-armor-steel,0.6583150779396439,0.7889027618514798,0.8066871279761905
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,6280-cast-iron-high,0.5593478549187507,0.6796882090977798,0.8350965711805556
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,6280-cast-iron-low,0.4947445766530764,0.6500299722981443,0.7310014204545454
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,4130-steel,0.5218238657216583,0.6793724299254336,0.688955349392361
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x20,0.469758217469763,0.5521918798819909,0.8185557208994709
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x5,0.7924369200070975,0.8707784598239197,0.9774641927083333

@@ -154,5 +154,17 @@
     "params_m": 5.836441,
     "train_seconds": 16.46999502182007,
     "device": "mps"
+  },
+  "dl_deeplabv3p_effb0": {
+    "model_id": "dl_deeplabv3p_effb0",
+    "display_name": "DeepLabV3+ (EfficientNet-B0)",
+    "group": "general",
+    "category": "context-atrous",
+    "architecture": "DeepLabV3Plus",
+    "encoder": "tu-efficientnet_b0",
+    "input_mode": "rgb",
+    "params_m": 4.498393,
+    "train_seconds": 15.323055267333984,
+    "device": "mps"
   }
 }

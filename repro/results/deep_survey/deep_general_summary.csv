@@ -1,4 +1,5 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,miou,dice,pixel_acc,params_m,train_seconds,train_minutes
+dl_deeplabv3p_effb0,DeepLabV3+ (EfficientNet-B0),general,context-atrous,DeepLabV3Plus,tu-efficientnet_b0,rgb,0.5876182649191719,0.7030825772596226,0.816453158507195,4.498393,15.323055267333984,0.2553842544555664
 dl_segformer_b2,SegFormer (MiT-B2),general,transformer,Segformer,mit_b2,rgb,0.5759797018661156,0.6965814490285807,0.8052651251908657,24.725453,277.0208249092102,4.617013748486837
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,0.5740033699076693,0.6980186093458643,0.7960005266031471,22.440541,17.58085870742798,0.29301431179046633
 dl_segformer_b0,SegFormer (MiT-B0),general,transformer,Segformer,mit_b0,rgb,0.5708843132404668,0.686579298968105,0.8011909092200841,3.717485,71.13828086853027,1.1856380144755045
