@@ -262,5 +262,17 @@
     "params_m": 23.156941,
     "train_seconds": 24.608868837356567,
     "device": "mps"
+  },
+  "metal_linknet_edge4_r34": {
+    "model_id": "metal_linknet_edge4_r34",
+    "display_name": "Metal-LinkNet RGB+Sobel (ResNet34)",
+    "group": "metallography",
+    "category": "edge-aware",
+    "architecture": "Linknet",
+    "encoder": "resnet34",
+    "input_mode": "edge4",
+    "params_m": 21.775469,
+    "train_seconds": 15.850100994110107,
+    "device": "mps"
   }
 }

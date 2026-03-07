@@ -89,12 +89,18 @@ metal_deeplabv3p_clahe_r34,Metal-DeepLabV3+ CLAHE (ResNet34),metallography,micro
 metal_deeplabv3p_clahe_r34,Metal-DeepLabV3+ CLAHE (ResNet34),metallography,micrograph-contrast,DeepLabV3Plus,resnet34,clahe_rgb,5884-armor-steel,0.5987969488293123,0.7413520616221593,0.7679333560681217
 metal_deeplabv3p_clahe_r34,Metal-DeepLabV3+ CLAHE (ResNet34),metallography,micrograph-contrast,DeepLabV3Plus,resnet34,clahe_rgb,6280-cast-iron-high,0.5625865717370934,0.6844624672590108,0.8325927734375
 metal_deeplabv3p_clahe_r34,Metal-DeepLabV3+ CLAHE (ResNet34),metallography,micrograph-contrast,DeepLabV3Plus,resnet34,clahe_rgb,6280-cast-iron-low,0.4732961153333308,0.6364035118682815,0.6890363596906566
-metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,4130-steel,0.26583997938368054,0.34595208518238957,0.5316799587673611
-metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,418-17-4ph-x20,0.28960120960222224,0.3437949333878255,0.5712632275132276
+metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,4130-steel,0.26583997938368054,0.3459520851823895,0.5316799587673611
+metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,418-17-4ph-x20,0.2896012096022222,0.3437949333878255,0.5712632275132276
 metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,418-17-4ph-x5,0.6139154325018915,0.7068810369422033,0.9313856336805556
 metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,5884-armor-steel,0.5661197534366693,0.7160601253786137,0.7352947255291005
 metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,6280-cast-iron-high,0.4287365246041344,0.482648601035661,0.8261338975694444
-metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,6280-cast-iron-low,0.31922093677906355,0.4726182980721194,0.54354827572601
+metal_fpn_gabor_r34,Metal-FPN Gabor Stack (ResNet34),metallography,texture-aware,FPN,resnet34,gabor3,6280-cast-iron-low,0.3192209367790635,0.4726182980721193,0.54354827572601
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,4130-steel,0.5101111958811844,0.6636745673388258,0.6865464952256944
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,418-17-4ph-x20,0.32330930110671524,0.4358504360791169,0.5457485945767195
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,418-17-4ph-x5,0.7706288001421577,0.8543004827834292,0.9721137152777777
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,5884-armor-steel,0.45785793082486537,0.6024144704556029,0.6622605096726191
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,6280-cast-iron-high,0.41963819293749294,0.5632805004920003,0.6549858940972222
+metal_linknet_edge4_r34,Metal-LinkNet RGB+Sobel (ResNet34),metallography,edge-aware,Linknet,resnet34,edge4,6280-cast-iron-low,0.3033933997904989,0.44250502811434517,0.5468774660669191
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,4130-steel,0.636496955759951,0.7708556122103808,0.7771321614583333
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,418-17-4ph-x20,0.4437363114428422,0.5340433886117656,0.7707325768849206
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,418-17-4ph-x5,0.6512932042509096,0.7382824732780915,0.9626453993055556
