@@ -42,7 +42,7 @@
     "metal_mlography_unet_vgg16_gray"
   ],
   "selected_models": [
-    "dl_segformer_b0"
+    "dl_upernet_b0"
   ],
   "completed_models": [
     "dl_deeplabv3_r34",
@@ -53,7 +53,8 @@
     "dl_pspnet_r34",
     "dl_segformer_b0",
     "dl_unet_r34",
-    "dl_unetpp_r34"
+    "dl_unetpp_r34",
+    "dl_upernet_b0"
   ],
   "resume_enabled": true
 }

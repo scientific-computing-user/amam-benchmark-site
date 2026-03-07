@@ -106,5 +106,17 @@
     "params_m": 3.717485,
     "train_seconds": 71.13828086853027,
     "device": "cpu"
+  },
+  "dl_upernet_b0": {
+    "model_id": "dl_upernet_b0",
+    "display_name": "UPerNet (MiT-B0)",
+    "group": "general",
+    "category": "transformer",
+    "architecture": "UPerNet",
+    "encoder": "mit_b0",
+    "input_mode": "rgb",
+    "params_m": 10.735469,
+    "train_seconds": 101.13108396530151,
+    "device": "cpu"
   }
 }
