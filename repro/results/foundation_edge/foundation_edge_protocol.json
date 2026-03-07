@@ -14,11 +14,12 @@
     "pidi_watershed"
   ],
   "selected_models": [
-    "slimsam_50"
+    "slimsam_77"
   ],
   "completed_models": [
     "sam_vit_base",
-    "slimsam_50"
+    "slimsam_50",
+    "slimsam_77"
   ],
   "resume_enabled": true
 }
