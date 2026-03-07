@@ -42,11 +42,12 @@
     "metal_mlography_unet_vgg16_gray"
   ],
   "selected_models": [
-    "dl_deeplabv3p_r34"
+    "dl_fpn_r34"
   ],
   "completed_models": [
     "dl_deeplabv3_r34",
     "dl_deeplabv3p_r34",
+    "dl_fpn_r34",
     "dl_unet_r34",
     "dl_unetpp_r34"
   ],

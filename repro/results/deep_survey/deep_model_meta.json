@@ -46,5 +46,17 @@
     "params_m": 22.440541,
     "train_seconds": 17.58085870742798,
     "device": "mps"
+  },
+  "dl_fpn_r34": {
+    "model_id": "dl_fpn_r34",
+    "display_name": "FPN (ResNet34)",
+    "group": "general",
+    "category": "pyramid",
+    "architecture": "FPN",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 23.156941,
+    "train_seconds": 15.888894081115723,
+    "device": "mps"
   }
 }

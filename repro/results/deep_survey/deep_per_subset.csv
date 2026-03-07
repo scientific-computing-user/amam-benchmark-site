@@ -7,10 +7,16 @@ dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,
 dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,6280-cast-iron-low,0.1695706682129963,0.2305491699729913,0.4958693379103536
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,4130-steel,0.5218238657216583,0.6793724299254336,0.688955349392361
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x20,0.469758217469763,0.5521918798819909,0.8185557208994709
-dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x5,0.7924369200070975,0.8707784598239194,0.9774641927083333
+dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,418-17-4ph-x5,0.7924369200070975,0.8707784598239197,0.9774641927083333
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,5884-armor-steel,0.631502304533108,0.7681324636041366,0.7867283089451058
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,6280-cast-iron-high,0.5543024424572328,0.6784991332296599,0.8211127387152779
 dl_deeplabv3p_r34,DeepLabV3+ (ResNet34),general,context-atrous,DeepLabV3Plus,resnet34,rgb,6280-cast-iron-low,0.4741964692571564,0.6391372896100458,0.6831868489583334
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,4130-steel,0.3471643303212814,0.506470033502752,0.5321628146701389
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,418-17-4ph-x20,0.3007578283047949,0.3479203412819058,0.5987891141699736
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,418-17-4ph-x5,0.7892706424487492,0.8680466552159507,0.9781477864583333
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,5884-armor-steel,0.6356027518929999,0.7720941469553376,0.7867967716600529
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,6280-cast-iron-high,0.4133432212963949,0.4532227291045145,0.825732421875
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,6280-cast-iron-low,0.21331169869393152,0.3167445450095311,0.47355883049242425
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,4130-steel,0.5312387024576954,0.6766173921982077,0.7094122992621528
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.35678686256392506,0.5947769407242064
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x5,0.7316227217315345,0.8212322235863642,0.9688140190972223
