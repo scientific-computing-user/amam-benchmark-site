@@ -1,4 +1,4 @@
-## Metallography-Oriented Deep Models (10)
+## Metallography-Oriented Deep Models (11)
 
 | Rank | Model | Category | mIoU | Dice | Pixel Acc | Params (M) | Train min |
 |---:|---|---|---:|---:|---:|---:|---:|
@@ -11,4 +11,5 @@
 | 7 | Metal-U-Net LBP Stack (ResNet34) | texture-aware | 0.4884 | 0.6155 | 0.7110 | 24.44 | 0.4 |
 | 8 | Metal-U-Net++ Gray (ResNet34) | micrograph-contrast | 0.4776 | 0.5968 | 0.6874 | 26.07 | 0.8 |
 | 9 | Metal-LinkNet RGB+Sobel (ResNet34) | edge-aware | 0.4642 | 0.5937 | 0.6781 | 21.78 | 0.3 |
-| 10 | Metal-FPN Gabor Stack (ResNet34) | texture-aware | 0.4139 | 0.5113 | 0.6899 | 23.16 | 0.4 |
+| 10 | Metal-UPerNet CLAHE (MiT-B2) | micrograph-contrast | 0.4413 | 0.5378 | 0.7015 | 32.53 | 5.0 |
+| 11 | Metal-FPN Gabor Stack (ResNet34) | texture-aware | 0.4139 | 0.5113 | 0.6899 | 23.16 | 0.4 |

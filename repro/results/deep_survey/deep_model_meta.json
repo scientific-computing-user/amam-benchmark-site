@@ -286,5 +286,17 @@
     "params_m": 3.717485,
     "train_seconds": 78.25425004959106,
     "device": "cpu"
+  },
+  "metal_upernet_clahe_b2": {
+    "model_id": "metal_upernet_clahe_b2",
+    "display_name": "Metal-UPerNet CLAHE (MiT-B2)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "UPerNet",
+    "encoder": "mit_b2",
+    "input_mode": "clahe_rgb",
+    "params_m": 32.530893,
+    "train_seconds": 302.05386900901794,
+    "device": "cpu"
   }
 }
