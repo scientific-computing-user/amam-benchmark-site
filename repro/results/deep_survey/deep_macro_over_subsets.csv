@@ -1,3 +1,4 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,miou,dice,pixel_acc,params_m,train_seconds,train_minutes
 dl_unetpp_r34,U-Net++ (ResNet34),general,encoder-decoder,UnetPlusPlus,resnet34,rgb,0.5587611621535308,0.6824271886518343,0.7735952323802259,26.080349,29.275037050247192,0.48791728417078656
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,0.52087618958004,0.643584936281159,0.7319583089270996,24.438109,16.993568658828735,0.28322614431381227
+dl_deeplabv3_r34,DeepLabV3 (ResNet34),general,context-atrous,DeepLabV3,resnet34,rgb,0.3199988288161854,0.375795637895941,0.6600972467067437,26.010189,39.0425488948822,0.6507091482480367
