@@ -31,9 +31,9 @@
   <main id="top" class="report-main">
     <section class="report-hero panel">
       <div class="report-hero-main">
-        <p class="kicker">Benchmark Rationale and Evaluation Framing</p>
+        <p class="kicker">AMAM-128 No-Split Campaign</p>
         <h1 id="reportHeadline">AMAM Benchmark Report</h1>
-        <p id="reportOverview" class="hero-overview">Loading benchmark profile...</p>
+        <p id="reportOverview" class="hero-overview">Loading campaign profile...</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="index.html#explorer">Open Dataset Explorer</a>
           <a class="btn btn-ghost" href="assets/data/amam-dataset.json" download>Download Benchmark Metadata</a>
@@ -42,13 +42,13 @@
       <aside class="report-hero-side">
         <h2>Core Claim</h2>
         <p>
-          AMAM is benchmark-relevant because it combines multiple microstructure segmentation regimes in one curated resource,
-          while preserving per-subset label semantics and full-image context.
+          The AMAM-128 campaign is a reproducible benchmark release: 45 models were evaluated under one strict
+          protocol on the same 128 paired images.
         </p>
         <ul class="report-list">
-          <li>Multi-material microstructures (steel and cast iron in this release)</li>
-          <li>Multiple imaging regimes and magnification styles</li>
-          <li>Expert-guided iterative annotation workflow with known edge cases</li>
+          <li><code>fullset_no_holdout</code>: every model is evaluated on all 128 paired images</li>
+          <li>10 classical, 29 supervised deep, 6 foundation/edge add-on models</li>
+          <li>Hard reproducibility audit and per-model provenance manifest published</li>
         </ul>
       </aside>
     </section>
@@ -121,7 +121,7 @@
     <section class="panel" id="model-results">
       <div class="panel-head">
         <h2>Model Benchmark Results (All 45 Runs)</h2>
-        <p>Complete benchmark table across 10 classical baselines, 29 supervised deep models, and 6 foundation/edge inference add-ons.</p>
+        <p>Complete campaign table across 10 classical baselines, 29 supervised deep models, and 6 foundation/edge inference add-ons under one no-split protocol.</p>
       </div>
 
       <div class="results-summary" id="resultsSummary"></div>
@@ -155,6 +155,8 @@
         <a class="btn btn-ghost" href="assets/data/results/benchmark_summary.csv" download>Download Classical CSV</a>
         <a class="btn btn-ghost" href="assets/data/results/deep_macro_over_subsets.csv" download>Download Deep CSV</a>
         <a class="btn btn-ghost" href="assets/data/results/foundation_edge_summary.csv" download>Download Foundation/Edge CSV</a>
+        <a class="btn btn-ghost" href="repro/results/model_provenance_manifest.csv" download>Download Provenance Manifest</a>
+        <a class="btn btn-ghost" href="repro/results/reproducibility_audit_45_models.json" download>Download Repro Audit</a>
       </div>
 
       <p class="results-status" id="resultsStatus">Loading benchmark results...</p>
@@ -212,48 +214,48 @@
 
     <section class="panel">
       <div class="panel-head">
-        <h2>Recommended Benchmark Protocol</h2>
-        <p>To avoid monolithic ranking artifacts, evaluation should stay subset-aware and include out-of-distribution checks.</p>
+        <h2>Campaign Protocol (Executed)</h2>
+        <p>The AMAM-128 campaign runs one fixed benchmark protocol so all model families are directly comparable.</p>
       </div>
       <div class="protocol-grid">
         <article class="protocol-card">
-          <h3>Track A: Within-Subset Segmentation</h3>
-          <p>Evaluate each subset in its native label space. Report per-subset IoU/Dice and macro-average across subsets.</p>
+          <h3>Coverage Rule</h3>
+          <p><code>fullset_no_holdout</code> mode: each benchmarked model is evaluated on all 128 paired images.</p>
         </article>
         <article class="protocol-card">
-          <h3>Track B: Cross-Material OOD</h3>
-          <p>Hold out one material group at a time and report generalization drop relative to in-domain training.</p>
+          <h3>Model Scope</h3>
+          <p>45 total models: 10 classical, 29 supervised deep, and 6 foundation/edge add-ons.</p>
         </article>
         <article class="protocol-card">
-          <h3>Track C: Cross-Scale OOD</h3>
-          <p>Use magnification-separated splits to quantify robustness to feature-scale shift.</p>
+          <h3>Metrics</h3>
+          <p>Subset-aware macro mIoU, Dice, and Pixel Accuracy with per-subset and per-image outputs.</p>
         </article>
         <article class="protocol-card">
-          <h3>Track D: Artifact Stress Tests</h3>
-          <p>Build fixed slices for scratches, blurry boundaries, and reflective regions, then report targeted robustness metrics.</p>
+          <h3>Auditability</h3>
+          <p>Published checkpoint provenance plus strict 45-model reproducibility audit artifacts.</p>
         </article>
       </div>
     </section>
 
     <section class="panel">
       <div class="panel-head">
-        <h2>Current Limits and Next Steps</h2>
+        <h2>Post-Campaign Next Steps</h2>
       </div>
       <div class="limits-grid">
         <article class="limits-card">
           <h3>Already Strong</h3>
           <ul class="report-list">
+            <li>One fixed 45-model campaign with synchronized reporting</li>
             <li>Paired original-mask tuples with transparent subset definitions</li>
-            <li>Full-image context rather than only small crop patches</li>
-            <li>Clear path to subset-level and OOD benchmarking</li>
+            <li>Hard verification artifacts for reproducibility checks</li>
           </ul>
         </article>
         <article class="limits-card">
-          <h3>To Reach Full Community Benchmark Governance</h3>
+          <h3>To Reach Full Benchmark Governance</h3>
           <ul class="report-list" id="nextStepsList">
-            <li>Freeze immutable test splits and version identifiers</li>
-            <li>Add hidden test evaluation workflow and submission rules</li>
-            <li>Publish audit-style annotation reliability statistics</li>
+            <li>Add hidden-test governance and submission protocol</li>
+            <li>Define official OOD tracks (cross-material and cross-scale)</li>
+            <li>Publish annotation reliability and inter-rater audit stats</li>
           </ul>
         </article>
       </div>
