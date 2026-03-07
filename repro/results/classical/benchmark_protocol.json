@@ -4,27 +4,20 @@
     256,
     256
   ],
-  "train_fraction": 0.8,
+  "split_mode": "fullset_no_holdout",
   "n_pairs": 128,
-  "test_images": 25,
+  "train_images": 128,
+  "test_images": 128,
   "methods": [
-    "kmeans_rgb",
-    "gmm_rgb",
-    "canny_watershed",
-    "sobel_watershed",
-    "slic_cluster",
-    "felzenszwalb_cluster",
-    "lbp_kmeans",
-    "gabor_kmeans",
-    "rf_pixel",
-    "svm_pixel"
+    "kmeans_rgb"
   ],
   "subset_test_counts": {
-    "4130-steel": 8,
-    "6280-cast-iron-low": 2,
-    "6280-cast-iron-high": 2,
-    "5884-armor-steel": 4,
-    "418-17-4ph-x5": 5,
-    "418-17-4ph-x20": 4
-  }
+    "4130-steel": 40,
+    "6280-cast-iron-low": 11,
+    "6280-cast-iron-high": 10,
+    "5884-armor-steel": 21,
+    "418-17-4ph-x5": 25,
+    "418-17-4ph-x20": 21
+  },
+  "subset_metadata_source": "assets/data/amam-dataset.json"
 }
