@@ -17,7 +17,8 @@
     "lbp_kmeans",
     "rf_pixel",
     "slic_cluster",
-    "sobel_watershed"
+    "sobel_watershed",
+    "svm_pixel"
   ],
   "subset_test_counts": {
     "4130-steel": 40,
