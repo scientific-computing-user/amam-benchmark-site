@@ -15,6 +15,7 @@
     "gmm_rgb",
     "kmeans_rgb",
     "lbp_kmeans",
+    "rf_pixel",
     "slic_cluster",
     "sobel_watershed"
   ],
