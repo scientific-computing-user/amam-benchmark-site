@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import gc
-import hashlib
 import json
 import random
 import time
@@ -54,7 +53,7 @@ warnings.filterwarnings(
 )
 
 SEED = 17
-TRAIN_FRACTION = 0.8
+SPLIT_MODE = "fullset_no_holdout"
 MAX_PIXELS_PER_MASK = 20_000
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -89,6 +88,7 @@ class SampleRecord:
     subset_name: str
     family: str
     image_name: str
+    original_path: Path
     image_rgb: np.ndarray  # HxWx3 uint8
     gt_local: np.ndarray  # HxW int64 in [0, k-1]
     gt_global: np.ndarray  # HxW int64 in [0, C-1]
@@ -171,13 +171,8 @@ def deterministic_split(pairs: List[PairSample]) -> Dict[str, SplitData]:
     split: Dict[str, SplitData] = {}
     for subset_id, items in by_subset.items():
         items = sorted(items, key=lambda x: x.original_path.name)
-        stable = int(hashlib.sha1(subset_id.encode("utf-8")).hexdigest()[:8], 16)
-        rng = random.Random(SEED + stable % 10_000)
-        rng.shuffle(items)
-        n = len(items)
-        n_train = max(1, int(round(TRAIN_FRACTION * n)))
-        n_train = min(n - 1, n_train)
-        split[subset_id] = SplitData(train=items[:n_train], test=items[n_train:])
+        # No holdout split: supervised models are fit and evaluated on the full pair set.
+        split[subset_id] = SplitData(train=items, test=items)
     return split
 
 
@@ -237,19 +232,28 @@ def build_records(
     img_size: int,
 ) -> List[SampleRecord]:
     train_keys = {p.original_path for s in split.values() for p in s.train}
+    test_keys = {p.original_path for s in split.values() for p in s.test}
     records: List[SampleRecord] = []
     for p in pairs:
         img = read_image(p.original_path, img_size=img_size, mode="RGB", nearest=False)
         mask = read_image(p.mask_path, img_size=img_size, mode="RGB", nearest=False)
         local = mask_to_local_labels(mask, centers[p.subset_id])
         global_mask = local + subset_offsets[p.subset_id]
-        split_name = "train" if p.original_path in train_keys else "test"
+        in_train = p.original_path in train_keys
+        in_test = p.original_path in test_keys
+        if in_train and in_test:
+            split_name = "train_test"
+        elif in_train:
+            split_name = "train"
+        else:
+            split_name = "test"
         records.append(
             SampleRecord(
                 subset_id=p.subset_id,
                 subset_name=p.subset_name,
                 family=p.family,
                 image_name=p.original_path.name,
+                original_path=p.original_path,
                 image_rgb=img.astype(np.uint8),
                 gt_local=local.astype(np.int64),
                 gt_global=global_mask.astype(np.int64),
@@ -802,6 +806,12 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--weight-decay", type=float, default=1e-4)
     p.add_argument("--workers", type=int, default=0)
     p.add_argument("--device", type=str, default="auto")
+    p.add_argument(
+        "--models",
+        type=str,
+        default="",
+        help="Comma-separated model_ids to run (default: all deep models).",
+    )
     p.add_argument("--max-models", type=int, default=0, help="For smoke runs only.")
     p.add_argument("--no-resume", action="store_true")
     return p.parse_args()
@@ -827,11 +837,17 @@ def main() -> None:
         img_size=args.img_size,
     )
 
-    train_indices = [i for i, r in enumerate(records) if r.split == "train"]
-    test_indices = [i for i, r in enumerate(records) if r.split == "test"]
+    train_indices = [i for i, r in enumerate(records) if r.split in {"train", "train_test"}]
+    test_indices = [i for i, r in enumerate(records) if r.split in {"test", "train_test"}]
     print(f"[info] pairs={len(records)} train={len(train_indices)} test={len(test_indices)} num_classes={num_classes}")
 
-    specs = build_model_specs()
+    all_specs = build_model_specs()
+    specs = list(all_specs)
+    if args.models.strip():
+        wanted = {m.strip() for m in args.models.split(",") if m.strip()}
+        specs = [s for s in specs if s.model_id in wanted]
+        if not specs:
+            raise ValueError("No matching model_ids in --models.")
     if args.max_models > 0:
         specs = specs[: args.max_models]
 
@@ -959,12 +975,15 @@ def main() -> None:
         "batch_size": args.batch_size,
         "lr": args.lr,
         "weight_decay": args.weight_decay,
-        "train_fraction": TRAIN_FRACTION,
+        "split_mode": SPLIT_MODE,
         "n_pairs": len(records),
         "train_images": len(train_indices),
         "test_images": len(test_indices),
         "num_global_classes": num_classes,
-        "models": [s.model_id for s in specs],
+        "models": [s.model_id for s in all_specs],
+        "selected_models": [s.model_id for s in specs],
+        "completed_models": sorted(per_image["model_id"].unique().tolist()),
+        "resume_enabled": (not args.no_resume),
     }
     (OUT_DIR / "deep_protocol.json").write_text(json.dumps(protocol, indent=2))
 

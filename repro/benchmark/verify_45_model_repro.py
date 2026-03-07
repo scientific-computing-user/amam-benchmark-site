@@ -101,6 +101,8 @@ EXPECTED_DEEP = {
     "metal_mlography_unet_vgg16_gray",
 }
 
+EXPECTED_PAIRS = 128
+
 
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -185,6 +187,23 @@ def main() -> None:
     if len(all_ids) != 45:
         raise RuntimeError(f"expected 45 unique models, got {len(all_ids)}")
 
+    # Full-set protocol checks: each model must have 128 per-image rows.
+    c_img_df = pd.read_csv(CLASSICAL_PER_IMAGE)
+    d_img_df = pd.read_csv(DEEP_PER_IMAGE)
+    f_img_df = pd.read_csv(FOUNDATION_PER_IMAGE)
+    c_counts = c_img_df.groupby("method").size()
+    d_counts = d_img_df.groupby("model_id").size()
+    f_counts = f_img_df.groupby("model_id").size()
+    if not (c_counts == EXPECTED_PAIRS).all():
+        bad = c_counts[c_counts != EXPECTED_PAIRS].to_dict()
+        raise RuntimeError(f"classical per-image row count mismatch (expected {EXPECTED_PAIRS} each): {bad}")
+    if not (d_counts == EXPECTED_PAIRS).all():
+        bad = d_counts[d_counts != EXPECTED_PAIRS].to_dict()
+        raise RuntimeError(f"deep per-image row count mismatch (expected {EXPECTED_PAIRS} each): {bad}")
+    if not (f_counts == EXPECTED_PAIRS).all():
+        bad = f_counts[f_counts != EXPECTED_PAIRS].to_dict()
+        raise RuntimeError(f"foundation per-image row count mismatch (expected {EXPECTED_PAIRS} each): {bad}")
+
     manifest = pd.read_csv(MANIFEST)
     if len(manifest) != 45:
         raise RuntimeError(f"manifest row count mismatch: {len(manifest)} != 45")
@@ -224,12 +243,18 @@ def main() -> None:
     d_protocol = json.loads(DEEP_PROTOCOL.read_text())
     f_protocol = json.loads(FOUNDATION_PROTOCOL.read_text())
 
-    if int(c_protocol.get("n_pairs", -1)) != 128:
-        raise RuntimeError("classical protocol n_pairs != 128")
-    if int(d_protocol.get("n_pairs", -1)) != 128:
-        raise RuntimeError("deep protocol n_pairs != 128")
-    if int(f_protocol.get("n_pairs", -1)) != 128:
-        raise RuntimeError("foundation protocol n_pairs != 128")
+    if int(c_protocol.get("n_pairs", -1)) != EXPECTED_PAIRS:
+        raise RuntimeError(f"classical protocol n_pairs != {EXPECTED_PAIRS}")
+    if int(d_protocol.get("n_pairs", -1)) != EXPECTED_PAIRS:
+        raise RuntimeError(f"deep protocol n_pairs != {EXPECTED_PAIRS}")
+    if int(f_protocol.get("n_pairs", -1)) != EXPECTED_PAIRS:
+        raise RuntimeError(f"foundation protocol n_pairs != {EXPECTED_PAIRS}")
+    if c_protocol.get("split_mode") != "fullset_no_holdout":
+        raise RuntimeError("classical protocol split_mode is not fullset_no_holdout")
+    if d_protocol.get("split_mode") != "fullset_no_holdout":
+        raise RuntimeError("deep protocol split_mode is not fullset_no_holdout")
+    if f_protocol.get("split_mode") != "fullset_no_holdout":
+        raise RuntimeError("foundation protocol split_mode is not fullset_no_holdout")
 
     audit = {
         "status": "PASS",
@@ -284,4 +309,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

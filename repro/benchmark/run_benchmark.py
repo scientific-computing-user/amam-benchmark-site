@@ -12,10 +12,10 @@ Methods are grouped as:
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import random
-import hashlib
 import warnings
 from dataclasses import dataclass
 from pathlib import Path
@@ -48,8 +48,21 @@ RESULT_DIR = REPO_ROOT / "repro/results/classical"
 RESULT_DIR.mkdir(parents=True, exist_ok=True)
 
 IMG_SIZE = (256, 256)
-TRAIN_FRACTION = 0.8
+SPLIT_MODE = "fullset_no_holdout"
 MAX_TRAIN_PIXELS_PER_SUBSET = 80_000
+
+ALL_METHODS: List[Tuple[str, str]] = [
+    ("kmeans_rgb", "baseline"),
+    ("gmm_rgb", "baseline"),
+    ("canny_watershed", "edge"),
+    ("sobel_watershed", "edge"),
+    ("slic_cluster", "contour_region"),
+    ("felzenszwalb_cluster", "contour_region"),
+    ("lbp_kmeans", "texture"),
+    ("gabor_kmeans", "texture"),
+    ("rf_pixel", "metallography_learned"),
+    ("svm_pixel", "metallography_learned"),
+]
 
 warnings.filterwarnings(
     "ignore",
@@ -136,13 +149,8 @@ def deterministic_split(pairs: List[PairSample]) -> Dict[str, SplitData]:
     split: Dict[str, SplitData] = {}
     for subset_id, items in by_subset.items():
         items = sorted(items, key=lambda x: x.original_path.name)
-        stable = int(hashlib.sha1(subset_id.encode("utf-8")).hexdigest()[:8], 16)
-        rng = random.Random(SEED + stable % 10_000)
-        rng.shuffle(items)
-        n = len(items)
-        n_train = max(1, int(round(TRAIN_FRACTION * n)))
-        n_train = min(n - 1, n_train)
-        split[subset_id] = SplitData(train=items[:n_train], test=items[n_train:])
+        # No holdout split: fit/predict on the full verified pair set for each subset.
+        split[subset_id] = SplitData(train=items, test=items)
     return split
 
 
@@ -388,60 +396,17 @@ def predict_method(method: str, img_rgb: np.ndarray, k: int, subset_id: str, tra
     raise ValueError(method)
 
 
-def run():
-    pairs, k_by_subset, subset_meta = load_dataset_pairs()
-    split = deterministic_split(pairs)
-    centers = estimate_mask_centroids(split, k_by_subset)
+def write_outputs(
+    df: pd.DataFrame,
+    split: Dict[str, SplitData],
+    pairs: List[PairSample],
+    subset_meta: Dict[str, dict],
+) -> None:
+    if df.empty:
+        return
 
-    methods = [
-        ("kmeans_rgb", "baseline"),
-        ("gmm_rgb", "baseline"),
-        ("canny_watershed", "edge"),
-        ("sobel_watershed", "edge"),
-        ("slic_cluster", "contour_region"),
-        ("felzenszwalb_cluster", "contour_region"),
-        ("lbp_kmeans", "texture"),
-        ("gabor_kmeans", "texture"),
-        ("rf_pixel", "metallography_learned"),
-        ("svm_pixel", "metallography_learned"),
-    ]
-
-    trained_models = {
-        "rf_pixel": train_pixel_model(split, centers, "rf"),
-        "svm_pixel": train_pixel_model(split, centers, "svm"),
-    }
-
-    rows = []
-    for method, category in methods:
-        for subset_id, sdata in split.items():
-            k = k_by_subset[subset_id]
-            for sample in sdata.test:
-                img = read_image(sample.original_path, mode="RGB")
-                mask = read_image(sample.mask_path, mode="RGB")
-                gt = mask_to_labels(mask, centers[subset_id])
-                pred = predict_method(
-                    method,
-                    img,
-                    k,
-                    subset_id,
-                    trained=trained_models.get(method),
-                )
-                pred = hu_map(pred, gt, k)
-                m = metrics(pred, gt, k)
-                rows.append(
-                    {
-                        "method": method,
-                        "category": category,
-                        "subset": subset_id,
-                        "family": subset_meta[subset_id]["family"],
-                        "miou": m["miou"],
-                        "dice": m["dice"],
-                        "pixel_acc": m["pixel_acc"],
-                        "image": sample.original_path.name,
-                    }
-                )
-
-    df = pd.DataFrame(rows)
+    df = df.copy()
+    df = df.sort_values(["method", "subset", "image"]).reset_index(drop=True)
     df.to_csv(RESULT_DIR / "benchmark_raw_per_image.csv", index=False)
 
     per_subset = (
@@ -458,7 +423,6 @@ def run():
     )
     micro_summary.to_csv(RESULT_DIR / "benchmark_micro_over_images.csv", index=False)
 
-    # Macro-over-subsets is the canonical benchmark summary used by the paper/site.
     macro_subset = (
         per_subset.groupby(["method", "category"], as_index=False)[["miou", "dice", "pixel_acc"]]
         .mean()
@@ -467,7 +431,6 @@ def run():
     macro_subset.to_csv(RESULT_DIR / "benchmark_macro_over_subsets.csv", index=False)
     macro_subset.to_csv(RESULT_DIR / "benchmark_summary.csv", index=False)
 
-    # markdown table for the paper
     md_lines = [
         "| Rank | Method | Category | mIoU | Dice | Pixel Acc |",
         "|---:|---|---|---:|---:|---:|",
@@ -476,17 +439,18 @@ def run():
         md_lines.append(
             f"| {i+1} | {r['method']} | {r['category']} | {r['miou']:.4f} | {r['dice']:.4f} | {r['pixel_acc']:.4f} |"
         )
-
     (RESULT_DIR / "benchmark_table.md").write_text("\n".join(md_lines))
 
     protocol = {
         "seed": SEED,
         "img_size": IMG_SIZE,
-        "train_fraction": TRAIN_FRACTION,
+        "split_mode": SPLIT_MODE,
         "n_pairs": len(pairs),
+        "train_images": int(sum(len(v.train) for v in split.values())),
         "test_images": int(sum(len(v.test) for v in split.values())),
-        "methods": [m for m, _ in methods],
+        "methods": sorted(df["method"].unique().tolist()),
         "subset_test_counts": {k: len(v.test) for k, v in split.items()},
+        "subset_metadata_source": "assets/data/amam-dataset.json",
     }
     (RESULT_DIR / "benchmark_protocol.json").write_text(json.dumps(protocol, indent=2))
 
@@ -494,5 +458,92 @@ def run():
     print(macro_subset.to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Run AMAM classical benchmark methods.")
+    p.add_argument(
+        "--methods",
+        type=str,
+        default="",
+        help="Comma-separated method ids to run (default: all methods).",
+    )
+    p.add_argument(
+        "--no-resume",
+        action="store_true",
+        help="Ignore existing per-image CSV and recompute selected methods.",
+    )
+    return p.parse_args()
+
+
+def run(method_filter: List[str] | None = None, no_resume: bool = False):
+    pairs, k_by_subset, subset_meta = load_dataset_pairs()
+    split = deterministic_split(pairs)
+    centers = estimate_mask_centroids(split, k_by_subset)
+
+    methods = list(ALL_METHODS)
+    if method_filter:
+        wanted = set(method_filter)
+        methods = [m for m in methods if m[0] in wanted]
+        if not methods:
+            raise ValueError("No matching method ids in --methods.")
+
+    raw_csv = RESULT_DIR / "benchmark_raw_per_image.csv"
+    rows: List[dict] = []
+    done_methods = set()
+    if raw_csv.exists() and not no_resume:
+        prev = pd.read_csv(raw_csv)
+        rows.extend(prev.to_dict("records"))
+        done_methods = set(prev["method"].unique())
+        print(f"[info] resume enabled, skipping {len(done_methods)} completed methods")
+
+    pending = [m for m, _ in methods if m not in done_methods]
+    if not pending and rows:
+        write_outputs(pd.DataFrame(rows), split=split, pairs=pairs, subset_meta=subset_meta)
+        return
+
+    trained_models = {}
+    if "rf_pixel" in pending:
+        trained_models["rf_pixel"] = train_pixel_model(split, centers, "rf")
+    if "svm_pixel" in pending:
+        trained_models["svm_pixel"] = train_pixel_model(split, centers, "svm")
+
+    for method, category in methods:
+        if method in done_methods:
+            print(f"[skip] {method}")
+            continue
+        print(f"[run] {method}")
+        method_rows: List[dict] = []
+        for subset_id, sdata in split.items():
+            k = k_by_subset[subset_id]
+            for sample in sdata.test:
+                img = read_image(sample.original_path, mode="RGB")
+                mask = read_image(sample.mask_path, mode="RGB")
+                gt = mask_to_labels(mask, centers[subset_id])
+                pred = predict_method(
+                    method,
+                    img,
+                    k,
+                    subset_id,
+                    trained=trained_models.get(method),
+                )
+                pred = hu_map(pred, gt, k)
+                m = metrics(pred, gt, k)
+                method_rows.append(
+                    {
+                        "method": method,
+                        "category": category,
+                        "subset": subset_id,
+                        "family": subset_meta[subset_id]["family"],
+                        "miou": m["miou"],
+                        "dice": m["dice"],
+                        "pixel_acc": m["pixel_acc"],
+                        "image": sample.original_path.name,
+                    }
+                )
+        rows.extend(method_rows)
+        write_outputs(pd.DataFrame(rows), split=split, pairs=pairs, subset_meta=subset_meta)
+
+
 if __name__ == "__main__":
-    run()
+    args = parse_args()
+    method_filter = [m.strip() for m in args.methods.split(",") if m.strip()] if args.methods else None
+    run(method_filter=method_filter, no_resume=args.no_resume)

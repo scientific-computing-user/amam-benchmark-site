@@ -150,7 +150,7 @@ def build_classical_rows(df: pd.DataFrame) -> List[Dict[str, str]]:
                 "miou": f"{float(r['miou']):.4f}",
                 "checkpoint_kind": "none",
                 "checkpoint_identifier": "none",
-                "checkpoint_loader": "No pretrained checkpoint (classical algorithm fit on AMAM train split)",
+                "checkpoint_loader": "No pretrained checkpoint (classical algorithm fit on the full AMAM-128 pair set)",
                 "checkpoint_source_location": (
                     "scikit-learn / scikit-image classical methods executed in "
                     "repro/benchmark/run_benchmark.py"

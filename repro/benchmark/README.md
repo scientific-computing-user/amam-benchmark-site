@@ -49,7 +49,8 @@ python3 repro/benchmark/run_foundation_edge_addons.py --img-size 192 --device au
 ## Determinism / Protocol
 
 - Pair-only inclusion from `assets/data/amam-dataset.json`.
-- Deterministic split seed: `17` (see script constants/protocol JSON outputs).
+- Deterministic seed: `17` for randomized internals.
+- Evaluation mode: `fullset_no_holdout` (all 128 paired tuples are used for per-model inference/evaluation).
 - Subset-aware macro metrics: mIoU, Dice, Pixel Accuracy.
 - Output protocol manifests:
   - `repro/results/classical/benchmark_protocol.json`

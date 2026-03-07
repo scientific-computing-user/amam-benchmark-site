@@ -14,7 +14,6 @@ Models:
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import random
 import sys
@@ -36,7 +35,7 @@ from transformers import pipeline
 from controlnet_aux import HEDdetector, PidiNetDetector
 
 SEED = 17
-TRAIN_FRACTION = 0.8
+SPLIT_MODE = "fullset_no_holdout"
 MAX_PIXELS_PER_MASK = 20_000
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -123,13 +122,8 @@ def deterministic_split(pairs: List[PairSample]) -> Dict[str, SplitData]:
     split: Dict[str, SplitData] = {}
     for subset_id, items in by_subset.items():
         items = sorted(items, key=lambda x: x.original_path.name)
-        stable = int(hashlib.sha1(subset_id.encode("utf-8")).hexdigest()[:8], 16)
-        rng = random.Random(SEED + stable % 10_000)
-        rng.shuffle(items)
-        n = len(items)
-        n_train = max(1, int(round(TRAIN_FRACTION * n)))
-        n_train = min(n - 1, n_train)
-        split[subset_id] = SplitData(train=items[:n_train], test=items[n_train:])
+        # No holdout split: evaluate all inference-only models on every paired sample.
+        split[subset_id] = SplitData(train=items, test=items)
     return split
 
 
@@ -350,32 +344,47 @@ def main() -> None:
     test_samples = [s for sp in split.values() for s in sp.test]
     print(f"[info] test samples: {len(test_samples)}")
 
-    print("[load] foundation/edge models")
-    sam_base = pipeline("mask-generation", model="facebook/sam-vit-base", device=args.device)
-    slim_50 = pipeline("mask-generation", model="nielsr/slimsam-50-uniform", device=args.device)
-    slim_77 = pipeline("mask-generation", model="nielsr/slimsam-77-uniform", device=args.device)
-    hed = HEDdetector.from_pretrained("lllyasviel/Annotators")
-    pidi = PidiNetDetector.from_pretrained("lllyasviel/Annotators")
-    texturesam = load_texturesam_generator(
-        repo_dir=Path(args.texturesam_repo),
-        checkpoint_path=Path(args.texturesam_ckpt),
-    )
-
-    all_models = [
-        ("sam_vit_base", "foundation_sam", lambda img, k: run_model_sam(sam_base, img, k)),
-        ("slimsam_50", "foundation_sam", lambda img, k: run_model_sam(slim_50, img, k)),
-        ("slimsam_77", "foundation_sam", lambda img, k: run_model_sam(slim_77, img, k)),
-        ("texturesam_03", "foundation_texture", lambda img, k: run_model_texturesam(texturesam, img, k)),
-        ("hed_watershed", "deep_edge", lambda img, k: run_model_hed(hed, img, k)),
-        ("pidi_watershed", "deep_edge", lambda img, k: run_model_hed(pidi, img, k)),
+    all_model_ids = [
+        "sam_vit_base",
+        "slimsam_50",
+        "slimsam_77",
+        "texturesam_03",
+        "hed_watershed",
+        "pidi_watershed",
     ]
-    models = list(all_models)
-
+    wanted = set(all_model_ids)
     if args.models.strip():
         wanted = {m.strip() for m in args.models.split(",") if m.strip()}
-        models = [m for m in models if m[0] in wanted]
-        if not models:
-            raise ValueError("No matching model_ids in --models.")
+        invalid = sorted(m for m in wanted if m not in all_model_ids)
+        if invalid:
+            raise ValueError(f"Unknown model_ids in --models: {invalid}")
+    print("[load] foundation/edge models")
+    models = []
+    if "sam_vit_base" in wanted:
+        sam_base = pipeline("mask-generation", model="facebook/sam-vit-base", device=args.device)
+        models.append(("sam_vit_base", "foundation_sam", lambda img, k, p=sam_base: run_model_sam(p, img, k)))
+    if "slimsam_50" in wanted:
+        slim_50 = pipeline("mask-generation", model="nielsr/slimsam-50-uniform", device=args.device)
+        models.append(("slimsam_50", "foundation_sam", lambda img, k, p=slim_50: run_model_sam(p, img, k)))
+    if "slimsam_77" in wanted:
+        slim_77 = pipeline("mask-generation", model="nielsr/slimsam-77-uniform", device=args.device)
+        models.append(("slimsam_77", "foundation_sam", lambda img, k, p=slim_77: run_model_sam(p, img, k)))
+    if "texturesam_03" in wanted:
+        texturesam = load_texturesam_generator(
+            repo_dir=Path(args.texturesam_repo),
+            checkpoint_path=Path(args.texturesam_ckpt),
+        )
+        models.append(
+            ("texturesam_03", "foundation_texture", lambda img, k, p=texturesam: run_model_texturesam(p, img, k))
+        )
+    if "hed_watershed" in wanted:
+        hed = HEDdetector.from_pretrained("lllyasviel/Annotators")
+        models.append(("hed_watershed", "deep_edge", lambda img, k, p=hed: run_model_hed(p, img, k)))
+    if "pidi_watershed" in wanted:
+        pidi = PidiNetDetector.from_pretrained("lllyasviel/Annotators")
+        models.append(("pidi_watershed", "deep_edge", lambda img, k, p=pidi: run_model_hed(p, img, k)))
+    if not models:
+        raise ValueError("No matching model_ids in --models.")
 
     per_image_csv = OUT_DIR / "foundation_edge_per_image.csv"
     meta_json = OUT_DIR / "foundation_edge_model_meta.json"
@@ -459,10 +468,11 @@ def main() -> None:
     protocol = {
         "seed": SEED,
         "img_size": args.img_size,
-        "train_fraction": TRAIN_FRACTION,
+        "split_mode": SPLIT_MODE,
         "n_pairs": len(pairs),
+        "train_images": int(sum(len(v.train) for v in split.values())),
         "test_images": len(test_samples),
-        "models": [m for m, _, _ in all_models],
+        "models": all_model_ids,
         "selected_models": [m for m, _, _ in models],
         "completed_models": sorted(df["model_id"].unique().tolist()),
         "resume_enabled": (not args.no_resume),
