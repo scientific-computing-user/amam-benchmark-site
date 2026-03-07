@@ -142,5 +142,17 @@
     "params_m": 32.530893,
     "train_seconds": 384.8260221481323,
     "device": "cpu"
+  },
+  "dl_unet_effb0": {
+    "model_id": "dl_unet_effb0",
+    "display_name": "U-Net (EfficientNet-B0)",
+    "group": "general",
+    "category": "encoder-decoder",
+    "architecture": "Unet",
+    "encoder": "tu-efficientnet_b0",
+    "input_mode": "rgb",
+    "params_m": 5.836441,
+    "train_seconds": 16.46999502182007,
+    "device": "mps"
   }
 }
