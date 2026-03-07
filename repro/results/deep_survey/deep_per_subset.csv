@@ -107,3 +107,9 @@ metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contras
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,5884-armor-steel,0.6550090750625951,0.786033916935582,0.8007153707837301
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,6280-cast-iron-high,0.5937398562441107,0.7223106247750377,0.8244222005208334
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,6280-cast-iron-low,0.505986405987463,0.6647944819630985,0.7225058199179293
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,4130-steel,0.5057841259259016,0.6624711221223609,0.6847208658854167
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,418-17-4ph-x20,0.29642892492039763,0.4056538605343579,0.5326386305390212
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,418-17-4ph-x5,0.6967149854317529,0.7919542957408912,0.9476812065972221
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,5884-armor-steel,0.6058265923762274,0.7456871598158599,0.7668418278769842
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,6280-cast-iron-high,0.5081744982460816,0.6070425490619669,0.8435221354166667
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,6280-cast-iron-low,0.3173422759882403,0.47989396015722363,0.49052290482954547

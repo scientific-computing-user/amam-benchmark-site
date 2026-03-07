@@ -214,5 +214,17 @@
     "params_m": 24.438109,
     "train_seconds": 33.942429065704346,
     "device": "mps"
+  },
+  "metal_unet_lbp_r34": {
+    "model_id": "metal_unet_lbp_r34",
+    "display_name": "Metal-U-Net LBP Stack (ResNet34)",
+    "group": "metallography",
+    "category": "texture-aware",
+    "architecture": "Unet",
+    "encoder": "resnet34",
+    "input_mode": "lbp3",
+    "params_m": 24.438109,
+    "train_seconds": 26.718668222427368,
+    "device": "mps"
   }
 }

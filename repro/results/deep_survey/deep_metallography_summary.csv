@@ -3,3 +3,4 @@ metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contras
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,0.5720929309760879,0.6930075276250774,0.8084238587355449,24.438109,25.303546905517578,0.4217257817586263
 metal_unet_gabor_r34,Metal-U-Net Gabor Stack (ResNet34),metallography,texture-aware,Unet,resnet34,gabor3,0.5608936203910289,0.6731017095005312,0.7770240929257856,24.438109,33.942429065704346,0.5657071510950724
 metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,0.5307940382421376,0.6496756032443965,0.744652959699143,24.441245,26.60616683959961,0.44343611399332683
+metal_unet_lbp_r34,Metal-U-Net LBP Stack (ResNet34),metallography,texture-aware,Unet,resnet34,lbp3,0.48837856714810024,0.6154504912387767,0.7109879285241427,24.438109,26.718668222427368,0.44531113704045616
