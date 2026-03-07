@@ -190,5 +190,17 @@
     "params_m": 24.438109,
     "train_seconds": 25.303546905517578,
     "device": "mps"
+  },
+  "metal_unet_edge4_r34": {
+    "model_id": "metal_unet_edge4_r34",
+    "display_name": "Metal-U-Net RGB+Sobel (ResNet34)",
+    "group": "metallography",
+    "category": "edge-aware",
+    "architecture": "Unet",
+    "encoder": "resnet34",
+    "input_mode": "edge4",
+    "params_m": 24.441245,
+    "train_seconds": 26.60616683959961,
+    "device": "mps"
   }
 }

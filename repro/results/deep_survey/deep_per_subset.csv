@@ -89,6 +89,12 @@ metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contr
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,5884-armor-steel,0.6235280721369806,0.7589307082751802,0.7823376529431217
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,6280-cast-iron-high,0.5801021047336375,0.6964474400489241,0.8555691189236111
 metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,6280-cast-iron-low,0.4974009375322066,0.6594855433261224,0.7021262428977273
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,4130-steel,0.49133878636657613,0.6461445766310397,0.6833855523003473
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,418-17-4ph-x20,0.3090140931936539,0.36700259789081646,0.6007848668981481
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,418-17-4ph-x5,0.809662333993642,0.884117159338676,0.9795844184027778
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,5884-armor-steel,0.4994061116598819,0.6312785293008732,0.698751136739418
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,6280-cast-iron-high,0.5863901661933628,0.7188877814621246,0.8066813151041666
+metal_unet_edge4_r34,Metal-U-Net RGB+Sobel (ResNet34),metallography,edge-aware,Unet,resnet34,edge4,6280-cast-iron-low,0.48895273804570855,0.6506229748428496,0.69873046875
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,4130-steel,0.6103498741832127,0.7497728632463097,0.7623026529947917
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,418-17-4ph-x20,0.303030647255479,0.3571253741235266,0.5894743096891534
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,418-17-4ph-x5,0.768151357422489,0.8526155660414758,0.9721625434027777
