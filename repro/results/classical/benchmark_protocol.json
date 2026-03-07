@@ -10,6 +10,7 @@
   "test_images": 128,
   "methods": [
     "canny_watershed",
+    "felzenszwalb_cluster",
     "gmm_rgb",
     "kmeans_rgb",
     "slic_cluster",
