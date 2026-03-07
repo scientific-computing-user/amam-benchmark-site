@@ -202,5 +202,17 @@
     "params_m": 24.441245,
     "train_seconds": 26.60616683959961,
     "device": "mps"
+  },
+  "metal_unet_gabor_r34": {
+    "model_id": "metal_unet_gabor_r34",
+    "display_name": "Metal-U-Net Gabor Stack (ResNet34)",
+    "group": "metallography",
+    "category": "texture-aware",
+    "architecture": "Unet",
+    "encoder": "resnet34",
+    "input_mode": "gabor3",
+    "params_m": 24.438109,
+    "train_seconds": 33.942429065704346,
+    "device": "mps"
   }
 }
