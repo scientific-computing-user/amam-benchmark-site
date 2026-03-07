@@ -14,14 +14,15 @@
     "pidi_watershed"
   ],
   "selected_models": [
-    "pidi_watershed"
+    "texturesam_03"
   ],
   "completed_models": [
     "hed_watershed",
     "pidi_watershed",
     "sam_vit_base",
     "slimsam_50",
-    "slimsam_77"
+    "slimsam_77",
+    "texturesam_03"
   ],
   "resume_enabled": true
 }
