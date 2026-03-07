@@ -1,4 +1,4 @@
-## General Deep Segmentation Models (11)
+## General Deep Segmentation Models (12)
 
 | Rank | Model | Category | mIoU | Dice | Pixel Acc | Params (M) | Train min |
 |---:|---|---|---:|---:|---:|---:|---:|
@@ -11,5 +11,6 @@
 | 7 | LinkNet (ResNet34) | lightweight | 0.4956 | 0.6307 | 0.7233 | 21.77 | 0.2 |
 | 8 | UPerNet (MiT-B0) | transformer | 0.4700 | 0.5729 | 0.7286 | 10.74 | 1.7 |
 | 9 | FPN (ResNet34) | pyramid | 0.4499 | 0.5441 | 0.6992 | 23.16 | 0.3 |
-| 10 | PSPNet (ResNet34) | pyramid | 0.4076 | 0.5128 | 0.6388 | 21.49 | 0.1 |
-| 11 | DeepLabV3 (ResNet34) | context-atrous | 0.3200 | 0.3758 | 0.6601 | 26.01 | 0.7 |
+| 10 | UPerNet (MiT-B2) | transformer | 0.4448 | 0.5411 | 0.7086 | 32.53 | 6.4 |
+| 11 | PSPNet (ResNet34) | pyramid | 0.4076 | 0.5128 | 0.6388 | 21.49 | 0.1 |
+| 12 | DeepLabV3 (ResNet34) | context-atrous | 0.3200 | 0.3758 | 0.6601 | 26.01 | 0.7 |
