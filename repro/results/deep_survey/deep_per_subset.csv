@@ -83,8 +83,14 @@ dl_upernet_b2,UPerNet (MiT-B2),general,transformer,UPerNet,mit_b2,rgb,418-17-4ph
 dl_upernet_b2,UPerNet (MiT-B2),general,transformer,UPerNet,mit_b2,rgb,5884-armor-steel,0.5995742762604251,0.7413458695650958,0.7692160631613757
 dl_upernet_b2,UPerNet (MiT-B2),general,transformer,UPerNet,mit_b2,rgb,6280-cast-iron-high,0.45344733080498767,0.5221940851613305,0.8364366319444445
 dl_upernet_b2,UPerNet (MiT-B2),general,transformer,UPerNet,mit_b2,rgb,6280-cast-iron-low,0.23355410274917124,0.3384698892937485,0.4528759272411616
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,4130-steel,0.636496955759951,0.7708556122103808,0.7771321614583333
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,418-17-4ph-x20,0.4437363114428422,0.5340433886117656,0.7707325768849206
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,418-17-4ph-x5,0.6512932042509096,0.7382824732780915,0.9626453993055556
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,5884-armor-steel,0.6235280721369806,0.7589307082751802,0.7823376529431217
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,6280-cast-iron-high,0.5801021047336375,0.6964474400489241,0.8555691189236111
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,6280-cast-iron-low,0.4974009375322066,0.6594855433261224,0.7021262428977273
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,4130-steel,0.6103498741832127,0.7497728632463097,0.7623026529947917
-metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,418-17-4ph-x20,0.30303064725547907,0.35712537412352663,0.5894743096891534
+metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,418-17-4ph-x20,0.303030647255479,0.3571253741235266,0.5894743096891534
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,418-17-4ph-x5,0.768151357422489,0.8526155660414758,0.9721625434027777
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,5884-armor-steel,0.6550090750625951,0.786033916935582,0.8007153707837301
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,6280-cast-iron-high,0.5937398562441107,0.7223106247750377,0.8244222005208334

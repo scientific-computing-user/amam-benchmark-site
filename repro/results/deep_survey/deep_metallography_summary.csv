@@ -1,2 +1,3 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,miou,dice,pixel_acc,params_m,train_seconds,train_minutes
 metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,0.5727112026925583,0.6887754711808384,0.7785971495515359,24.431837,17.624907970428467,0.2937484661738078
+metal_unet_clahe_r34,Metal-U-Net CLAHE (ResNet34),metallography,micrograph-contrast,Unet,resnet34,clahe_rgb,0.5720929309760879,0.6930075276250774,0.8084238587355449,24.438109,25.303546905517578,0.4217257817586263

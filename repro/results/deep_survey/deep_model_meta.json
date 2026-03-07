@@ -178,5 +178,17 @@
     "params_m": 24.431837,
     "train_seconds": 17.624907970428467,
     "device": "mps"
+  },
+  "metal_unet_clahe_r34": {
+    "model_id": "metal_unet_clahe_r34",
+    "display_name": "Metal-U-Net CLAHE (ResNet34)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "Unet",
+    "encoder": "resnet34",
+    "input_mode": "clahe_rgb",
+    "params_m": 24.438109,
+    "train_seconds": 25.303546905517578,
+    "device": "mps"
   }
 }
