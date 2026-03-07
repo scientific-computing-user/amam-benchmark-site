@@ -7,5 +7,8 @@
   },
   "slimsam_77": {
     "runtime_sec": 2606.3692860603333
+  },
+  "hed_watershed": {
+    "runtime_sec": 46.734177112579346
   }
 }

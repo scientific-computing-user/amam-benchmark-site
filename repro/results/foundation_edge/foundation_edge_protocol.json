@@ -14,9 +14,10 @@
     "pidi_watershed"
   ],
   "selected_models": [
-    "slimsam_77"
+    "hed_watershed"
   ],
   "completed_models": [
+    "hed_watershed",
     "sam_vit_base",
     "slimsam_50",
     "slimsam_77"
