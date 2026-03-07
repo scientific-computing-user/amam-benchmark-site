@@ -1,1 +1,2 @@
 model_id,display_name,group,category,architecture,encoder,input_mode,miou,dice,pixel_acc,params_m,train_seconds,train_minutes
+metal_unet_gray_r34,Metal-U-Net Gray (ResNet34),metallography,micrograph-contrast,Unet,resnet34,gray,0.5727112026925583,0.6887754711808384,0.7785971495515359,24.431837,17.624907970428467,0.2937484661738078
