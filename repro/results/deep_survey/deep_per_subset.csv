@@ -16,7 +16,13 @@ dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,418-17-4ph-x20,0.3007
 dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,418-17-4ph-x5,0.7892706424487492,0.8680466552159507,0.9781477864583333
 dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,5884-armor-steel,0.6356027518929999,0.7720941469553376,0.7867967716600529
 dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,6280-cast-iron-high,0.4133432212963949,0.4532227291045145,0.825732421875
-dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,6280-cast-iron-low,0.21331169869393152,0.3167445450095311,0.47355883049242425
+dl_fpn_r34,FPN (ResNet34),general,pyramid,FPN,resnet34,rgb,6280-cast-iron-low,0.21331169869393146,0.31674454500953103,0.47355883049242425
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,4130-steel,0.27511416469266864,0.36382140918485356,0.5363315158420139
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,418-17-4ph-x20,0.418305324077766,0.46053108401144704,0.8233971974206349
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,418-17-4ph-x5,0.7471799336371866,0.8347693930738305,0.9677907986111112
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,5884-armor-steel,0.5299752284493631,0.6754729981805406,0.7064615885416666
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,6280-cast-iron-high,0.16603918616547864,0.2827548179823404,0.2864501953125
+dl_pspnet_r34,PSPNet (ResNet34),general,pyramid,PSPNet,resnet34,rgb,6280-cast-iron-low,0.30916499197507624,0.45929471064587357,0.5122662168560607
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,4130-steel,0.5312387024576954,0.6766173921982077,0.7094122992621528
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x20,0.30411623524942416,0.35678686256392506,0.5947769407242064
 dl_unet_r34,U-Net (ResNet34),general,encoder-decoder,Unet,resnet34,rgb,418-17-4ph-x5,0.7316227217315345,0.8212322235863642,0.9688140190972223

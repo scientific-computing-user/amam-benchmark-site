@@ -58,5 +58,17 @@
     "params_m": 23.156941,
     "train_seconds": 15.888894081115723,
     "device": "mps"
+  },
+  "dl_pspnet_r34": {
+    "model_id": "dl_pspnet_r34",
+    "display_name": "PSPNet (ResNet34)",
+    "group": "general",
+    "category": "pyramid",
+    "architecture": "PSPNet",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 21.493293,
+    "train_seconds": 4.904197692871094,
+    "device": "mps"
   }
 }
