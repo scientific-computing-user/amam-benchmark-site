@@ -82,5 +82,17 @@
     "params_m": 21.772333,
     "train_seconds": 14.40543508529663,
     "device": "mps"
+  },
+  "dl_manet_r34": {
+    "model_id": "dl_manet_r34",
+    "display_name": "MAnet (ResNet34)",
+    "group": "general",
+    "category": "attention",
+    "architecture": "MAnet",
+    "encoder": "resnet34",
+    "input_mode": "rgb",
+    "params_m": 31.785373,
+    "train_seconds": 20.794602870941162,
+    "device": "mps"
   }
 }
