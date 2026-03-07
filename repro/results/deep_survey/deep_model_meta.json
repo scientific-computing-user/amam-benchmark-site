@@ -274,5 +274,17 @@
     "params_m": 21.775469,
     "train_seconds": 15.850100994110107,
     "device": "mps"
+  },
+  "metal_segformer_clahe_b0": {
+    "model_id": "metal_segformer_clahe_b0",
+    "display_name": "Metal-SegFormer CLAHE (MiT-B0)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "Segformer",
+    "encoder": "mit_b0",
+    "input_mode": "clahe_rgb",
+    "params_m": 3.717485,
+    "train_seconds": 78.25425004959106,
+    "device": "cpu"
   }
 }

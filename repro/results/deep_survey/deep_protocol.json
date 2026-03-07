@@ -42,7 +42,7 @@
     "metal_mlography_unet_vgg16_gray"
   ],
   "selected_models": [
-    "metal_linknet_edge4_r34"
+    "metal_segformer_clahe_b0"
   ],
   "completed_models": [
     "dl_deeplabv3_r34",
@@ -62,6 +62,7 @@
     "metal_deeplabv3p_clahe_r34",
     "metal_fpn_gabor_r34",
     "metal_linknet_edge4_r34",
+    "metal_segformer_clahe_b0",
     "metal_unet_clahe_r34",
     "metal_unet_edge4_r34",
     "metal_unet_gabor_r34",
