@@ -118,5 +118,17 @@
     "params_m": 10.735469,
     "train_seconds": 101.13108396530151,
     "device": "cpu"
+  },
+  "dl_segformer_b2": {
+    "model_id": "dl_segformer_b2",
+    "display_name": "SegFormer (MiT-B2)",
+    "group": "general",
+    "category": "transformer",
+    "architecture": "Segformer",
+    "encoder": "mit_b2",
+    "input_mode": "rgb",
+    "params_m": 24.725453,
+    "train_seconds": 277.0208249092102,
+    "device": "cpu"
   }
 }
