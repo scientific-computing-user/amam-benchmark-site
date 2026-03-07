@@ -207,7 +207,8 @@ def train_best_deep_models():
         subset_global_ids=subset_global_ids,
         img_size=img_size,
     )
-    train_indices = [i for i, r in enumerate(records) if r.split == "train"]
+    # In fullset_no_holdout mode, deep records are tagged as "train_test".
+    train_indices = [i for i, r in enumerate(records) if r.split in {"train", "train_test"}]
 
     specs = {s.model_id: s for s in rds.build_model_specs()}
     spec_general = specs["dl_unet_effb0"]

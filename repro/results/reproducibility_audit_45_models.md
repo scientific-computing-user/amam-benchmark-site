@@ -1,7 +1,7 @@
 # AMAM-128 Reproducibility Audit (45 Models)
 
 - Status: **PASS**
-- Git commit: `7c3036b4de5e27c7a36cccb377d6fc50e82df811`
+- Git commit: `4c245d60b6af02230bcbd6eb8c459a2839d10542`
 - Model counts:
   - Classical: 10
   - Deep general: 14
@@ -16,17 +16,17 @@
 - Provenance manifest matches results IDs: `True`
 
 ## Key Artifacts (SHA256)
-- `repro/results/classical/benchmark_summary.csv`: `59ea2daa61828ea99e7f362a7715f9e4997edcde15b010b24a7a969dfdba51bb`
-- `repro/results/classical/benchmark_raw_per_image.csv`: `fa65da35b21da685601ba91aaa9744bc862117efb32c19cefa29c3ddcfffbab0`
-- `repro/results/classical/benchmark_per_subset.csv`: `2f908f440c9822cb5bc989c35bed64dca4bbac9ae452bc94b2c6a74aa77b777a`
-- `repro/results/deep_survey/deep_general_summary.csv`: `9fd9d6e33c6681985f0b39c1e5f12d50234774bc42afe76106c00a5e6dd97eef`
-- `repro/results/deep_survey/deep_metallography_summary.csv`: `e0d9d765d209b5ede75f2bd703132356fc019e6e77f1371988dd0c4698bccab6`
-- `repro/results/deep_survey/deep_per_image.csv`: `71364e52c22d8530cfb667946e33f18665977ae75e41a91d49fe80058341b639`
-- `repro/results/deep_survey/deep_per_subset.csv`: `bbad9acc6ee18a05aec0791fa0f8984348d6aa4a51c5d54c6f23238831b40e15`
-- `repro/results/foundation_edge/foundation_edge_summary.csv`: `030492186028fe0f9db47c70a7f32bca506881923288dbbab3b4b7c50714079a`
-- `repro/results/foundation_edge/foundation_edge_per_image.csv`: `95536886244b614115f471e9cbe6e9e9a41d046b48c4709a0f01f5b91638bbe3`
-- `repro/results/foundation_edge/foundation_edge_per_subset.csv`: `56646c792047b8b494ebf3f498d211f30a0041288bb3011504ebc3e188d38197`
-- `repro/results/classical/benchmark_protocol.json`: `6db5cfbfaeab7bc8ee63cdafc426cce49752ed725b465a3b64aa4d74c149ad16`
-- `repro/results/deep_survey/deep_protocol.json`: `a9fdd197533d74490b6472924d2c9c6b5fa3f7cceb89cce59777b7e33e4ec1df`
-- `repro/results/foundation_edge/foundation_edge_protocol.json`: `2853d10f60e30349dab230aaf9e71c6a486dfde83e5395764081f03598481665`
-- `repro/results/model_provenance_manifest.csv`: `436fc44adea38600601d74bb4ba890b977808d469fac33c440a148bed635670e`
+- `repro/results/classical/benchmark_summary.csv`: `9e6d6614392becaa6440b75fc5ae685bd7a634009d78af0b376b920be79bf2ce`
+- `repro/results/classical/benchmark_raw_per_image.csv`: `9c7bc06c69d46e306d769b54fcc4ed65ffed29d48c2a2976f73b5a12de880b8f`
+- `repro/results/classical/benchmark_per_subset.csv`: `53fd5c04f2e6b530b48eea3908bd5f5da7e458eb260b239b2f7a0f2ce4ca823c`
+- `repro/results/deep_survey/deep_general_summary.csv`: `e6769e7f5b2c30790fd5b1b0bd02cf4f702f3f3db5588854f78ec27bafa685f9`
+- `repro/results/deep_survey/deep_metallography_summary.csv`: `7fcca9147ecb16bf315550a9dc80dd8ac2e7d16843187990961c8da17ae36228`
+- `repro/results/deep_survey/deep_per_image.csv`: `19723ef9cd0847da83b5da274e48c08303f45d8e4dd5251fc62de63ac0260e82`
+- `repro/results/deep_survey/deep_per_subset.csv`: `82cfd67c5fcae0757da119d490feedb092997f8220e7fda4458ef7a1a15e46cb`
+- `repro/results/foundation_edge/foundation_edge_summary.csv`: `20225ece312a6d154d5b6e41628050d16815164b6e7cf760708c7718e1a6e5a8`
+- `repro/results/foundation_edge/foundation_edge_per_image.csv`: `1d243293a659557fd0520505c097107847035264f8dc590c6822dcb358dc0019`
+- `repro/results/foundation_edge/foundation_edge_per_subset.csv`: `33aee7b5ecfb826102531258e5d14132fdcb8ed64ff083668c0c8a2168f96f32`
+- `repro/results/classical/benchmark_protocol.json`: `80d0fbbdc106d5d24e6b8afa16df1eefd6c5da1bf61907663d08b62f6bdb3de0`
+- `repro/results/deep_survey/deep_protocol.json`: `a3e2db22dad50220086cdf64d28b5d5bde3e7fe133a9ace00a24d617aa1d4f9b`
+- `repro/results/foundation_edge/foundation_edge_protocol.json`: `e92463dc9129a36d175ed02e52eb2d5fb1fa044650c7fa703323c023e08b9ea1`
+- `repro/results/model_provenance_manifest.csv`: `ed1d0db7501368ec01e791a9fa6502b85fe4fb5d99334c7fa8d28bf1e7ad4ccf`
