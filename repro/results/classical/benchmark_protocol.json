@@ -13,6 +13,7 @@
     "felzenszwalb_cluster",
     "gmm_rgb",
     "kmeans_rgb",
+    "lbp_kmeans",
     "slic_cluster",
     "sobel_watershed"
   ],

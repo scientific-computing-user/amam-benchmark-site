@@ -4,5 +4,6 @@
 | 2 | kmeans_rgb | baseline | 0.5611 | 0.6673 | 0.7913 |
 | 3 | slic_cluster | contour_region | 0.5012 | 0.6117 | 0.7541 |
 | 4 | felzenszwalb_cluster | contour_region | 0.4788 | 0.5838 | 0.7484 |
-| 5 | sobel_watershed | edge | 0.3575 | 0.4987 | 0.5707 |
-| 6 | canny_watershed | edge | 0.3481 | 0.4376 | 0.6567 |
+| 5 | lbp_kmeans | texture | 0.4164 | 0.5572 | 0.6144 |
+| 6 | sobel_watershed | edge | 0.3575 | 0.4987 | 0.5707 |
+| 7 | canny_watershed | edge | 0.3481 | 0.4376 | 0.6567 |
