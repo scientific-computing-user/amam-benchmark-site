@@ -11,6 +11,7 @@
   "methods": [
     "canny_watershed",
     "felzenszwalb_cluster",
+    "gabor_kmeans",
     "gmm_rgb",
     "kmeans_rgb",
     "lbp_kmeans",
