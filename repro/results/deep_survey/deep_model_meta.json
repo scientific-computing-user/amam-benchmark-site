@@ -226,5 +226,17 @@
     "params_m": 24.438109,
     "train_seconds": 26.718668222427368,
     "device": "mps"
+  },
+  "metal_unetpp_gray_r34": {
+    "model_id": "metal_unetpp_gray_r34",
+    "display_name": "Metal-U-Net++ Gray (ResNet34)",
+    "group": "metallography",
+    "category": "micrograph-contrast",
+    "architecture": "UnetPlusPlus",
+    "encoder": "resnet34",
+    "input_mode": "gray",
+    "params_m": 26.074077,
+    "train_seconds": 45.83568978309631,
+    "device": "mps"
   }
 }
